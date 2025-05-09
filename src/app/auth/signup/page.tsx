@@ -1,17 +1,6 @@
 import DisplayLayout from "@/components/layout/layout";
-import Button from "@/components/ui/button";
-import Image from "next/image";
-import Link from "next/link";
-import { FaAngleDown } from "react-icons/fa6";
-import { GoArrowUpRight } from "react-icons/go";
-import { Controller, useForm } from "react-hook-form";
 
 export default function SignupPage() {
-    // const { handleSubmit, control } = useForm({
-    //   defaultValues: {
-    //     firstName: ''
-    //   }
-    // });
     return (
         <div>
             <DisplayLayout noSpaceOnTop={true}>
