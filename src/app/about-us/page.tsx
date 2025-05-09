@@ -4,26 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
-import GlobeImg from "@/assets/images/download.png";
+
 
 export default function Home() {
   return (
     <div>
       <DisplayLayout>
         <>
-          <section className="px-28 pt-44 pb-20">
-            <div className="grid grid-cols-2 items-center gap-20">
+          <section className="hero-bg px-28 pt-44 pb-20">
+            <div className="items-center gap-20">
               <div>
-                <h1 className="text-5xl font-medium w-[80%] mb-4 leading-tight md:leading-tight">
-                  Sentinel Security: Safeguarding Your Digital Frontier.
+                <h1 className="text-6xl font-medium mb-6 leading-tight md:leading-tight w-[60%]">
+                  Freelance Security: Protecting Your Projects.
                 </h1>
-                <p className="text-base leading-relaxed md:leading-loose mb-7">
+                <p className="text-base leading-relaxed md:leading-loose mb-7 w-[50%]">
                   At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. At Citadel Security, we are dedicated to fortifying your software applications and systems.
                 </p>
-                <Button content="See how we impact" />
-              </div>
-              <div>
-                <Image src="https://framerusercontent.com/images/4iRboOeHolIxcWnocarRCo62k.png?scale-down-to=1024" alt="hero" width={400} height={400} className="w-full h-full" />
               </div>
             </div>
           </section>
@@ -146,65 +142,31 @@ export default function Home() {
           </div>
         </div> */}
           </section>
-          <section className="px-28 py-28">
-            <div className="grid grid-cols-3 gap-10">
-              <div className="">
-                <div className="w-full mb-4">
-                  <Image src="https://framerusercontent.com/images/EBxviubc7696r1ZsHUfqPqKSE.jpg?scale-down-to=1024" quality={100} width={400} height={0} className="h-[15rem] w-full rounded-xl object-fit object-cover" alt="blog image" />
-                </div>
-                <div>
-                  {/* <p className="opacity-80 text-sm mb-3">&bull; May 28, 2025</p> */}
-                  <h4 className="text-xl font-bold mb-2">
-                    Harnessing AI's Power for Security Everywhere.
-                  </h4>
-                  {/* <p className="text-sm leading-loose md:leading-loose opacity-80">
-                                                          With a team of seasoned security experts and developers, we offer a range of services.
-                                                      </p> */}
-                </div>
-              </div>
-              <div className="">
-                <div className="w-full mb-4">
-                  <Image src="https://framerusercontent.com/images/EBxviubc7696r1ZsHUfqPqKSE.jpg?scale-down-to=1024" quality={100} width={400} height={0} className="h-[15rem] w-full rounded-xl object-fit object-cover" alt="blog image" />
-                </div>
-                <div>
-                  {/* <p className="opacity-80 text-sm mb-3">&bull; May 28, 2025</p> */}
-                  <h4 className="text-xl font-bold mb-2">
-                    Harnessing AI's Power for Security Everywhere.
-                  </h4>
-                  {/* <p className="text-sm leading-loose md:leading-loose opacity-80">
-                                                          With a team of seasoned security experts and developers, we offer a range of services.
-                                                      </p> */}
-                </div>
-              </div>
-              <div className="">
-                <div className="w-full mb-4">
-                  <Image src="https://framerusercontent.com/images/EBxviubc7696r1ZsHUfqPqKSE.jpg?scale-down-to=1024" quality={100} width={400} height={0} className="h-[15rem] w-full rounded-xl object-fit object-cover" alt="blog image" />
-                </div>
-                <div>
-                  {/* <p className="opacity-80 text-sm mb-3">&bull; May 28, 2025</p> */}
-                  <h4 className="text-xl font-bold mb-2">
-                    Harnessing AI's Power for Security Everywhere.
-                  </h4>
-                  {/* <p className="text-sm leading-loose md:leading-loose opacity-80">
-                                                          With a team of seasoned security experts and developers, we offer a range of services.
-                                                      </p> */}
-                </div>
-              </div>
+          <section className="px-28 pt-28">
+            <div className="text-center">
+              <h3 className="text-4xl mb-8 font-medium">
+                Team Pioneers in Online & Software Security Excellence
+              </h3>
+              <p className="w-[70%] mx-auto text-base leading-relaxed md:leading-relaxed mb-14">
+                At Citadel Security, we are dedicated to fortifying your software applications and systems.
+              </p>
             </div>
-          </section>
-          <section className="px-28">
-            <div className="bg-black items-center pl-14 rounded-4xl grid grid-cols-2 gap-10">
-              <div>
-                <h3 className="text-[42px] text-white mb-4 leading-snug md:leading-snug font-medium">
-                  Team Pioneers in Online & Software Security Excellence.
-                </h3>
-                <p className="text-white opacity-80 leading-loose md:leading-loose mb-6">
-                  With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training. With a team of seasoned security.
-                </p>
-                <Link className="flex items-center gap-3 border-2 border-white border-solid text-sm text-white px-8 py-4 opacity-70 rounded-lg w-max" href="">Get Started <GoArrowUpRight className="text-2xl text-white" /></Link>
+            <div className="flex gap-5 flex-col w-[70%] mx-auto">
+              <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                <h3 className="font-medium text-lg">How can I use this platform?</h3>
+                <FaAngleDown className="text-xl" />
               </div>
-              <div>
-                <Image src={GlobeImg} width={0} height={0} quality={100} className="w-full h-full" alt="" />
+              <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                <h3 className="font-medium text-lg">How can I use this platform?</h3>
+                <FaAngleDown className="text-xl" />
+              </div>
+              <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                <h3 className="font-medium text-lg">How can I use this platform?</h3>
+                <FaAngleDown className="text-xl" />
+              </div>
+              <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                <h3 className="font-medium text-lg">How can I use this platform?</h3>
+                <FaAngleDown className="text-xl" />
               </div>
             </div>
           </section>
