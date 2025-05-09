@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
-import { Controller, useForm } from "react-hook-form";
-import { Input } from "antd";
 
 export default function BlogDetailPage() {
     return (
