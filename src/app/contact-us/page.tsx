@@ -4,11 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
-import { Controller, useForm } from "react-hook-form";
-import { Input } from "antd";
 
 export default function ContactUs() {
-  const { TextArea } = Input;
   // const { handleSubmit, control } = useForm({
   //   defaultValues: {
   //     firstName: ''
@@ -64,14 +61,14 @@ export default function ContactUs() {
                       <label htmlFor="" className="text-sm">First name</label>
                       {/* <Controller name="firstName" control={control}
                         render={({ field }) => ( */}
-                      <Input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="firstName" />
+                      <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="firstName" />
                       {/* )} /> */}
                     </div>
                     <div className="form-group">
                       <label htmlFor="" className="text-sm">First name</label>
                       {/* <Controller name="firstName" control={control}
                         render={({ field }) => ( */}
-                      <Input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="firstName" />
+                      <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="firstName" />
                       {/* )} /> */}
                     </div>
                   </div>
@@ -79,14 +76,14 @@ export default function ContactUs() {
                     <label htmlFor="" className="text-sm">Email address</label>
                     {/* <Controller name="firstName" control={control}
                         render={({ field }) => ( */}
-                    <Input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" />
+                    <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" />
                     {/* )} /> */}
                   </div>
                   <div className="form-group mb-3">
                     <label htmlFor="" className="text-sm">Subject</label>
                     {/* <Controller name="firstName" control={control}
                         render={({ field }) => ( */}
-                    <Input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" />
+                    <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" />
                     {/* )} /> */}
                   </div>
                   <div className="form-group">
