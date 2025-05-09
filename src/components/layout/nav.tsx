@@ -26,19 +26,19 @@ const Navigation = () => {
                 <div>
                     <ul className="flex gap-10 items-center">
                         <li>
-                            <a href="/" className="text-sm font-medium opacity-80">Home</a>
+                            <Link href="/" className="text-sm font-medium opacity-80">Home</Link>
                         </li>
                         <li>
-                            <a href="about-us" className="text-sm font-medium opacity-80">About Us</a>
+                            <Link href="about-us" className="text-sm font-medium opacity-80">About Us</Link>
                         </li>
                         <li>
-                            <a href="/pillars" className="text-sm font-medium opacity-80">Pillars</a>
+                            <Link href="/pillars" className="text-sm font-medium opacity-80">Pillars</Link>
                         </li>
                         <li>
-                            <a href="/blogs" className="text-sm font-medium opacity-80">Blog</a>
+                            <Link href="/blogs" className="text-sm font-medium opacity-80">Blog</Link>
                         </li>
                         <li>
-                            <a href="" className="text-sm font-medium opacity-80">Feedback Hub</a>
+                            <Link href="" className="text-sm font-medium opacity-80">Feedback Hub</Link>
                         </li>
                     </ul>
                 </div>
