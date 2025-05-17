@@ -40,7 +40,7 @@ const AuthLayout = (props: LayoutProps) => {
                                 {user?.profile_picture ? (
                                     <img
                                         src={user?.profile_picture}
-                                        alt="profile" className="size-32 rounded-full object-center object-cover"
+                                        alt="profile" className="size-12 rounded-full object-center object-cover"
                                     />
                                 ) : (
                                     <div className="size-12 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
