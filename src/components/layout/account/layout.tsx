@@ -2,6 +2,8 @@ import Image from "next/image";
 import SideNav from "./sidenav";
 import Logo from "@/assets/images/logo.png";
 import Link from "next/link";
+import { useContext } from "react";
+import UserContext from "@/context/UserContext";
 
 interface LayoutProps {
     children: React.ReactElement,
@@ -9,6 +11,10 @@ interface LayoutProps {
 }
 
 const AuthLayout = (props: LayoutProps) => {
+
+    const { updateUser, user } = useContext(UserContext);
+
+
     return (
         <div className="fle h-[100vh] overflow-hidden">
             <div className="h-[12vh] flex items-center border-b-2 border-solid border-[#E4E4E6] w-full px-8">
@@ -31,10 +37,19 @@ const AuthLayout = (props: LayoutProps) => {
                         <div className="flex gap-6 items-center">
                             <Link href="" className="bg-primary text-sm text-white rounded-lg py-4 px-8">Today&apos;s Summaries</Link>
                             <div className="flex items-center gap-3">
-                                <div className="size-12 bg-black rounded-full flex items-center justify-center">
-                                    <h3 className="text-base text-white uppercase font-bold">IA</h3>
-                                </div>
-                                <h4 className="text-sm font-medium">Ife Ade</h4>
+                                {user?.profile_picture ? (
+                                    <img
+                                        src={user?.profile_picture}
+                                        alt="profile" className="size-32 rounded-full object-center object-cover"
+                                    />
+                                ) : (
+                                    <div className="size-12 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
+                                        <h4 className="text-black uppercase font-medium text-base">
+                                            {user?.first_name?.slice(0, 1)} {user?.last_name?.slice(0, 1)}
+                                        </h4>
+                                    </div>
+                                )}
+                                <h4 className="text-sm font-medium">{user?.first_name} {user?.last_name}</h4>
                             </div>
                         </div>
                     </div>
