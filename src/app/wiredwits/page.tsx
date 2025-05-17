@@ -1,5 +1,5 @@
 import DisplayLayout from "@/components/layout/layout";
-import Button from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
@@ -26,7 +26,7 @@ export default function ContactUs() {
                                 <p className="text-base leading-relaxed md:leading-loose mb-7">
                                     At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. At Citadel Security, we are dedicated to fortifying your software applications and systems.
                                 </p>
-                                <Button content="See how we impact" />
+                                <Button>See how we impact</Button>
                             </div>
                             <div>
                                 {/* <Image src="https://framerusercontent.com/images/4iRboOeHolIxcWnocarRCo62k.png?scale-down-to=1024" alt="hero" width={400} height={400} className="w-full h-full" /> */}

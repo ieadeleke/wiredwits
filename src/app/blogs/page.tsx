@@ -1,5 +1,4 @@
 import DisplayLayout from "@/components/layout/layout";
-import Button from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
