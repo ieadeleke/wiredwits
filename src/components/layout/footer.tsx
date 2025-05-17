@@ -24,33 +24,16 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                             <h5 className="text-white mb-5 text-lg">Who We Are</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Home</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Home</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">About Us</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">About Us</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Feedback Hub</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Feedback Hub</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Resources</Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h5 className="text-white mb-5 text-lg">Social</h5>
-                            <ul className="flex flex-col gap-5">
-                                <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Home</Link>
-                                </li>
-                                <li>
-                                    <Link href="" className="text-white text-sm opacity-50">About Us</Link>
-                                </li>
-                                <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Feedback Hub</Link>
-                                </li>
-                                <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Resources</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Resources</Link>
                                 </li>
                             </ul>
                         </div>
@@ -58,16 +41,33 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                             <h5 className="text-white mb-5 text-lg">Social</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Home</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Home</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">About Us</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">About Us</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Feedback Hub</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Feedback Hub</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-50">Resources</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Resources</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 className="text-white mb-5 text-lg">Social</h5>
+                            <ul className="flex flex-col gap-5">
+                                <li>
+                                    <Link href="" className="text-white text-sm opacity-70">Home</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-white text-sm opacity-70">About Us</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-white text-sm opacity-70">Feedback Hub</Link>
+                                </li>
+                                <li>
+                                    <Link href="" className="text-white text-sm opacity-70">Resources</Link>
                                 </li>
                             </ul>
                         </div>
@@ -77,12 +77,12 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
             <div className="w-full h-[.1rem] bg-[#EBEBEB] opacity-30 mt-20"></div>
             <div className="flex justify-between mt-16">
                 <div>
-                    <p className="text-white text-sm opacity-50">Trademark &copy; {new Date().getFullYear()}</p>
+                    <p className="text-white text-sm opacity-70">Trademark &copy; {new Date().getFullYear()}</p>
                 </div>
                 <div className="flex gap-10">
-                    <Link className="text-white text-sm opacity-50" href="">Terms of use</Link>
-                    <Link className="text-white text-sm opacity-50" href="">Sitemap</Link>
-                    <Link className="text-white text-sm opacity-50" href="">Privacy Policies</Link>
+                    <Link className="text-white text-sm opacity-70" href="">Terms of use</Link>
+                    <Link className="text-white text-sm opacity-70" href="">Sitemap</Link>
+                    <Link className="text-white text-sm opacity-70" href="">Privacy Policies</Link>
                 </div>
             </div>
         </footer>

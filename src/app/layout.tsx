@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Inter, IBM_Plex_Sans } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
+import RootLayoutClient from "@/components/client/RootLayout";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,17 +15,19 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const inter = Inter({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  display: 'swap',
+  variable: '--font-plus-jakarta',
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
 });
 
-// const plexSans = IBM_Plex_Sans({
-//   subsets: ['latin'],
-//   variable: '--font-plex',
-//   weight: ['400', '500', '600', '700', '800']
-// });
-
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,12 +40,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+          <RootLayoutClient>
+            {children}
+          </RootLayoutClient>
       </body>
-    </html>
+    </html >
   );
 }

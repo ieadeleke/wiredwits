@@ -17,8 +17,8 @@ const Navigation = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-0 ${fixedNav ? 'bg-white shadow-xl' : ''} w-full max-w-[1800px] mx-auto z-40 shadow-2x px-28`}>
-            <div className="w-full py-6 flex justify-between items-center">
+        <nav className={`fixed top-0 ${fixedNav ? 'bg-white shadow-lg' : ''} w-full max-w-[1800px] mx-auto z-40 shadow-2x px-28`}>
+            <div className="w-full py-4 flex justify-between items-center">
                 <div className="flex items-center gap-5">
                     <div className="w-[5rem] h-[3rem] bg-black"></div>
                     <h3 className="text-xl font-bold">WiredWits</h3>

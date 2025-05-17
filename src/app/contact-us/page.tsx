@@ -1,5 +1,5 @@
 import DisplayLayout from "@/components/layout/layout";
-import Button from "@/components/ui/button";
+// import Button from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
@@ -15,12 +15,11 @@ export default function ContactUs() {
     <div>
       <DisplayLayout>
         <>
-          <section className="hero-bg px-28 pt-44 pb-20">
+          <section className="hero-bg px-28 pt-44 pb-14">
             <div className="w-[50%] items-center gap-20">
               <div>
                 <h1 className="text-6xl font-medium mb-6 leading-tight md:leading-tight w-[70%]">
-                  Get in Touch
-                  with Our Team
+                  Get in Touch with Our Team.
                 </h1>
                 <p className="text-base leading-relaxed md:leading-loose mb-7">
                   Let us assist you in getting started. Please fill out this form or reach out via phone or fax to share details about your business needs, so our team can better understand how to help.
@@ -80,12 +79,21 @@ export default function ContactUs() {
                     {/* )} /> */}
                   </div>
                   <div className="form-group mb-3">
-                    <label htmlFor="" className="text-sm">Subject</label>
+                    <label htmlFor="" className="text-sm">Category</label>
                     {/* <Controller name="firstName" control={control}
                         render={({ field }) => ( */}
-                    <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" />
+                    <select className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg">
+                      <option value="">Public Good</option>
+                      <option value="">Public Good</option>
+                      <option value="">Public Good</option>
+                    </select>
+                    {/* <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" /> */}
                     {/* )} /> */}
                   </div>
+                  {/* <div className="form-group mb-3">
+                    <label htmlFor="" className="text-sm">Subject</label>
+                    <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" />
+                  </div> */}
                   <div className="form-group">
                     <label htmlFor="" className="text-sm">Message</label>
                     {/* <Controller name="firstName" control={control}

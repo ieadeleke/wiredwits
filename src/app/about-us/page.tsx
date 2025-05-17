@@ -11,33 +11,45 @@ export default function Home() {
     <div>
       <DisplayLayout>
         <>
-          <section className="hero-bg px-28 pt-44 pb-20">
-            <div className="items-center gap-20">
-              <div>
-                <h1 className="text-6xl font-medium mb-6 leading-tight md:leading-tight w-[60%]">
-                  Freelance Security: Protecting Your Projects.
+          <section className="hero-bg flex items-center justify-center text-center">
+            <div className="w-[90%] mx-auto gap-20 py-48 pb-28">
+              <div className="w-[60%] mx-auto">
+                <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-4 rounded-lg">
+                  <h4 className="text-[#9747FF] font-medium text-sm">Take Full Control of Your Task</h4>
+                </div>
+                <h1 className="text-6xl font-bold mb-4 leading-tight md:leading-tight">
+                  {/* Freelance Security: Protecting Your Projects. */}
+                  Empowering Teams, One Task at a Time, Every Day
                 </h1>
-                <p className="text-base leading-relaxed md:leading-loose mb-7 w-[50%]">
-                  At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. At Citadel Security, we are dedicated to fortifying your software applications and systems.
+                <p className="text-base text-[#111111b3] leading-relaxed md:leading-loose mb-7 w-[80%] mx-auto">
+                  At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. At Citadel Security, we are dedicated.
                 </p>
+                <div className="flex gap-4 mx-auto mb-10 w-max">
+                  <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Get Started</Link>
+                  <Link href="/auth/signup" className="bg-white text-black py-4 px-8 rounded-lg text-sm font-medium">Reach out to us</Link>
+                </div>
+              </div>
+              <div className="w-[90%] mx-auto grid grid-cols-4 gap-4">
+                <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] bg-white text-center py-8 rounded-lg">
+                  <h3 className="text-2xl mb-5 font-medium">2010</h3>
+                  <p className="text-base opacity-80 uppercase">Founded In</p>
+                </div>
+                <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] bg-white text-center py-8 rounded-lg">
+                  <h3 className="text-2xl mb-5 font-medium">100+ Company</h3>
+                  <p className="text-base opacity-80 uppercase">Founded In</p>
+                </div>
+                <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] bg-white text-center py-8 rounded-lg">
+                  <h3 className="text-2xl mb-5 font-medium">Silicon Valley</h3>
+                  <p className="text-base opacity-80 uppercase">Founded In</p>
+                </div>
+                <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] bg-white text-center py-8 rounded-lg">
+                  <h3 className="text-2xl mb-5 font-medium">Silicon Valley</h3>
+                  <p className="text-base opacity-80 uppercase">Founded In</p>
+                </div>
               </div>
             </div>
           </section>
-          <section className="px-28 mt-28">
-            <div className="grid grid-cols-3 gap-10">
-              <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] text-center py-8 rounded-lg">
-                <h3 className="text-3xl mb-5 font-medium">2010</h3>
-                <p className="text-base opacity-80 uppercase">Founded In</p>
-              </div>
-              <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] text-center py-8 rounded-lg">
-                <h3 className="text-3xl mb-5 font-medium">100+ Company</h3>
-                <p className="text-base opacity-80 uppercase">Founded In</p>
-              </div>
-              <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] text-center py-8 rounded-lg">
-                <h3 className="text-3xl mb-5 font-medium">Silicon Valley</h3>
-                <p className="text-base opacity-80 uppercase">Founded In</p>
-              </div>
-            </div>
+          <section className="px-28 mt-14">
             <div className="mt-28">
               <div className="flex">
                 <div className="w-[550px]">
@@ -56,9 +68,9 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="bg-black px-28 mt-28 py-28">
+          <section className="bg-[#F9F7FF] px-28 mt-28 py-28">
             <div>
-              <h3 className="text-4xl leading-snug font-bold text-white mb-5">
+              <h3 className="text-4xl leading-snug font-bold mb-5">
                 {/* Our Core Values */}
                 Robust & Tailored <br /> Software Security Solutions
               </h3>
@@ -66,37 +78,37 @@ export default function Home() {
                 <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
                   <div className="size-20 rounded-full mb-16 border-2 border-solid border-[#EBEBEB]"></div>
                   <div>
-                    <h4 className="text-white font-medium text-xl mb-3">
+                    <h4 className="font-medium text-xl mb-3">
                       Security Audits
                     </h4>
-                    <p className="text-sm text-white opacity-80 leading-loose md:leading-loose mb-5">
+                    <p className="text-sm opacity-80 leading-loose md:leading-loose mb-5">
                       Empower your team with practical security training programs focused on secure coding practices. Comprehensive security audits.
                     </p>
-                    <Link href="" className="text-white opacity-80 text-sm">Get Started</Link>
+                    <Link href="" className="opacity-80 text-sm">Get Started</Link>
                   </div>
                 </div>
                 <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
                   <div className="size-20 rounded-full mb-16 border-2 border-solid border-[#EBEBEB]"></div>
                   <div>
-                    <h4 className="text-white font-medium text-xl mb-3">
+                    <h4 className="font-medium text-xl mb-3">
                       Security Audits
                     </h4>
-                    <p className="text-sm text-white opacity-80 leading-loose md:leading-loose mb-5">
+                    <p className="text-sm opacity-80 leading-loose md:leading-loose mb-5">
                       Empower your team with practical security training programs focused on secure coding practices. Comprehensive security audits.
                     </p>
-                    <Link href="" className="text-white opacity-80 text-sm">Get Started</Link>
+                    <Link href="" className="opacity-80 text-sm">Get Started</Link>
                   </div>
                 </div>
                 <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
                   <div className="size-20 rounded-full mb-16 border-2 border-solid border-[#EBEBEB]"></div>
                   <div>
-                    <h4 className="text-white font-medium text-xl mb-3">
+                    <h4 className="font-medium text-xl mb-3">
                       Security Audits
                     </h4>
-                    <p className="text-sm text-white opacity-80 leading-loose md:leading-loose mb-5">
+                    <p className="text-sm opacity-80 leading-loose md:leading-loose mb-5">
                       Empower your team with practical security training programs focused on secure coding practices. Comprehensive security audits.
                     </p>
-                    <Link href="" className="text-white opacity-80 text-sm">Get Started</Link>
+                    <Link href="" className="opacity-80 text-sm">Get Started</Link>
                   </div>
                 </div>
               </div>
@@ -104,16 +116,16 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-24 mt-20">
                 <div>
                   <div>
-                    <h3 className="text-4xl leading-tight md:leading-tight font-medium w-[80%] text-white mb-4">
+                    <h3 className="text-4xl leading-tight md:leading-tight font-bold w-[80%] mb-4">
                       Team Pioneers in Online & Software Security Excellence.
                     </h3>
-                    <p className="text-base text-white opacity-70 leading-loose md:leading-loose mb-5">
-                      With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training.
+                    <p className="text-base opacity-70 leading-loose md:leading-loose mb-5 w-[95%]">
+                      With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training at Citadel Security.
                     </p>
-                    <p className="text-base text-white opacity-70 leading-loose md:leading-loose mb-10">
-                      With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training.
+                    <p className="text-base opacity-70 leading-loose md:leading-loose mb-10 w-[95%]">
+                      With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training at Citadel Security.
                     </p>
-                    <Link className="flex items-center gap-3 border-2 border-white border-solid text-sm text-white px-8 py-4 opacity-70 rounded-full w-max" href="">Get Started <GoArrowUpRight className="text-2xl text-white" /></Link>
+                    <Link className="flex items-center gap-3 bg-[#9747FF] border-2 border-white border-solid text-sm text-white px-8 py-4 rounded-lg w-max" href="">Get Started <GoArrowUpRight className="text-2xl text-white" /></Link>
                   </div>
                 </div>
                 <div>

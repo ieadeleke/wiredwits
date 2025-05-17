@@ -1,9 +1,13 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #9747FF;
+  --font-primary: "Plus Jakarta Sans", sans-serif;
 }
 
 @theme inline {
@@ -15,6 +19,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-primary) !important;
+  font-family: var(--font-plus-jakarta), sans-serif !important;
 }
 
 h1,
@@ -24,6 +31,15 @@ h4,
 h5,
 h6 {
   font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.MuiTypography-root,
+.MuiButton-root,
+.MuiInputBase-root,
+.MuiMenuItem-root,
+.MuiFormLabel-root {
+  font-family: var(--font-primary) !important;
 }
 
 .hero-bg {
@@ -31,10 +47,24 @@ h6 {
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 24%, rgba(145, 71, 255, 1) 100%);
   background: linear-gradient(90deg, #f5f0ff 0%, #d6bfff 50%, #9747FF 100%);
   background: linear-gradient(135deg, #ffffff 0%, #f5f5ff 50%, #e5d9ff 80%, #9747FF 100%);
+  background: red;
+
+  /* margin: 0;
+  padding: 0; */
+  /* height: 100vh; */
+  background:
+    radial-gradient(#ffffff 1px, transparent 0),
+    linear-gradient(to bottom, #ffffff 40%, #f5f2fc 60%, #dad0f7 100%);
+  /* radial-gradient(#ffffff 1px, transparent 0),
+    linear-gradient(to bottom, #f5f2fc, #dad0f7); */
+  background-size: 30px 30px, cover;
+  background-position: top left, center;
+  background-repeat: repeat, no-repeat;
 }
 
 label {
   font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .font-ibm {
@@ -48,4 +78,151 @@ label {
 .custom-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
+}
+
+.grid-cols-31 {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.auth-bg {
+  background: linear-gradient(#00000005, #00000005), url('/gray.png');
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url('/gray.png');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+
+  /* min-height: 100vh;
+  background: linear-gradient(#00000005, #00000005), url(/assets/gray-sw4efwFE.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex
+;
+  align-items: center;
+  justify-content: center; */
+}
+
+.current-view {
+  transition: all .5s ease-in-out;
+}
+
+.form-error {
+  color: #8B0000;
+  font-size: 12px !important;
+}
+
+.ant-table-content {
+  border: 2px solid #4A4B571A;
+  border-radius: 8px;
+  font-family: var(--font-plus-jakarta), sans-serif !important;
+}
+
+.ant-table-content thead tr th {
+  border-bottom: 2px solid #4A4B571A !important;
+  font-family: var(--font-plus-jakarta), sans-serif !important;
+}
+
+.blog-sect-paragraph {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-sect-paragraph strong {
+  font-weight: 400;
+}
+
+.image-container {
+  width: 100%;
+  height: 12rem;
+  background-color: #ccc;
+  /* fallback gray */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-cover h4 {
+  width: 100%;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.main-blog-content .skeleton-img .ant-skeleton,
+.main-blog-content .ant-skeleton .ant-skeleton-image {
+  width: 100% !important;
+  height: 20rem !important;
+}
+
+.empty-div .ant-skeleton,
+.empty-div .ant-skeleton .ant-skeleton-image {
+  width: 100% !important;
+  height: 10rem !important;
+}
+
+.inner-article-text {
+  font-size: 1rem !important;
+  line-height: 2.1 !important;
+}
+
+.inner-article-text h1,
+.inner-article-text h2,
+.inner-article-text h3,
+.inner-article-text h4,
+.inner-article-text h5,
+.inner-article-text h6 {
+  font-weight: 500;
+}
+
+.inner-article-text h1 {
+  border-top: 2px solid #E4E4E6;
+  padding-top: 20px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.inner-article-text strong,
+.inner-article-text b {
+  font-weight: 600;
+}
+
+.modal,
+select,
+textarea {
+  font-family: var(--font-plus-jakarta), sans-serif !important;
+}
+
+.active {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
+
+.global-hero {
+  background: url('/greeting-cover.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-message {
+  background: url('/frame.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ant-upload-list.ant-upload-list-text {
+  display: none;
 }

@@ -1,17 +1,19 @@
 import DisplayLayout from "@/components/layout/layout";
-import Button from "@/components/ui/button";
+// import Button from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { FaAngleDown } from "react-icons/fa6";
+import { IoArrowForward } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
 import GlobeImg from "@/assets/images/download.png";
+import { GoArrowRight } from "react-icons/go";
+
 
 export default function Home() {
   return (
     <div>
       <DisplayLayout>
         <>
-          <section className="px-28 pt-44 pb-20">
+          <section className="hero-bg px-28 pt-44 pb-20">
             <div className="grid grid-cols-2 items-center gap-20">
               <div>
                 <h1 className="text-5xl font-medium w-[80%] mb-4 leading-tight md:leading-tight">
@@ -20,48 +22,131 @@ export default function Home() {
                 <p className="text-base leading-relaxed md:leading-loose mb-7">
                   At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. At Citadel Security, we are dedicated to fortifying your software applications and systems.
                 </p>
-                <Button content="See how we impact" />
+                {/* <Button content="See how we impact" /> */}
               </div>
               <div>
                 <Image src="https://framerusercontent.com/images/4iRboOeHolIxcWnocarRCo62k.png?scale-down-to=1024" alt="hero" width={400} height={400} className="w-full h-full" />
               </div>
             </div>
           </section>
-          <section className="px-28 mt-28">
-            <div className="grid grid-cols-3 gap-10">
-              <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] text-center py-8 rounded-lg">
-                <h3 className="text-3xl mb-5 font-medium">2010</h3>
-                <p className="text-base opacity-80 uppercase">Founded In</p>
+          <section className="px-28 mt-24">
+            <h3 className="text-4xl font-bold text-center">
+              Features to elevate your business smartly
+            </h3>
+            <div className="grid grid-cols-4 gap-20 mt-28">
+              <div>
+                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
+                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
+                <p className="text-base leading-loose opacity-80">
+                  Efficiently managing expenses is crucial for maintaining a healthy business budget
+                </p>
+                <div className="mt-3">
+                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
+                    <IoArrowForward />
+                  </div>
+                </div>
               </div>
-              <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] text-center py-8 rounded-lg">
-                <h3 className="text-3xl mb-5 font-medium">100+ Company</h3>
-                <p className="text-base opacity-80 uppercase">Founded In</p>
+              <div>
+                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
+                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
+                <p className="text-base leading-loose opacity-80">
+                  Efficiently managing expenses is crucial for maintaining a healthy business budget
+                </p>
+                <div className="mt-3">
+                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
+                    <IoArrowForward />
+                  </div>
+                </div>
               </div>
-              <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] text-center py-8 rounded-lg">
-                <h3 className="text-3xl mb-5 font-medium">Silicon Valley</h3>
-                <p className="text-base opacity-80 uppercase">Founded In</p>
+              <div>
+                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
+                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
+                <p className="text-base leading-loose opacity-80">
+                  Efficiently managing expenses is crucial for maintaining a healthy business budget
+                </p>
+                <div className="mt-3">
+                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
+                    <IoArrowForward />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
+                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
+                <p className="text-base leading-loose opacity-80">
+                  Efficiently managing expenses is crucial for maintaining a healthy business budget
+                </p>
+                <div className="mt-3">
+                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
+                    <IoArrowForward />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="mt-28">
-              <div className="flex">
-                <div className="w-[550px]">
-                  <h3 className="w-[70%] text-4xl leading-snug font-bold">
-                    Safeguarding Your Digital Frontier.
-                  </h3>
+            <div className="w-[50%] mx-auto mt-20 text-center">
+              <h3 className="text-4xl mb-3 font-[600]">
+                Secure Your Software,
+              </h3>
+              <h3 className="text-4xl mb-3 font-[600]">
+                Safeguard Your Business
+              </h3>
+              <p className="text-base leading-loose opaci">
+                Our services are tailored to meet the unique security needs of your software and applications. Contact us for a customized solution.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-20 items-center mt-14">
+              <div className="bg-[#F6F7F9] border-2 border-solid border-[#EFEFF0] w-full h-full rounded-3xl"></div>
+              <div className="py-10">
+                <div className="border-y-2 border-solid border-[#EAEAEA] flex gap-7 py-5 mb-5">
+                  <div>
+                    <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
+                  </div>
+                  <div>
+                    <h4 className="mb-3 font-[600] text-xl">
+                      Risk Mitigation
+                    </h4>
+                    <p className="text-base leading-loose opaci">
+                      Proactively identify vulnerabilities and safeguard your software from potential data breaches and cyber threats.
+                    </p>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <p className="text-black opacity-80 leading-loose mb-4">
-                    At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. Our mission is to empower your organization with robust security solutions.
-                  </p>
-                  <p className="text-black opacity-80 leading-loose">
-                    Founded in 2012, Citadel Security has established itself as a trusted partner in the software security domain. Our team of seasoned security experts and developers possesses extensive knowledge and hands-on experience in identifying and mitigating vulnerabilities, implementing secure coding practices, and fortifying software architectures.
-                  </p>
+                <div className="border-b-2 border-solid border-[#EAEAEA] flex gap-7 pb-5 mb-5">
+                  <div>
+                    <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
+                  </div>
+                  <div>
+                    <h4 className="mb-3 font-[600] text-xl">
+                      Risk Mitigation
+                    </h4>
+                    <p className="text-base leading-loose opaci">
+                      Proactively identify vulnerabilities and safeguard your software from potential data breaches and cyber threats.
+                    </p>
+                  </div>
                 </div>
+                <div className="border-b-2 border-solid border-[#EAEAEA] flex gap-7 pb-5">
+                  <div>
+                    <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
+                  </div>
+                  <div>
+                    <h4 className="mb-3 font-[600] text-xl">
+                      Risk Mitigation
+                    </h4>
+                    <p className="text-base leading-loose opaci">
+                      Proactively identify vulnerabilities and safeguard your software from potential data breaches and cyber threats.
+                    </p>
+                  </div>
+                </div>
+                {/* <Link href="" className="flex items-center gap-2 opacity-80">Get Started
+                  <span className="block size-6 flex items-center justify-center border-2 border-solid border-[#7F57F1] rounded-full">
+                    <GoArrowRight className="text-lg font-bold text-[#7F57F1]" /></span></Link> */}
               </div>
             </div>
           </section>
           <section className="bg-black px-28 mt-28 py-28">
             <div>
+              <div className="grid grid-cols-2 gap-10">
+                <div></div>
+              </div>
               <h3 className="text-4xl leading-snug font-bold text-white mb-5">
                 {/* Our Core Values */}
                 Robust & Tailored <br /> Software Security Solutions
@@ -145,52 +230,6 @@ export default function Home() {
             </p>
           </div>
         </div> */}
-          </section>
-          <section className="px-28 py-28">
-            <div className="grid grid-cols-3 gap-10">
-              <div className="">
-                <div className="w-full mb-4">
-                  <Image src="https://framerusercontent.com/images/EBxviubc7696r1ZsHUfqPqKSE.jpg?scale-down-to=1024" quality={100} width={400} height={0} className="h-[15rem] w-full rounded-xl object-fit object-cover" alt="blog image" />
-                </div>
-                <div>
-                  {/* <p className="opacity-80 text-sm mb-3">&bull; May 28, 2025</p> */}
-                  <h4 className="text-xl font-bold mb-2">
-                    Harnessing AI's Power for Security Everywhere.
-                  </h4>
-                  {/* <p className="text-sm leading-loose md:leading-loose opacity-80">
-                                                          With a team of seasoned security experts and developers, we offer a range of services.
-                                                      </p> */}
-                </div>
-              </div>
-              <div className="">
-                <div className="w-full mb-4">
-                  <Image src="https://framerusercontent.com/images/EBxviubc7696r1ZsHUfqPqKSE.jpg?scale-down-to=1024" quality={100} width={400} height={0} className="h-[15rem] w-full rounded-xl object-fit object-cover" alt="blog image" />
-                </div>
-                <div>
-                  {/* <p className="opacity-80 text-sm mb-3">&bull; May 28, 2025</p> */}
-                  <h4 className="text-xl font-bold mb-2">
-                    Harnessing AI's Power for Security Everywhere.
-                  </h4>
-                  {/* <p className="text-sm leading-loose md:leading-loose opacity-80">
-                                                          With a team of seasoned security experts and developers, we offer a range of services.
-                                                      </p> */}
-                </div>
-              </div>
-              <div className="">
-                <div className="w-full mb-4">
-                  <Image src="https://framerusercontent.com/images/EBxviubc7696r1ZsHUfqPqKSE.jpg?scale-down-to=1024" quality={100} width={400} height={0} className="h-[15rem] w-full rounded-xl object-fit object-cover" alt="blog image" />
-                </div>
-                <div>
-                  {/* <p className="opacity-80 text-sm mb-3">&bull; May 28, 2025</p> */}
-                  <h4 className="text-xl font-bold mb-2">
-                    Harnessing AI's Power for Security Everywhere.
-                  </h4>
-                  {/* <p className="text-sm leading-loose md:leading-loose opacity-80">
-                                                          With a team of seasoned security experts and developers, we offer a range of services.
-                                                      </p> */}
-                </div>
-              </div>
-            </div>
           </section>
           <section className="px-28">
             <div className="bg-black items-center pl-14 rounded-4xl grid grid-cols-2 gap-10">
