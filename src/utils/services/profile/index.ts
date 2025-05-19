@@ -38,7 +38,25 @@ export function ProfileService() {
         })
         return response as ApiResponse
     }
-    
+
+    async function getUserSubscriptions() {
+        const response = await request({
+            path: `user/subscribed-topics`,
+            method: "GET",
+            body: ''
+        })
+        return response as ApiResponse
+    }
+
+    async function removeUserSubscriptions(e: any) {
+        const response = await request({
+            path: `user/remove-topic`,
+            method: "POST",
+            body: e
+        })
+        return response as ApiResponse
+    }
+
     async function getAllSummaries(e?: number) {
         const response = await request({
             path: `user/todays-summaries?currentPage=${e}`,
@@ -111,7 +129,7 @@ export function ProfileService() {
         })
         return response as ApiResponse
     }
-    
+
 
     return {
         getUser,
@@ -125,6 +143,8 @@ export function ProfileService() {
         generateNewArticle,
         getSubscribedTopics,
         getAllTopics,
-        subscribeToTopic
+        subscribeToTopic,
+        getUserSubscriptions,
+        removeUserSubscriptions
     }
 }

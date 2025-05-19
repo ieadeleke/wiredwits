@@ -96,21 +96,21 @@ export default function UserDashboard() {
                         </div>
                         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 mt-7">
                             <TransactionPill data={{
-                                title: "Available Tokens",
+                                title: "Tokens Remaining",
                                 description: user?.token_count ? user?.token_count.toString() : ''
                             }} />
                             <TransactionPill data={{
-                                title: "Available Summaries",
+                                title: "Summaries Remaining (Estimated)",
                                 description: '300'
                             }} />
                             <TransactionPill data={{
-                                title: "Subscribed Topics",
+                                title: "Topics You're Following",
                                 description: String(allSubscriptions?.length)
                                 // description: data.PendingTransaction && data.PendingTransaction.toString()
                             }} />
                         </div>
                         <div className="mt-12">
-                            <h4 className="text-xl mb-5 font-medium">Today&apos;s Summaries</h4>
+                            <h4 className="text-xl mb-5 font-medium">Today&apos;s News</h4>
                             <AllSummariesListing
                                 data={allArticles}
                                 paginationControl={handleNewsPaginationControl}

@@ -11,6 +11,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { changePasswordValidator } from "@/utils/validators";
 import { useChangePassword } from "@/utils/apiHooks/profile/useChangePassword";
 import Spinner from "@/components/ui/spin";
+import { PasswordInput } from "@/components/ui/password";
+
 
 export default function PasswordSettings() {
 
@@ -60,7 +62,7 @@ export default function PasswordSettings() {
                             <Label className="mb-1">Current Password</Label>
                             <Controller name="curr_password" control={control} defaultValue=""
                                 render={({ field }) => (
-                                    <Input {...field} type="password" className="py-6" />
+                                    <PasswordInput {...field} className="py-6" />
                                 )} />
                             {errors.curr_password && <p className="form-error">{errors.curr_password.message}</p>}
                         </div>
@@ -68,7 +70,7 @@ export default function PasswordSettings() {
                             <Label className="mb-1">New Password</Label>
                             <Controller name="password" control={control} defaultValue=""
                                 render={({ field }) => (
-                                    <Input {...field} type="password" className="py-6" />
+                                    <PasswordInput {...field} className="py-6" />
                                 )} />
                             {errors.password && <p className="form-error">{errors.password.message}</p>}
                         </div>

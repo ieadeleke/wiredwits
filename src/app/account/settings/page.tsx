@@ -22,6 +22,7 @@ import { LoadingOutlined } from "@ant-design/icons";
 import { BASE_URL } from "@/utils/constants";
 import { Spin, Upload } from "antd";
 import AuthToken from "@/utils/AuthToken";
+import SubscribedTopics from "@/components/pages/account/settings/topics";
 
 
 
@@ -126,6 +127,7 @@ export default function Settings() {
                                     <li onClick={() => handleCurrentDisplay('password')}
                                         className={`current-view cursor-pointer text-sm font-medium ${currentDisplay === 'password' ? 'bg-[#EEECFD] p-4 px-8 rounded-full text-primary' : ''}`}>Password</li>
                                     <li onClick={() => handleCurrentDisplay('token')} className={`current-view cursor-pointer text-sm font-medium ${currentDisplay === 'token' ? 'bg-[#EEECFD] p-4 px-8 rounded-full text-primary' : ''}`}>Token History</li>
+                                    <li onClick={() => handleCurrentDisplay('subscriptions')} className={`current-view cursor-pointer text-sm font-medium ${currentDisplay === 'subscriptions' ? 'bg-[#EEECFD] p-4 px-8 rounded-full text-primary' : ''}`}>Subscribed Topics</li>
                                 </ul>
                             </div>
                             <div className="mt-10 px-10">
@@ -136,7 +138,10 @@ export default function Settings() {
                                         currentDisplay === 'password' ?
                                             <PasswordSettings />
                                             :
-                                            <TokenHistory />
+                                            currentDisplay === 'token' ?
+                                                <TokenHistory />
+                                                :
+                                                <SubscribedTopics />
                                 }
                             </div>
                         </div>

@@ -44,11 +44,11 @@ const SideNav = () => {
                 </li>
                 <li>
                     <Link href="/account/summaries" className={`${pathName === '/account/summaries' ? 'active px-3' : ''} text-sm flex gap-2 py-4 font-medium items-center`}>
-                        <PiNewspaperClipping className="text-xl" /> Summaries</Link>
+                        <PiNewspaperClipping className="text-xl" /> Your News</Link>
                 </li>
                 <li>
                     <Link href="/account/explore" className={`${pathName === '/account/explore' ? 'active px-3' : ''} text-sm flex gap-2 py-4 font-medium items-center`}>
-                        <MdOutlineExplore className="text-xl" /> Explore</Link>
+                        <MdOutlineExplore className="text-xl" /> Discover Topics</Link>
                 </li>
                 {/* <li>
                     <Link href="/account/token-history" className={`${pathName === '/account/token-history' ? 'active px-3' : ''} text-sm flex gap-2 py-4 font-medium items-center`}>
@@ -56,14 +56,14 @@ const SideNav = () => {
                 </li> */}
                 <li>
                     <Link href="/account/settings" className={`${pathName === '/account/settings' ? 'active px-3' : ''} text-sm flex gap-2 py-4 font-medium items-center`}>
-                        <CgProfile className="text-xl" /> Profile</Link>
+                        <CgProfile className="text-xl" /> My Profile</Link>
                 </li>
             </ul>
             <div className="absolute bottom-6">
                 <ul className="flex flex-col gap-10 px-8">
                     <li>
                         <Link href="/contact-us" className={`text-sm flex gap-2 font-medium items-center`}>
-                            <TbHelp className="text-xl" /> Reach out to us</Link>
+                            <TbHelp className="text-xl" /> Contact Us</Link>
                     </li>
                     <li>
                         <Link href="" className={`text-sm flex gap-2 font-medium items-center`}>

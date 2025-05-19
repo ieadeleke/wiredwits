@@ -70,9 +70,9 @@ export default function Communities() {
                     <div className="">
                         <div className="flex items-end justify-between">
                             <h3 className="text-2xl font-bold">
-                                Today&apos;s Summaries
+                                Today&apos;s Top Stories
                             </h3>
-                            <Link href={AppRoutes.explore} className="block bg-primary py-4 px-12 rounded-lg text-sm text-white">Subscribe to new topics</Link>
+                            <Link href={AppRoutes.explore} className="block bg-primary py-4 px-12 rounded-lg text-sm text-white">Discover More Topics</Link>
                         </div>
                         <div className="mt-5">
                             <AllSummariesListing

@@ -29,13 +29,13 @@ const AuthLayout = (props: LayoutProps) => {
                                 <Link href="" className="text-sm font-medium">Dashboard</Link>
                             </li>
                             <li>
-                                <Link href="" className="text-sm font-medium">Explore</Link>
+                                <Link href="" className="text-sm font-medium">Discover Topics</Link>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <div className="flex gap-6 items-center">
-                            <Link href="" className="bg-primary text-sm text-white rounded-lg py-4 px-8">Today&apos;s Summaries</Link>
+                            <Link href="" className="bg-primary text-sm text-white rounded-lg py-4 px-8">Today&apos;s Top Stories</Link>
                             <div className="flex items-center gap-3">
                                 {user?.profile_picture ? (
                                     <img
