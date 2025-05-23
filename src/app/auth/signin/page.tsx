@@ -15,12 +15,13 @@ import { Label } from "@/components/ui/label";
 import AppRoutes from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/images/logo-box.svg";
+import Logo from "@/assets/images/logo.png";
 import { Button } from "@/components/ui/button";
 import { useLogin } from "@/utils/apiHooks/auth/useLogin";
 import { GlobalActionContext } from "@/context/GlobalActionContext";
 import Spinner from "@/components/ui/spin";
 import { signInValidator } from "@/utils/validators";
+import { PasswordInput } from "@/components/ui/password";
 
 
 const GoogleSignInButton = () => {
@@ -102,6 +103,8 @@ const SignInPage = () => {
     const { showSnackBar } = useContext(GlobalActionContext);
     const [loadingData, setLoadingData] = useState(false);
 
+    const [formLoader, setFormLoader] = useState<boolean>(false);
+
     const { handleSubmit, control, formState: { errors } } = useForm({
         resolver: yupResolver(signInValidator)
     });
@@ -123,6 +126,7 @@ const SignInPage = () => {
                 message: error,
             });
         }
+        setFormLoader(false);
     }, [error])
 
     const handleUserSignIn = (e: any) => {
@@ -130,6 +134,7 @@ const SignInPage = () => {
             email_address: e.email_address,
             password: e.password
         })
+        setFormLoader(true);
     }
 
     return (
@@ -153,7 +158,7 @@ const SignInPage = () => {
                         <Label className="mb-1">Password</Label>
                         <Controller name="password" control={control}
                             render={({ field }) => (
-                                <Input {...field} type="password" className="py-7 text-[10px]" />
+                                <PasswordInput {...field} className="py-7 text-[10px]" />
                             )} />
                         {errors.password && <p className="form-error">{errors.password.message}</p>}
                     </div>
@@ -161,9 +166,9 @@ const SignInPage = () => {
                         <Link className="text-sm" href={AppRoutes.reset}>Forgot Password? <span className="text-primary">Reset Here</span></Link>
                     </div>
                     <div className="mt-5">
-                        <Button className="w-full py-7 text-sm" disabled={isLoading}>
+                        <Button className="w-full py-7 text-sm" disabled={formLoader}>
                             {
-                                isLoading ?
+                                formLoader ?
                                     <Spinner />
                                     :
                                     'Log In'

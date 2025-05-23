@@ -15,12 +15,13 @@ import { Label } from "@/components/ui/label";
 import AppRoutes from "@/utils/routes";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/images/logo-box.svg";
+import Logo from "@/assets/images/logo.png";
 import { Button } from "@/components/ui/button";
 import { GlobalActionContext } from "@/context/GlobalActionContext";
 import { signUpValidator } from "@/utils/validators";
 import Spinner from "@/components/ui/spin";
 import { useSignup } from "@/utils/apiHooks/auth/useSignup";
+import { PasswordInput } from "@/components/ui/password";
 
 
 const GoogleSignInButton = () => {
@@ -101,6 +102,8 @@ const SignUpPage = () => {
     const { signUp, data, error, isLoading } = useSignup();
     const { showSnackBar } = useContext(GlobalActionContext);
 
+    const [formLoader, setFormLoader] = useState<boolean>(false);
+
     const { handleSubmit, control, formState: { errors } } = useForm({
         resolver: yupResolver(signUpValidator)
     });
@@ -115,12 +118,14 @@ const SignUpPage = () => {
         }
     }, [data])
 
+
     useEffect(() => {
         if (error) {
             showSnackBar({
                 severity: "error",
                 message: error,
             });
+            setFormLoader(false)
         }
     }, [error])
 
@@ -133,6 +138,7 @@ const SignUpPage = () => {
             confirm_password: e.password,
             user_agent: window.navigator.userAgent
         })
+        setFormLoader(true);
     }
 
     return (
@@ -174,14 +180,15 @@ const SignUpPage = () => {
                         <Label className="mb-1">Password</Label>
                         <Controller name="password" control={control}
                             render={({ field }) => (
-                                <Input {...field} type="password" className="py-7 text-[10px]" />
+                                // <Input {...field} type="password" className="py-7 text-[10px]" />
+                                <PasswordInput {...field} className="py-7 text-[10px]" />
                             )} />
                         {errors.password && <p className="form-error">{errors.password.message}</p>}
                     </div>
                     <div className="mt-5">
-                        <Button className="w-full py-7 text-sm" disabled={isLoading}>
+                        <Button className="w-full py-7 text-sm" disabled={formLoader}>
                             {
-                                isLoading ?
+                                formLoader ?
                                     <Spinner />
                                     :
                                     'Sign up'

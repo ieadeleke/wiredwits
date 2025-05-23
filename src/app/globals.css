@@ -22,6 +22,8 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-family: var(--font-primary) !important;
   font-family: var(--font-plus-jakarta), sans-serif !important;
+  max-width: 1800px;
+  margin: 0px auto;
 }
 
 h1,
@@ -48,10 +50,6 @@ h6 {
   background: linear-gradient(90deg, #f5f0ff 0%, #d6bfff 50%, #9747FF 100%);
   background: linear-gradient(135deg, #ffffff 0%, #f5f5ff 50%, #e5d9ff 80%, #9747FF 100%);
   background: red;
-
-  /* margin: 0;
-  padding: 0; */
-  /* height: 100vh; */
   background:
     radial-gradient(#ffffff 1px, transparent 0),
     linear-gradient(to bottom, #ffffff 40%, #f5f2fc 60%, #dad0f7 100%);
@@ -60,6 +58,11 @@ h6 {
   background-size: 30px 30px, cover;
   background-position: top left, center;
   background-repeat: repeat, no-repeat;
+}
+
+.main-hero {
+  background: linear-gradient(135deg, #5D3FD3 0%, #6C4AB6 100%);
+  background: linear-gradient(to bottom, #F9F7FF, #F9F7FF, #9747FF 100%);
 }
 
 label {
@@ -181,7 +184,15 @@ label {
 .inner-article-text h4,
 .inner-article-text h5,
 .inner-article-text h6 {
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.inner-article-text em:last-child {
+  /* color: red; */
+  display: block;
+  margin-top: 20px;
+  border-top: 1px solid #E4E4E6;
+  padding-top: 20px;
 }
 
 .inner-article-text h1 {
@@ -225,4 +236,11 @@ textarea {
 
 .ant-upload-list.ant-upload-list-text {
   display: none;
+}
+
+.bottom-center {
+  position: absolute;
+  bottom: -30rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

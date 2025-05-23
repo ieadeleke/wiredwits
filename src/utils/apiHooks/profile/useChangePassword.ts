@@ -15,7 +15,10 @@ export const useChangePassword = () => {
         setData(null)
         const response = await execute(async () => await ProfileService().updatePassword(params));
         if(response){
-            setData(response.success)
+            setData({
+                found: true,
+                message: response.message
+            })
         }
     }
 

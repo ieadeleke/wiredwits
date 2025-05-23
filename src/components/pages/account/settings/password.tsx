@@ -25,7 +25,7 @@ export default function PasswordSettings() {
     const { showSnackBar } = useContext(GlobalActionContext);
 
     useEffect(() => {
-        if (data?.length) {
+        if (data?.found) {
             showSnackBar({
                 severity: "success",
                 message: 'Password updated successfully',

@@ -12,14 +12,23 @@ import { RiHistoryFill } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 import { TbHelp } from "react-icons/tb";
 import { TbLogout } from "react-icons/tb";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import logOut from '@/utils/auth/logOut';
+import { useContext } from "react";
+import UserContext from "@/context/UserContext";
 
 
+interface SideNavInterface {
+    togglePageSpinner: () => void
+}
 
 
-const SideNav = () => {
+const SideNav = (props: SideNavInterface) => {
     const pathName = usePathname();
+    const router = useRouter();
     const [fixedNav, setFixed] = useState(false);
+    const { updateUser } = useContext(UserContext)
+
     useEffect(() => {
         window.addEventListener("scroll", () => {
             const offset = window.scrollY;
@@ -31,12 +40,15 @@ const SideNav = () => {
         });
     }, []);
 
+    function handleLogout() {
+        props.togglePageSpinner();
+        logOut();
+        router.push("/auth/signin");
+        updateUser(null);
+    }
+
     return (
         <>
-            {/* <div className="px-5 flex items-center mb-10 pt-10 justify-center flex-col">
-                <div className="size-28 rounded-full bg-black mb-4"></div>
-                <h3 className="text-xl font-medium">Adeleke Ifeoluwase</h3>
-            </div> */}
             <ul className="flex flex-col gap-3 px-8">
                 <li>
                     <Link href="/account/dashboard" className={`${pathName === '/account/dashboard' ? 'active px-3' : ''} text-sm flex gap-2 py-4 font-medium items-center`}>
@@ -66,7 +78,7 @@ const SideNav = () => {
                             <TbHelp className="text-xl" /> Contact Us</Link>
                     </li>
                     <li>
-                        <Link href="" className={`text-sm flex gap-2 font-medium items-center`}>
+                        <Link href="#" onClick={handleLogout} className={`text-sm flex gap-2 font-medium items-center`}>
                             <TbLogout className="text-xl" /> Logout</Link>
                     </li>
                 </ul>

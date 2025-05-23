@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { errorHandler } from "@/utils/errorHandler";
-// import { logOut } from "../auth/logout";
 import Router from "next/router";
+import logOut from "../auth/logOut";
 
 type ExecuteConfig = {
   onError?: (error: any) => void;
@@ -33,23 +33,20 @@ export const useApi = () => {
         } else {
           if (apiCall.statusCode == 401) {
             setError(apiCall?.message)
-            //   logOut()
-            Router.push("/login")
+            logOut();
+            window.location.href = "/auth/signin";
           } else {
             setError(apiCall?.message)
           }
         }
       } catch (error: any) {
-
         const parsedError = errorHandler(error)
-        if (parsedError.status == 401) {
+        if (parsedError.statusCode == 401) {
           setError(parsedError.message)
-          //   logOut()
-          Router.push("/login")
+          logOut();
+          window.location.href = "/auth/signin";
         } else {
           setError(parsedError.message)
-          // Router.push("/login")
-          // AuthToken().clearToken()
         }
       } finally {
         setIsLoading(false);

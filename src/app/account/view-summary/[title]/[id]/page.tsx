@@ -367,6 +367,9 @@ const ViewSummaryPage = () => {
                                                                             )}
                                                                         />
                                                                     </div>
+                                                                    <p className="leading-relaxed md:leading-relaxed text-sm mt-5 block">
+                                                                        AI-generated responses may include general knowledge or insights not found in the article. Always verify critical information using trusted sources. This beta feature is designed to support independent thinking and help you explore the facts from multiple angles.
+                                                                    </p>
                                                                 </div>
                                                                 <div className="block md:hidden mt-14">
                                                                     <button

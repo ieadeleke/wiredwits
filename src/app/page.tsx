@@ -4,8 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoArrowForward } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
-import GlobeImg from "@/assets/images/download.png";
+import GlobeImg from "@/assets/images/globe.png";
 import { GoArrowRight } from "react-icons/go";
+import { FaSquareArrowUpRight } from "react-icons/fa6";
+import { FaAngleDown } from "react-icons/fa6";
+
 
 
 export default function Home() {
@@ -13,142 +16,121 @@ export default function Home() {
     <div>
       <DisplayLayout>
         <>
-          <section className="hero-bg px-28 pt-44 pb-20">
-            <div className="grid grid-cols-2 items-center gap-20">
-              <div>
-                <h1 className="text-5xl font-medium w-[80%] mb-4 leading-tight md:leading-tight">
-                  Sentinel Security: Safeguarding Your Digital Frontier.
-                </h1>
-                <p className="text-base leading-relaxed md:leading-loose mb-7">
-                  At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. At Citadel Security, we are dedicated to fortifying your software applications and systems.
-                </p>
-                {/* <Button content="See how we impact" /> */}
-              </div>
-              <div>
-                <Image src="https://framerusercontent.com/images/4iRboOeHolIxcWnocarRCo62k.png?scale-down-to=1024" alt="hero" width={400} height={400} className="w-full h-full" />
-              </div>
+          <section className="main-her pt-36 bg-[#F9F7FF] h-screen text-center relative overflow-hidden">
+            <div className="w-[60%] mx-auto">
+              <h2 className="text-6xl mb-4 font-bold leading-[1.1]">
+                AI-powered personalized outreach at scale.
+              </h2>
+              <p className="text-base w-[80%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
+                Deeply research and target customers who actually care about your product—whether building your TAM from scratch or nurturing a list of named accounts.
+              </p>
+              <Link href="/auth/signup" className="bg-primary text-white py-4 px-8 mb-10 rounded-lg text-sm font-medium flex items-center gap-2 w-max mx-auto">Get Started <GoArrowUpRight className="text-2xl" /></Link>
             </div>
+            {/* <img alt="dashboard" src={GlobeImg.src} className="w-[50rem] h-auto bottom-center" /> */}
+            <div className="w-full h-[20rem] bg-primary"></div>
           </section>
           <section className="px-28 mt-24">
-            <h3 className="text-4xl font-bold text-center">
-              Features to elevate your business smartly
-            </h3>
-            <div className="grid grid-cols-4 gap-20 mt-28">
-              <div>
-                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
-                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
-                <p className="text-base leading-loose opacity-80">
-                  Efficiently managing expenses is crucial for maintaining a healthy business budget
-                </p>
-                <div className="mt-3">
-                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
-                    <IoArrowForward />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
-                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
-                <p className="text-base leading-loose opacity-80">
-                  Efficiently managing expenses is crucial for maintaining a healthy business budget
-                </p>
-                <div className="mt-3">
-                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
-                    <IoArrowForward />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
-                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
-                <p className="text-base leading-loose opacity-80">
-                  Efficiently managing expenses is crucial for maintaining a healthy business budget
-                </p>
-                <div className="mt-3">
-                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
-                    <IoArrowForward />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
-                <h4 className="text-xl mb-3 font-bold">Expense Tracking</h4>
-                <p className="text-base leading-loose opacity-80">
-                  Efficiently managing expenses is crucial for maintaining a healthy business budget
-                </p>
-                <div className="mt-3">
-                  <div className="size-10 border-solid rounded-full border border-black flex items-center justify-center">
-                    <IoArrowForward />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-[50%] mx-auto mt-20 text-center">
-              <h3 className="text-4xl mb-3 font-[600]">
+            <div className="w-[50%] mx-auto mt-20 mb-7 text-center">
+              <h3 className="text-5xl mb-3 font-[600]">
                 Secure Your Software,
               </h3>
-              <h3 className="text-4xl mb-3 font-[600]">
+              <h3 className="text-5xl mb-7 font-[600]">
                 Safeguard Your Business
               </h3>
               <p className="text-base leading-loose opaci">
                 Our services are tailored to meet the unique security needs of your software and applications. Contact us for a customized solution.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-20 items-center mt-14">
-              <div className="bg-[#F6F7F9] border-2 border-solid border-[#EFEFF0] w-full h-full rounded-3xl"></div>
-              <div className="py-10">
-                <div className="border-y-2 border-solid border-[#EAEAEA] flex gap-7 py-5 mb-5">
-                  <div>
-                    <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
-                  </div>
-                  <div>
-                    <h4 className="mb-3 font-[600] text-xl">
-                      Risk Mitigation
-                    </h4>
-                    <p className="text-base leading-loose opaci">
-                      Proactively identify vulnerabilities and safeguard your software from potential data breaches and cyber threats.
-                    </p>
-                  </div>
+            <img alt="dashboard" src={'https://www.cortex.io/_next/image?url=https%3A%2F%2Fa-us.storyblok.com%2Ff%2F1021527%2F2012x1152%2F5c94ea8074%2Fimage-1415.webp&w=3840&q=99'} className="w-full h-full" />
+            <div className="px-20 grid grid-cols-2 gap-32 gap-y-7 items-center mt-14">
+              <div className="w-full h-full rounded-xl px-5 pt-5">
+                <div>
+                  <FaSquareArrowUpRight className="mb-4 text-xl" />
                 </div>
-                <div className="border-b-2 border-solid border-[#EAEAEA] flex gap-7 pb-5 mb-5">
-                  <div>
-                    <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
-                  </div>
-                  <div>
-                    <h4 className="mb-3 font-[600] text-xl">
-                      Risk Mitigation
-                    </h4>
-                    <p className="text-base leading-loose opaci">
-                      Proactively identify vulnerabilities and safeguard your software from potential data breaches and cyber threats.
-                    </p>
-                  </div>
+                <h4 className="mb-2 font-[600] text-xl">
+                  Risk Mitigation
+                </h4>
+                <p className="text-base leading-loose md:leading-loose opacity-90">
+                  Connect your team to customers. Align the entire organization with shared understanding and unlock the power of customer knowledge.
+                </p>
+              </div>
+              <div className="w-full h-full rounded-xl px-5 pt-5">
+                <div>
+                  <FaSquareArrowUpRight className="mb-4 text-xl" />
                 </div>
-                <div className="border-b-2 border-solid border-[#EAEAEA] flex gap-7 pb-5">
-                  <div>
-                    <div className="size-10 mb-8 bg-[#7F57F1] rounded-lg"></div>
-                  </div>
-                  <div>
-                    <h4 className="mb-3 font-[600] text-xl">
-                      Risk Mitigation
-                    </h4>
-                    <p className="text-base leading-loose opaci">
-                      Proactively identify vulnerabilities and safeguard your software from potential data breaches and cyber threats.
-                    </p>
-                  </div>
+                <h4 className="mb-2 font-[600] text-xl">
+                  Risk Mitigation
+                </h4>
+                <p className="text-base leading-loose md:leading-loose opacity-90">
+                  Connect your team to customers. Align the entire organization with shared understanding and unlock the power of customer knowledge.
+                </p>
+              </div>
+              <div className="w-full h-full rounded-xl px-5 pt-5">
+                <div>
+                  <FaSquareArrowUpRight className="mb-4 text-xl" />
                 </div>
-                {/* <Link href="" className="flex items-center gap-2 opacity-80">Get Started
-                  <span className="block size-6 flex items-center justify-center border-2 border-solid border-[#7F57F1] rounded-full">
-                    <GoArrowRight className="text-lg font-bold text-[#7F57F1]" /></span></Link> */}
+                <h4 className="mb-2 font-[600] text-xl">
+                  Risk Mitigation
+                </h4>
+                <p className="text-base leading-loose md:leading-loose opacity-90">
+                  Connect your team to customers. Align the entire organization with shared understanding and unlock the power of customer knowledge.
+                </p>
+              </div>
+              <div className="w-full h-full rounded-xl px-5 pt-5">
+                <div>
+                  <FaSquareArrowUpRight className="mb-4 text-xl" />
+                </div>
+                <h4 className="mb-2 font-[600] text-xl">
+                  Risk Mitigation
+                </h4>
+                <p className="text-base leading-loose md:leading-loose opacity-90">
+                  Connect your team to customers. Align the entire organization with shared understanding and unlock the power of customer knowledge.
+                </p>
               </div>
             </div>
           </section>
-          <section className="bg-black px-28 mt-28 py-28">
+
+          <section className="px-28 mt-28 bg-[#F5F3FF] py-24">
+            <h3 className="text-center text-5xl mb-6 font-bold">
+              Get the right information with Wits
+            </h3>
+            <p className="text-base text-center w-[60%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
+              Deeply research and target customers who actually care about your product—whether building your TAM from scratch or nurturing a list of named accounts.
+            </p>
+            <div className="grid grid-cols-3 gap-10 mt-7">
+              <div className="px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] bg-[#EFF1F3] text-center">
+                <p className="text-s font-medium text-[15px]">Craft unique messages at scale</p>
+              </div>
+              <div className="px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] text-center">
+                <p className="text-s font-medium text-[15px]">Craft unique messages at scale</p>
+              </div>
+              <div className="px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] text-center">
+                <p className="text-s font-medium text-[15px]">Craft unique messages at scale</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-8 mt-9 items-center">
+              <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                <div>
+                  <h3 className="text-3xl [42px] mb-3 leading-snug font-bold">
+                    {/* Transform data into insights reporting for coys. */}
+                    Connect to more <br /> sequencing tools & send
+                  </h3>
+                  <p className="text-sm font-medium leading-loose mb-4">
+                    Do you have 1,000+ of SMBs to probe with automated personalized messages? Use Clay to quickly build your list and get high coverage and accurate contact info. Overseeing the overall Marketo.
+                  </p>
+                </div>
+                <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
+                  <GoArrowUpRight className="text-2xl" /></Link>
+              </div>
+              <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+            </div>
+          </section>
+          {/* <section className="bg-black px-28 mt-20 py-28">
             <div>
               <div className="grid grid-cols-2 gap-10">
                 <div></div>
               </div>
               <h3 className="text-4xl leading-snug font-bold text-white mb-5">
-                {/* Our Core Values */}
                 Robust & Tailored <br /> Software Security Solutions
               </h3>
               <div className="mt-14 grid grid-cols-3 gap-10">
@@ -210,40 +192,38 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="flex">
-          <div className="w-[550px]">
-            <div className="w-[60%]">
-              <h3 className="text-3xl leading-snug font-bold text-white mb-5">
-                Robust & Tailored <br /> Software Security Solutions
-              </h3>
-              <p className="text-white opacity-70 leading-relaxed">
-                we understand that software security is a multifaceted challenge that requires a holistic approach.
-              </p>
-            </div>
-          </div>
-          <div className="flex-1">
-            <p className="text-black opacity-80 leading-loose mb-4">
-              At Citadel Security, we are dedicated to fortifying your software applications and systems against ever-evolving cyber threats. Our mission is to empower your organization with robust security solutions.
-            </p>
-            <p className="text-black opacity-80 leading-loose">
-              Founded in 2012, Citadel Security has established itself as a trusted partner in the software security domain. Our team of seasoned security experts and developers possesses extensive knowledge and hands-on experience in identifying and mitigating vulnerabilities, implementing secure coding practices, and fortifying software architectures.
-            </p>
-          </div>
-        </div> */}
-          </section>
-          <section className="px-28">
-            <div className="bg-black items-center pl-14 rounded-4xl grid grid-cols-2 gap-10">
-              <div>
-                <h3 className="text-[42px] text-white mb-4 leading-snug md:leading-snug font-medium">
-                  Team Pioneers in Online & Software Security Excellence.
-                </h3>
-                <p className="text-white opacity-80 leading-loose md:leading-loose mb-6">
-                  With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training. With a team of seasoned security.
-                </p>
-                <Link className="flex items-center gap-3 border-2 border-white border-solid text-sm text-white px-8 py-4 opacity-70 rounded-lg w-max" href="">Get Started <GoArrowUpRight className="text-2xl text-white" /></Link>
+          </section> */}
+          <section className="px-28 pt-28">
+            <div className="flex gap-20">
+              <div className="w-[500px]">
+                <div className="">
+                  <h3 className="text-4xl mb-4 font-bold leading-[1.3]">
+                    Questions we <br /> get asked often
+                  </h3>
+                  <p className="text-base leading-relaxed md:leading-relaxed mb-14 w-[80%]">
+                    At Citadel Security, we are dedicated to fortifying your software applications and systems.
+                  </p>
+                </div>
               </div>
-              <div>
-                <Image src={GlobeImg} width={0} height={0} quality={100} className="w-full h-full" alt="" />
+              <div className="flex-1">
+                <div className="flex gap-5 flex-col mx-auto">
+                  <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                    <h3 className="font-medium text-base">How can I use this platform?</h3>
+                    <FaAngleDown className="text-xl" />
+                  </div>
+                  <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                    <h3 className="font-medium text-base">How can I use this platform?</h3>
+                    <FaAngleDown className="text-xl" />
+                  </div>
+                  <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                    <h3 className="font-medium text-base">How can I use this platform?</h3>
+                    <FaAngleDown className="text-xl" />
+                  </div>
+                  <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
+                    <h3 className="font-medium text-base">How can I use this platform?</h3>
+                    <FaAngleDown className="text-xl" />
+                  </div>
+                </div>
               </div>
             </div>
           </section>

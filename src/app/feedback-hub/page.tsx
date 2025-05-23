@@ -24,8 +24,8 @@ export default function FeedbackHub() {
                             </div>
                         </div>
                     </section>
-                    <section className="px-28 mt-20">
-                        <div className="bg-[#F9F7FF] py-20 grid grid-cols-2 gap-20 mb-20">
+                    <section className="mt-20">
+                        <div className="bg-[#F5F3FF] px-28 py-20 grid grid-cols-2 gap-20 mb-20">
                             <div>
                                 <h4 className="text-xl font-medium mb-3">
                                     New Wired Wits Website
@@ -71,7 +71,7 @@ export default function FeedbackHub() {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-[#F9F7FF] py-20 grid grid-cols-2 gap-20 mb-20">
+                        <div className="bg-[#F5F3FF] px-28 py-20 grid grid-cols-2 gap-20 mb-20">
                             <div>
                                 <h4 className="text-xl font-medium mb-3">
                                     New Wired Wits Website

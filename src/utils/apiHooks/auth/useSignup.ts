@@ -16,7 +16,6 @@ export const useSignup = () => {
         setData(null)
         const response = await execute(async () => await AuthService().signUp(params))
         if (response?.success) {
-            console.log(response.data);
             AuthToken().saveToken(response?.data?.token);
             updateUser(response?.data?.userDetails);
             setData(response?.data?.userDetails);

@@ -6,18 +6,18 @@ export function errorHandler(error: any) {
         const message = data.message ?? data.statusMessage
         if (message) {
             return {
-                status: status as number,
+                statusCode: status as number,
                 message: message as string
             }
         } else {
             return {
-                status: status,
+                statusCode: status,
                 message: "An unexpected error has occurred"
             }
         }
     } else {
         return {
-            status: 500,
+            statusCode: 500,
             message: error.message || "An unexpected error has occurred"
         }
     }
