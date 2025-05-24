@@ -96,7 +96,7 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
             <div className="flex justify-between mt-16">
                 <div>
                     <p className="text-white text-sm opacity-70">
-                        &copy; {new Date().getFullYear()}. Wired Wits, a subsidiary of Anata Marketing, LLC . All Rights Reserved</p>
+                        &copy;2023 Wired Wits, LLC. All rights reserved.</p>
                 </div>
                 <div className="flex gap-10">
                     <Link className="text-white text-sm opacity-70" href="">Terms of use</Link>
