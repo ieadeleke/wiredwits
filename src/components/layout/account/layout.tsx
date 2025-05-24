@@ -66,12 +66,12 @@ const AuthLayout = (props: LayoutProps) => {
                     <Image src={Logo} alt="logo" quality={100} width={100} height={100} className="h-[3rem] w-auto" />
                 </div> */}
                 </div>
-                <div className="flex">
-                    <div className="w-[250px] bg-[#F3F5F7] h-[88vh] relative border-r-2 border-solid border-[#E4E4E6] py-10">
+                <div className="flex h-[88vh]">
+                    <div className="w-[250px] bg-[#F3F5F7] h-full relative border-r-2 border-solid border-[#E4E4E6] py-10">
                         {/* <div className="h-[6rem] border-b-2 border-solid border-[#E4E4E6] w-full mb-8"></div> */}
                         <SideNav togglePageSpinner={togglePageSpinner} />
                     </div>
-                    <div className="flex-1 h-[88vh] overflow-scroll overflow-x-hidden pb-10">
+                    <div className="flex-1 h-full overflow-y-auto overflow-x-hidden pb-10">
                         <div className="w-[90%] mx-auto mt-10">
                             {/* <div className="h-[6rem] border-b-2 border-solid border-[#E4E4E6] w-full"></div> */}
                             {props.children}

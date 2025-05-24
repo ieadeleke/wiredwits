@@ -4,6 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
+import { IoMailOpen } from "react-icons/io5";
+import { PiSignpostBold } from "react-icons/pi";
+
+
 
 export default function ContactUs() {
   // const { handleSubmit, control } = useForm({
@@ -18,16 +22,14 @@ export default function ContactUs() {
           <section className="hero-bg px-28 pt-44 pb-14">
             <div className="w-[50%] items-center gap-20">
               <div>
-                <h1 className="text-6xl font-medium mb-6 leading-tight md:leading-tight w-[70%]">
+                <h1 className="text-6xl font-medium mb-5 leading-tight md:leading-tight w-[70%]">
                   Get in Touch with Our Team.
                 </h1>
                 <p className="text-base leading-relaxed md:leading-loose mb-7">
-                  Let us assist you in getting started. Please fill out this form or reach out via phone or fax to share details about your business needs, so our team can better understand how to help.
+                  We&apos;d love to hear from you! Whether you have a question, want to explore a partnership, or just want to learn more about our tools, we&apos;re here to listen. Use the form on this page or reach out directly, let&apos;s build something better together.
                 </p>
-                {/* <Button content="See how we impact" /> */}
               </div>
               <div>
-                {/* <Image src="https://framerusercontent.com/images/4iRboOeHolIxcWnocarRCo62k.png?scale-down-to=1024" alt="hero" width={400} height={400} className="w-full h-full" /> */}
               </div>
             </div>
           </section>
@@ -37,18 +39,22 @@ export default function ContactUs() {
                 <div className="flex flex-col gap-10">
                   <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 py-8 rounded-lg">
                     <div>
-                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-14"></div>
+                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-14 flex items-center justify-center">
+                        <IoMailOpen className="text-primary text-2xl" />
+                      </div>
                       <h5 className="text-lg mb-2 font-medium">Email</h5>
-                      <p className="text-sm mb-2 leading-loose">Our friendly team is here to help.</p>
+                      <p className="text-sm mb-2 leading-loose">Our team is here to help.</p>
                       <a className="text-[#9747FF]" href="mailto:support@codepunk.com">support@wiredwits.com</a>
                     </div>
                   </div>
                   <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 py-8 rounded-lg">
                     <div>
-                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-14"></div>
-                      <h5 className="text-lg mb-2 font-medium">Phone</h5>
-                      <p className="text-sm mb-2 leading-loose">Monday - Friday from 8am to 5pm.</p>
-                      <a className="text-[#9747FF]" href="mailto:support@codepunk.com">0800 000 0000</a>
+                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-14 flex items-center justify-center">
+                        <PiSignpostBold className="text-primary text-2xl" />
+                      </div>
+                      <h5 className="text-lg mb-2 font-medium">Mailing Address</h5>
+                      <p className="text-sm mb-2 leading-loose">139 S144th St; PO Box 457</p>
+                      <a className="text-[#9747FF]" href="mailto:support@codepunk.com">Boys Tow, NE 68010</a>
                     </div>
                   </div>
                 </div>
@@ -83,9 +89,16 @@ export default function ContactUs() {
                     {/* <Controller name="firstName" control={control}
                         render={({ field }) => ( */}
                     <select className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg">
-                      <option value="">Public Good</option>
-                      <option value="">Public Good</option>
-                      <option value="">Public Good</option>
+                      <option value="General Question">General Question</option>
+                      <option value="Feedback or Suggestion">Feedback or Suggestion</option>
+                      <option value="Media & Public Relations">Media & Public Relations</option>
+                      <option value="Partnership or Collaboration">Partnership or Collaboration</option>
+                      <option value="Wits Newsroom (Public Good)">Wits Newsroom (Public Good)</option>
+                      <option value="Business Empowerment Tools">Business Empowerment Tools</option>
+                      <option value="Education or Training Opportunities">Education or Training Opportunities</option>
+                      <option value="Community Engagement">Community Engagement</option>
+                      <option value="Grants, Funding, or Support">Grants, Funding, or Support</option>
+                      <option value="Something Else (Tell Us More)">Something Else (Tell Us More)</option>
                     </select>
                     {/* <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="email" /> */}
                     {/* )} /> */}

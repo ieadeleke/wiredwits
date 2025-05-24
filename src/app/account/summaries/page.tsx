@@ -22,6 +22,7 @@ import { GlobalActionContext } from "@/context/GlobalActionContext";
 import { useGetAllSummaries } from "@/utils/apiHooks/profile/useGetAllSummaries";
 import AllSummariesListing from "@/components/pages/account/summary-listing";
 import AppRoutes from "@/utils/routes";
+import { useRef } from 'react';
 
 
 
@@ -35,6 +36,8 @@ export default function Communities() {
     const { handleSubmit, control, formState: { errors } } = useForm({
         resolver: yupResolver(signUpValidator)
     });
+
+    const scrollableRef = useRef<any>(null);
 
     const { showSnackBar } = useContext(GlobalActionContext);
     const [currentPage, setCurrentPage] = useState(1);
@@ -55,12 +58,23 @@ export default function Communities() {
         }
     }, [data])
 
+    const scrollToTop = () => {
+        if (scrollableRef.current) {
+            scrollableRef.current.scrollTo({
+                top: 0,
+                behavior: 'smooth' // For smooth scrolling animation
+            });
+        } else {
+        }
+    };
+
     useEffect(() => {
         getSummaries(currentPage);
     }, [currentPage])
 
     const handleNewsPaginationControl = (val: number) => {
         setCurrentPage(val);
+        scrollToTop();
     };
 
     return (
@@ -68,7 +82,7 @@ export default function Communities() {
             <AuthLayout>
                 <>
                     <div className="">
-                        <div className="flex items-end justify-between">
+                        <div ref={scrollableRef} className="flex items-end justify-between">
                             <h3 className="text-2xl font-bold">
                                 Today&apos;s Top Stories
                             </h3>
