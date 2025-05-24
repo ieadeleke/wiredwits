@@ -31,7 +31,7 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                                     <FaBluesky className="text-lg" />
                                 </div>
                             </Link>
-                            <Link href="https://twitter.com/WiredWit" rel="noreferrer" target="_blank">
+                            <Link href="https://twitter.com/WiredWits" rel="noreferrer" target="_blank">
                                 <div className="size-10 border-2 border-solid border-white rounded-full text-white opacity-80 flex items-center justify-center">
                                     <RiTwitterXLine className="text-lg" />
                                 </div>
