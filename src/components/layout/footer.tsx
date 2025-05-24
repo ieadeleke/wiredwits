@@ -13,12 +13,12 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
         <footer className={`bg-black px-28 ${noSpaceOnTop ? '' : 'mt-28'} pt-24 pb-16`}>
             <div className="flex">
                 <div className="w-[650px]">
-                    <div className="w-[60%]">
-                        <h3 className="text-3xl leading-snug font-bold text-white mb-5">
+                    <div className="w-[80%]">
+                        <h3 className="text-3xl leading-snug font-bold text-white mb-3">
                             WiredWits
                         </h3>
                         <p className="text-white opacity-70 leading-loose md:leading-loose text-sm mb-5">
-                            We understand that software security is a multifaceted challenge that requires a holistic approach.
+                            At Wired Wits, we create AI-powered tools, educational content, and community-driven resources to help people make smarter decisions in business, finance, and everyday life.
                         </p>
                         <div className="flex gap-5 items-center">
                             <Link href="https://www.linkedin.com/company/wired-wits" rel="noreferrer" target="_blank">
@@ -40,9 +40,9 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <div className="flex justify-between">
+                    <div className="flex justify-between pt-4">
                         <div>
-                            <h5 className="text-white mb-5 text-lg">Site Links</h5>
+                            <h5 className="text-white mb-5 text-lg font-medium">Company</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
                                     <Link href="" className="text-white text-sm opacity-70">Home</Link>
@@ -53,43 +53,40 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                                 <li>
                                     <Link href="" className="text-white text-sm opacity-70">Feedback Hub</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="" className="text-white text-sm opacity-70">Contact Us</Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                         <div>
-                            <h5 className="text-white mb-5 text-lg">Pillars</h5>
+                            <h5 className="text-white mb-5 text-lg font-medium">Pillars</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
                                     <Link href="" className="text-white text-sm opacity-70">Public Good</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">About Us</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Business Empowerment</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Feedback Hub</Link>
-                                </li>
-                                <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Resources</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Everyday AI</Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h5 className="text-white mb-5 text-lg">Social</h5>
+                            <h5 className="text-white mb-5 text-lg font-medium">Social</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Home</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">LinkedIn</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">About Us</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Twitter (X)</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Feedback Hub</Link>
+                                    <Link href="" className="text-white text-sm opacity-70">Blue Sky</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="" className="text-white text-sm opacity-70">Resources</Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -98,11 +95,12 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
             <div className="w-full h-[.1rem] bg-[#EBEBEB] opacity-30 mt-20"></div>
             <div className="flex justify-between mt-16">
                 <div>
-                    <p className="text-white text-sm opacity-70">Trademark &copy; {new Date().getFullYear()}</p>
+                    <p className="text-white text-sm opacity-70">
+                        &copy; {new Date().getFullYear()}. Wired Wits, a subsidiary of Anata Marketing, LLC . All Rights Reserved</p>
                 </div>
                 <div className="flex gap-10">
                     <Link className="text-white text-sm opacity-70" href="">Terms of use</Link>
-                    <Link className="text-white text-sm opacity-70" href="">Sitemap</Link>
+                    {/* <Link className="text-white text-sm opacity-70" href="">Sitemap</Link> */}
                     <Link className="text-white text-sm opacity-70" href="">Privacy Policies</Link>
                 </div>
             </div>
