@@ -44,20 +44,22 @@ const AuthLayout = (props: LayoutProps) => {
                         <div>
                             <div className="flex gap-6 items-center">
                                 <Link href="" className="bg-primary text-sm text-white rounded-lg py-4 px-8">Today&apos;s Top Stories</Link>
-                                <div className="flex items-center gap-3">
-                                    {user?.profile_picture ? (
-                                        <img
-                                            src={user?.profile_picture}
-                                            alt="profile" className="size-12 rounded-full object-center object-cover"
-                                        />
-                                    ) : (
-                                        <div className="size-12 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
-                                            <h4 className="text-black uppercase font-medium text-base">
-                                                {user?.first_name?.slice(0, 1)} {user?.last_name?.slice(0, 1)}
-                                            </h4>
-                                        </div>
-                                    )}
-                                    <h4 className="text-sm font-medium">{user?.first_name} {user?.last_name}</h4>
+                                <div>
+                                    <Link href='/account/settings' className="flex items-center gap-3">
+                                        {user?.profile_picture ? (
+                                            <img
+                                                src={user?.profile_picture}
+                                                alt="profile" className="size-12 rounded-full object-center object-cover"
+                                            />
+                                        ) : (
+                                            <div className="size-12 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
+                                                <h4 className="text-black uppercase font-medium text-base">
+                                                    {user?.first_name?.slice(0, 1)} {user?.last_name?.slice(0, 1)}
+                                                </h4>
+                                            </div>
+                                        )}
+                                        <h4 className="text-sm font-medium">{user?.first_name} {user?.last_name}</h4>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
