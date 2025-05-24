@@ -46,8 +46,8 @@ export default function ContactUs() {
                             </div>
                         </div>
                     </section>
-                    <section className="px-28 mt-28">
-                        <h3 className="text-center text-5xl mb-6 font-bold">
+                    <section className="px-32 mt-28">
+                        {/* <h3 className="text-center text-5xl mb-6 font-bold">
                             Solve real problems with Wired Wits
                         </h3>
                         <p className="text-base text-center w-[60%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
@@ -69,9 +69,99 @@ export default function ContactUs() {
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'everyday' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
                                 <p className="text-s font-medium text-[15px]">Systems That Work for Everyone</p>
                             </div>
-                        </div>
+                        </div> */}
                         <>
-                            {
+                            <div className="grid grid-cols-2 gap-20 mt-9 items-center">
+                                {/* <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col"> */}
+                                <div className="h-full rounded-lg border-solid">
+                                    <div>
+                                        <h3 className="text-3xl [42px] mb-3 leading-snug font-bold">
+                                            Truth Needs Defenders. <br /> We Build Their Tools
+                                        </h3>
+                                        <p className="text-sm font-medium leading-loose mb-4">
+                                            We don&apos;t decide the truth — we build tools so you can find it yourself. Wired Wits helps you spot misinformation, understand legislation clearly, and hold leaders accountable. Join those who demand truth as a non-negotiable. Features include AI-powered bias detection, plain-English legal guides, and transparency tools.
+                                        </p>
+                                        <ul className="flex flex-col gap-5 mb-12">
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                        <GoArrowUpRight className="text-2xl" /></Link>
+                                </div>
+                                <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                            </div>
+                            <div className="grid grid-cols-2 gap-20 mt-24 items-center">
+                                <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                                {/* <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col"> */}
+                                <div className="h-full rounded-lg border-solid">
+                                    <div>
+                                        <h3 className="text-3xl [42px] mb-3 leading-snug font-bold">
+                                            Truth Needs Defenders. <br /> We Build Their Tools
+                                        </h3>
+                                        <p className="text-sm font-medium leading-loose mb-4">
+                                            We don&apos;t decide the truth — we build tools so you can find it yourself. Wired Wits helps you spot misinformation, understand legislation clearly, and hold leaders accountable. Join those who demand truth as a non-negotiable. Features include AI-powered bias detection, plain-English legal guides, and transparency tools.
+                                        </p>
+                                        <ul className="flex flex-col gap-5 mb-12">
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                        <GoArrowUpRight className="text-2xl" /></Link>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-2 gap-20 mt-24 items-center">
+                                {/* <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col"> */}
+                                <div className="h-full rounded-lg border-solid">
+                                    <div>
+                                        <h3 className="text-3xl [42px] mb-3 leading-snug font-bold">
+                                            Truth Needs Defenders. <br /> We Build Their Tools
+                                        </h3>
+                                        <p className="text-sm font-medium leading-loose mb-4">
+                                            We don&apos;t decide the truth — we build tools so you can find it yourself. Wired Wits helps you spot misinformation, understand legislation clearly, and hold leaders accountable. Join those who demand truth as a non-negotiable. Features include AI-powered bias detection, plain-English legal guides, and transparency tools.
+                                        </p>
+                                        <ul className="flex flex-col gap-5 mb-12">
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                            <li className="flex items-center gap-3 text-sm font-medium">
+                                                <span className="size-8 rounded-lg block bg-primary"></span>
+                                                Truth Needs Defenders. We Build Their Tools
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                        <GoArrowUpRight className="text-2xl" /></Link>
+                                </div>
+                                <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                            </div>
+                            {/* {
                                 currView === 'public' ?
                                     <div className="grid grid-cols-2 gap-8 mt-9 items-center">
                                         <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
@@ -94,7 +184,6 @@ export default function ContactUs() {
                                                 <div>
                                                     <h3 className="text-3xl [42px] mb-3 leading-snug font-bold">
                                                         Smarter Tools. Greater <br /> Access. Real Opportunity.
-                                                        {/* Truth Needs Defenders. <br /> We Build Their Tools */}
                                                     </h3>
                                                     <p className="text-sm font-medium leading-loose mb-4">
                                                         We&apos;re creating AI tools to help entrepreneurs turn ideas into action — validating ideas, automating workflows, and spotting new opportunities. No gatekeepers, no jargon, just powerful tools to boost your success. Features coming soon include idea validation, content automation, and real-time trend tracking.
@@ -121,15 +210,13 @@ export default function ContactUs() {
                                             </div>
                                             <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
                                         </div>
-                            }
+                            } */}
                         </>
                     </section>
-                    <section className="px-28 py-24 mt-28 bg-[#F5F3FF]">
+                    {/* <section className="px-28 py-24 mt-28 bg-[#F5F3FF]">
                         <div>
                             <h3 className="text-4xl leading-snug font-bold">
-                                {/* Our Core Values */}
                                 Clear, Connected, <br /> Collaborative Solutions
-                                {/* Robust & Tailored <br /> Software Security Solutions */}
                             </h3>
                             <div className="mt-10 grid grid-cols-3 gap-10">
                                 <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
@@ -227,7 +314,7 @@ export default function ContactUs() {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </>
             </DisplayLayout>
         </div>
