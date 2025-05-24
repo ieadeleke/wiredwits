@@ -43,8 +43,9 @@ const SideNav = (props: SideNavInterface) => {
     function handleLogout() {
         props.togglePageSpinner();
         logOut();
-        router.push("/auth/signin");
+        // router.push("/auth/signin");
         updateUser(null);
+        window.location.href = "/auth/signin";
     }
 
     return (
