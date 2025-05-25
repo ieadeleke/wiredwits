@@ -99,9 +99,9 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                         &copy;2023 Wired Wits, LLC. All rights reserved.</p>
                 </div>
                 <div className="flex gap-10">
-                    <Link className="text-white text-sm opacity-70" href="">Terms of use</Link>
+                    <Link className="text-white text-sm opacity-70" href="">Terms and Conditions</Link>
                     {/* <Link className="text-white text-sm opacity-70" href="">Sitemap</Link> */}
-                    <Link className="text-white text-sm opacity-70" href="">Privacy Policies</Link>
+                    <Link className="text-white text-sm opacity-70" href="">Privacy Policy</Link>
                 </div>
             </div>
         </footer>

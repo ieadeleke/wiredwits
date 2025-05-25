@@ -1,4 +1,5 @@
 import DisplayLayout from "@/components/layout/layout";
+import { Divider } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa6";
@@ -45,6 +46,13 @@ export default function Home() {
                   <p className="text-black opacity-80 leading-loose">
                     Whether you&apos;re navigating misinformation, building a business, or just trying to make smarter decisions in your everyday life, Wired Wits exists to help you move with confidence and purpose. Our purpose is clear: build tools that solve real problems, and make sure those tools are accessible to everyone—not just the already-privileged.
                   </p>
+                  <Divider>Our Story</Divider>
+                  <p className="text-black opacity-80 leading-loose mb-4">
+                    Wired Wits was founded by Anthony Palmer, a veteran and longtime project management professional, who saw a growing gap between powerful technology and the people who could benefit from it the most. What began as a blog evolved into a platform built to educate, empower, and inspire action, with AI at its core.
+                  </p>
+                  <p className="text-black opacity-80 leading-loose">
+                    Even though we&apos;re just getting started, our purpose is clear: build tools that solve real problems, and make sure those tools are accessible to everyone—not just the already-privileged.
+                  </p>
                 </div>
               </div>
             </div>
@@ -85,7 +93,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="px-28 pt-28">
+          {/* <section className="px-28 pt-28">
             <div className="text-center">
               <h3 className="text-4xl mb-8 font-medium">
                 Common Questions About Our Mission and Tools
@@ -112,7 +120,7 @@ export default function Home() {
                 <FaAngleDown className="text-xl" />
               </div>
             </div>
-          </section>
+          </section> */}
         </>
       </DisplayLayout>
     </div>

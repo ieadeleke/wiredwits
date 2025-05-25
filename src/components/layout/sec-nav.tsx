@@ -25,8 +25,6 @@ const Navigation = () => {
             <div className="w-full py-1 flex justify-between items-center">
                 <div className="flex items-center gap-5 flex-1">
                     <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-aut" />
-                    {/* <div className="w-[5rem] h-[3rem] bg-black"></div>
-                    <h3 className="text-xl font-bold">WiredWits</h3> */}
                 </div>
                 <div className="flex-1">
                     <ul className="flex gap-12 items-center">
@@ -34,10 +32,10 @@ const Navigation = () => {
                             <Link href="/" className="text-sm font-[600]">Home</Link>
                         </li>
                         <li>
-                            <Link href="about-us" className="text-sm font-[600]">About Us</Link>
+                            <Link href="/about-us" className="text-sm font-[600]">About Us</Link>
                         </li>
                         <li>
-                            <Link href="/pillars" className="text-sm font-[600]">Pillars</Link>
+                            <Link href="/contact-us" className="text-sm font-[600]">Contact Us</Link>
                         </li>
                         {/* <li>
                             <Link href="/blogs" className="text-sm font-[600]">Blog</Link>
@@ -51,7 +49,7 @@ const Navigation = () => {
                     <div></div>
                     <ul className="flex gap-8 items-center">
                         <li>
-                            <Link href="/contact-us" className="text-sm font-[600]">Contact Us</Link>
+                            <Link href="/auth/signin" className="text-sm font-[600]">Sign In</Link>
                         </li>
                         <li>
                             <Link href="/auth/signup" className="bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium flex gap-1 items-center">Create Account <GoArrowUpRight className="text-2xl" /></Link>

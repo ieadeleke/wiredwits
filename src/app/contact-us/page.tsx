@@ -49,12 +49,13 @@ export default function ContactUs() {
                   </div>
                   <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 py-8 rounded-lg">
                     <div>
-                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-14 flex items-center justify-center">
+                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-10 flex items-center justify-center">
                         <PiSignpostBold className="text-primary text-2xl" />
                       </div>
                       <h5 className="text-lg mb-2 font-medium">Mailing Address</h5>
-                      <p className="text-sm mb-2 leading-loose">139 S144th St; PO Box 457</p>
-                      <a className="text-[#9747FF]" href="mailto:support@codepunk.com">Boys Tow, NE 68010</a>
+                      <p className="text-sm leading-loose">139 S144th St;</p>
+                      <p className="text-sm mb-2 leading-loose">PO Box 457</p>
+                      <a className="text-[#9747FF]" href="mailto:support@codepunk.com">Boys Town, NE 68010</a>
                     </div>
                   </div>
                 </div>
@@ -114,7 +115,7 @@ export default function ContactUs() {
                     <textarea name="message" rows={6} className="text-sm border-2 border-solid border-[#EBEBEB] block w-full px-2 rounded-lg" />
                     {/* )} /> */}
                   </div>
-                  <button className="bg-[#9747FF] text-white py-5 px-8 rounded-lg text-sm font-medium mt-14">Reach out to us</button>
+                  <button className="bg-[#9747FF] text-white py-5 px-8 rounded-lg text-sm font-medium mt-14">Submit</button>
                 </form>
               </div>
             </div>

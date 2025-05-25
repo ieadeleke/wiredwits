@@ -66,7 +66,7 @@ export default function FeedbackHub() {
                                             <Label className="mb-2">Email address</Label>
                                             <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[3.5rem] px-2 rounded-lg" name="email" />
                                         </div>
-                                        <button className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Submit Review</button>
+                                        <button className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Submit</button>
                                     </form>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ export default function FeedbackHub() {
                                             <Label className="mb-2">Email address</Label>
                                             <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[3.5rem] px-2 rounded-lg" name="email" />
                                         </div>
-                                        <button className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Submit Review</button>
+                                        <button className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Submit</button>
                                     </form>
                                 </div>
                             </div>

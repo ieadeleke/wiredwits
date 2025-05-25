@@ -43,7 +43,7 @@ export default function ContactUs() {
                                     {/* At Wired Wits, we believe everyone deserves access to tools that help them cut through noise, hold power accountable, and unlock new opportunities. */}
                                 </p>
                                 <div className="flex gap-4 mx-auto mb-10 w-max">
-                                    <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Get Started</Link>
+                                    <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Create Account</Link>
                                     <Link href="/contact-us" className="bg-white text-black py-4 px-8 rounded-lg text-sm font-medium">Reach out to us</Link>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ export default function ContactUs() {
                                                     Our interactive news app analyzes headlines and articles for bias, emotional manipulation, and misleading framing. It&apos;s like a compass for the information age, helping you think critically and stay grounded in a world full of spin.
                                                 </p>
                                             </div>
-                                            <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                            <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
                                                 <GoArrowUpRight className="text-2xl" /></Link>
                                         </div>
                                         <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
@@ -102,7 +102,7 @@ export default function ContactUs() {
                                                         We&apos;re building tools that make complex laws easier to understand—breaking down key points and translating them into clear, actionable summaries. No legalese, no hidden agendas — just the facts. Coming soon.
                                                     </p>
                                                 </div>
-                                                <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                                <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
                                             <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
@@ -118,7 +118,7 @@ export default function ContactUs() {
                                                         Soon, you&apos;ll be able to trace political influence and follow the money, because transparency shouldn&apos;t be a luxury. These tools are in development to support those who demand more from those in power. (Coming Soon)
                                                     </p>
                                                 </div>
-                                                <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                                <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
                                             <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
@@ -126,161 +126,7 @@ export default function ContactUs() {
                             }
                         </>
                     </section>
-                    <section className="px-32 mt-28">
-                        <h3 className="text-center text-4xl mb-3 font-bold leading-snug md:leading-snug">
-                            Smarter Tools. Greater <br /> Access. Real Opportunity.
-                        </h3>
-                        <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                            Entrepreneurs need more than ideas, they need strategy, insight, and support. We&apos;re working on tools that help validate ideas, automate workflows, and uncover new opportunities. These are under wraps for now, but they're on the way. (Coming Soon)
-                        </p>
-                        <div className="grid grid-cols-3 gap-10 mt-7">
-                            <div
-                                onClick={() => setCurrSecView('business-idea')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currSecView === 'business-idea' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Build Smarter. Move Faster.</p>
-                            </div>
-                            <div
-                                onClick={() => setCurrSecView('business-automate')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currSecView === 'business-automate' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Automate the Grind</p>
-                            </div>
-                            <div
-                                onClick={() => setCurrSecView('business-track')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currSecView === 'everyday' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Spot Trends. Seize Opportunity</p>
-                            </div>
-                        </div>
-                        <>
-                            {
-                                currSecView === 'business-idea' ?
-                                    <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                        <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
-                                            <div>
-                                                <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                    Validate your business idea with AI-powered insights
-                                                </h3>
-                                                <p className="text-sm font-mediu leading-loose mb-4">
-                                                    Know before you go. We&apos;re building tools to help you evaluate your next big idea with confidence. No fluff. No guesswork. (Coming Soon)
-                                                </p>
-                                            </div>
-                                            <Link href="/business-empowerment" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Unlock your edge
-                                                <GoArrowUpRight className="text-2xl" /></Link>
-                                        </div>
-                                    </div> :
-                                    currSecView === 'business-automate' ?
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
-                                                <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Automate Business Processes
-                                                    </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
-                                                        Spend less time on tasks and more on growth. This set of tools is designed to reduce the grind and help you scale, smarter. (Coming Soon)
-                                                    </p>
-                                                </div>
-                                                <Link href="/business-empowerment" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Unlock your edge
-                                                    <GoArrowUpRight className="text-2xl" /></Link>
-                                            </div>
-                                        </div>
-                                        :
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
-                                                <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Track emerging trends and uncover new markets.
-                                                    </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
-                                                        See what&apos;s coming before it hits. Our trend-tracking tools are being developed to help you move fast on real opportunity. (Coming Soon)
-                                                    </p>
-                                                </div>
-                                                <Link href="/business-empowerment" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Unlock your edge
-                                                    <GoArrowUpRight className="text-2xl" /></Link>
-                                            </div>
-                                        </div>
-                            }
-                        </>
-                    </section>
-                    <section className="px-32 mt-28">
-                        <h3 className="text-center text-4xl mb-3 font-bold">
-                            Live Smarter. Thrive Together.
-                        </h3>
-                        <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                            We believe tech should help people—not overwhelm them. Our Everyday AI tools are designed to simplify life, reduce costs, and build stronger local communities. They&apos;re coming soon, and we can't wait to show you more. (Coming Soon)
-                        </p>
-                        <div className="grid grid-cols-3 gap-10 mt-7">
-                            <div
-                                onClick={() => setCurrThirdView('thrive-money')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-money' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Spend Less. Stress Less.</p>
-                            </div>
-                            <div
-                                onClick={() => setCurrThirdView('thrive-resources')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-resources' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Share More. Build Together.</p>
-                            </div>
-                            <div
-                                onClick={() => setCurrThirdView('thrive-goods')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-goods' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Trade Smarter. Stay Local.</p>
-                            </div>
-                        </div>
-                        <>
-                            {
-                                currThirdView === 'thrive-money' ?
-                                    <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
-                                            <div>
-                                                <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                    Save money and reduce waste with AI-powered budgeting
-                                                </h3>
-                                                <p className="text-sm font-mediu leading-loose mb-4">
-                                                    Financial clarity shouldn&apos;t be a luxury. Our tools will help you see where your money goes and how to make it go further. (Coming Soon)
-                                                </p>
-                                            </div>
-                                            <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
-                                                <GoArrowUpRight className="text-2xl" /></Link>
-                                        </div>
-                                        <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                    </div> :
-                                    currView === 'thrive-resources' ?
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
-                                                <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Pool resources and skills through community-led co-ops
-                                                    </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
-                                                        We&apos;re creating ways to share more, spend less, and support each other. Because stronger communities start with smarter systems. (Coming Soon)
-                                                    </p>
-                                                </div>
-                                                <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
-                                                    <GoArrowUpRight className="text-2xl" /></Link>
-                                            </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                        </div>
-                                        :
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
-                                                <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Trade goods, services, or time in trusted networks
-                                                    </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
-                                                        Need something? Trade for it. These tools will help you create barter networks in your own neighborhood—no money required. (Coming Soon)
-                                                    </p>
-                                                </div>
-                                                <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
-                                                    <GoArrowUpRight className="text-2xl" /></Link>
-                                            </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                        </div>
-                            }
-                        </>
-                    </section>
-                    {/* <section className="px-28 py-24 mt-28 bg-[#F5F3FF]">
+                    <section className="px-28 py-24 mt-28 bg-[#F5F3FF]">
                         <div>
                             <h3 className="text-4xl leading-snug font-bold">
                                 Clear, Connected, <br /> Collaborative Solutions
@@ -339,7 +185,7 @@ export default function ContactUs() {
                                         <p className="text-base opacity-70 leading-loose md:leading-loose mb-10 w-[95%]">
                                             From spotting misinformation and simplifying laws to automating workflows and building stronger networks, we empower users to make smarter decisions, grow ideas, and thrive together.
                                         </p>
-                                        <Link className="flex items-center gap-3 bg-[#9747FF] border-2 border-white border-solid text-sm text-white px-8 py-4 rounded-lg w-max" href="">Get Started <GoArrowUpRight className="text-2xl text-white" /></Link>
+                                        <Link className="flex items-center gap-3 bg-[#9747FF] border-2 border-white border-solid text-sm text-white px-8 py-4 rounded-lg w-max" href="">Create Account <GoArrowUpRight className="text-2xl text-white" /></Link>
                                     </div>
                                 </div>
                                 <div>
@@ -381,7 +227,7 @@ export default function ContactUs() {
                                 </div>
                             </div>
                         </div>
-                    </section> */}
+                    </section>
                 </>
             </PillarsLayout>
         </div>
