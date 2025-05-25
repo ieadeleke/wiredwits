@@ -16,7 +16,7 @@ export default function Home() {
     <div>
       <DisplayLayout>
         <>
-          <section className="main-her pt-36 bg-[#F9F7FF] h-screen text-center relative overflow-hidden">
+          <section className="main-her pt-36 bg-[#F9F7FF] h-scree text-center relative overflow-hidden">
             <div className="w-[60%] mx-auto">
               <h2 className="text-6xl mb-4 font-bold leading-[1.1]">
                 AI-powered personalized outreach at scale.
