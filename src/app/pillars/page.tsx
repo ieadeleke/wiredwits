@@ -25,7 +25,7 @@ export default function ContactUs() {
 
     return (
         <div>
-            <PillarsLayout>
+            <DisplayLayout>
                 <>
                     <section className="hero-bg flex items-center justify-center text-center">
                         <div className="w-[90%] mx-auto gap-20 py-40 pb-16">
@@ -384,7 +384,7 @@ export default function ContactUs() {
                         </div>
                     </section> */}
                 </>
-            </PillarsLayout>
+            </DisplayLayout>
         </div>
     );
 }
