@@ -13,11 +13,11 @@ export default function Home() {
         <>
           <section className="hero-bg flex items-center justify-center text-center">
             <div className="w-[90%] mx-auto gap-20 py-40 pb-16">
-              <div className="w-[70%] mx-auto">
+              <div className="w-[60%] mx-auto">
                 <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-4 rounded-lg">
                   <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
                 </div>
-                <h1 className="text-5xl font-bold mb-4 leading-tight md:leading-tight">
+                <h1 className="text-4xl font-bold mb-4 leading-[1.4]">
                   {/* Freelance Security: Protecting Your Projects. */}
                   Empowering People. Defending the Ecosystem. Harnessing AI for Good.
                 </h1>
@@ -33,31 +33,48 @@ export default function Home() {
           </section>
           <section className="px-28 mt-14">
             <div className="mt-28">
-              <div className="flex">
-                <div className="w-[550px]">
-                  <h3 className="w-[70%] text-3xl leading-snug font-bold">
-                    AI Tools for Truth, Clarity, and Everyday Impact
+              <div className="flex gap-20 mb-8">
+                <div className="w-[500px]">
+                  <h3 className="w-[70%] text-3xl leading-snug font-bold mb-3">
+                    Our Mission
                   </h3>
+                  <p className="text-black opacity-80 leading-loose md:leading-relaxed w-[75%]">
+                    Empowering People. Defending the Ecosystem. Harnessing AI for Good.
+                  </p>
                 </div>
                 <div className="flex-1">
                   <p className="text-black opacity-80 leading-loose mb-4">
-                    We&apos;re building AI-powered tools designed to help defend the quality of life ecosystem—tools that empower you to take control of your future, stand up for truth, and make clearer sense of an increasingly chaotic and noisy world.
+                    At Wired Wits, we believe everyone deserves access to tools that help them cut through noise, hold power accountable, and unlock new opportunities.
                   </p>
-                  <p className="text-black opacity-80 leading-loose">
-                    Whether you&apos;re navigating misinformation, building a business, or just trying to make smarter decisions in your everyday life, Wired Wits exists to help you move with confidence and purpose. Our purpose is clear: build tools that solve real problems, and make sure those tools are accessible to everyone—not just the already-privileged.
+                  <p className="text-black opacity-80 leading-loose mb-4">
+                    We&apos;re building AI-powered tools to help defend the quality of life ecosystem, tools that empower you to take control of your future, stand up for truth, and make sense of a chaotic world.
                   </p>
-                  <Divider>Our Story</Divider>
+                  <p className="text-black opacity-80 leading-loose mb-4">
+                    Whether you're navigating misinformation, building a business, or just trying to make smarter decisions in your everyday life, Wired Wits exists to help you move with confidence and purpose.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-20">
+                <div className="w-[500px]">
+                  <h3 className="w-[70%] text-3xl leading-snug font-bold mb-3">
+                    Our Story
+                  </h3>
+                  <p className="text-black opacity-80 leading-loose md:leading-relaxed w-[80%]">
+                    Where we started
+                  </p>
+                </div>
+                <div className="flex-1">
                   <p className="text-black opacity-80 leading-loose mb-4">
                     Wired Wits was founded by Anthony Palmer, a veteran and longtime project management professional, who saw a growing gap between powerful technology and the people who could benefit from it the most. What began as a blog evolved into a platform built to educate, empower, and inspire action, with AI at its core.
                   </p>
                   <p className="text-black opacity-80 leading-loose">
-                    Even though we&apos;re just getting started, our purpose is clear: build tools that solve real problems, and make sure those tools are accessible to everyone—not just the already-privileged.
+                    Even though we&apos;re just getting started, our purpose is clear: build tools that solve real problems, and make sure those tools are accessible to everyone — not just the already-privileged.
                   </p>
                 </div>
               </div>
             </div>
           </section>
-          <section className="bg-[#F5F3FF] px-28 mt-28 py-24">
+          <section className="bg-[#F5F3FF] px-28 mt-20 py-20">
             <div className="flex gap-20">
               <div className="w-[500px]">
                 <div className="">
@@ -83,7 +100,7 @@ export default function Home() {
                       Innovation means nothing if it&apos;s not inclusive. We&apos;re driven by the belief that powerful technology should serve everyone, not just those with privilege or proximity. Our mission is to break down barriers and build tools anyone can use.
                     </p>
                   </div>
-                  <div className="border-b-2 border-solid border-[#EBEBEB] pb-7">
+                  <div className="">
                     <h3 className="font-bold text-2xl mb-3">Purpose Over Hype</h3>
                     <p className="text-base leading-loose md:leading-loose opacity-80">
                       We don&apos;t chase trends — we solve real problems. Everything we create is guided by purpose, shaped by impact, and driven by the urgent need to empower people to live better, smarter, and more intentional lives.

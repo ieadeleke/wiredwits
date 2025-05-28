@@ -45,13 +45,13 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                             <h5 className="text-white mb-5 text-lg font-medium">Company</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Home</Link>
+                                    <Link href="/" className="text-white text-sm opacity-70">Home</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">About Us</Link>
+                                    <Link href="/about-us" className="text-white text-sm opacity-70">About Us</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Feedback Hub</Link>
+                                    <Link href="/feedback-hub" className="text-white text-sm opacity-70">Feedback Hub</Link>
                                 </li>
                                 {/* <li>
                                     <Link href="" className="text-white text-sm opacity-70">Contact Us</Link>
@@ -62,13 +62,13 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                             <h5 className="text-white mb-5 text-lg font-medium">Pillars</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Public Good</Link>
+                                    <Link href="/public-good" className="text-white text-sm opacity-70">Public Good</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Business Empowerment</Link>
+                                    <Link href="/business-empowerment" className="text-white text-sm opacity-70">Business Empowerment</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Everyday AI</Link>
+                                    <Link href="/everday-ai" className="text-white text-sm opacity-70">Everyday AI</Link>
                                 </li>
                             </ul>
                         </div>
@@ -76,13 +76,13 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                             <h5 className="text-white mb-5 text-lg font-medium">Social</h5>
                             <ul className="flex flex-col gap-5">
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">LinkedIn</Link>
+                                    <Link href="https://www.linkedin.com/company/wired-wits" rel="noreferrer" target="_blank" className="text-white text-sm opacity-70">LinkedIn</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Twitter (X)</Link>
+                                    <Link href="https://twitter.com/WiredWits" rel="noreferrer" target="_blank" className="text-white text-sm opacity-70">Twitter (X)</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-white text-sm opacity-70">Blue Sky</Link>
+                                    <Link href="https://bsky.app/profile/wiredwits.bsky.social" rel="noreferrer" target="_blank" className="text-white text-sm opacity-70">Blue Sky</Link>
                                 </li>
                                 {/* <li>
                                     <Link href="" className="text-white text-sm opacity-70">Resources</Link>

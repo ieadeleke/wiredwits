@@ -1,27 +1,11 @@
 'use client';
 
-import { useContext, useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
-import { GoogleOAuthProvider, useGoogleLogin } from '@react-oauth/google';
-import { useRouter } from 'next/navigation';
-
-import { useDispatch } from "react-redux";
-import { login } from "@/utils/features/userslice";
-
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { Controller, useForm } from "react-hook-form";
-import { Label } from "@/components/ui/label";
+import { useState } from "react";
 import AppRoutes from "@/utils/routes";
-import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/images/logo-box.svg";
-import { Button } from "@/components/ui/button";
-import { GlobalActionContext } from "@/context/GlobalActionContext";
-import { signUpValidator } from "@/utils/validators";
+import Logo from "@/assets/images/logo.png";
 import Spinner from "@/components/ui/spin";
-import { useSignup } from "@/utils/apiHooks/auth/useSignup";
-import { Router } from "lucide-react";
+import { useRouter } from 'next/navigation';
 
 
 const SignUpPage = () => {
@@ -32,7 +16,12 @@ const SignUpPage = () => {
     const [loader, setLoader] = useState<boolean>(false);
     const [pillarSubs, setPillarSubs] = useState<any>([]);
     const handleUserSelection = (e: string) => {
-        setPillarSubs([...pillarSubs, e]);
+        if (pillarSubs.includes(e)) {
+            const newCollection = pillarSubs.filter((item: string) => item !== e);
+            setPillarSubs(newCollection);
+        } else {
+            setPillarSubs([...pillarSubs, e]);
+        }
     }
     const handlePageRedirect = () => {
         setLoader(true);
@@ -50,12 +39,12 @@ const SignUpPage = () => {
                 <div className="text-center">
                     <h2 className="text-2xl font-bold mb-1">Welcome to Wiredwits</h2>
                     <p className="text-[15px] leading-loose md:leading-loose w-[80%] mx-auto">
-                        Please subscribe to any pillar. You can click more than one.
+                        Almost there! Choose the topics that matter to you to get updates on tools, insights, and more.
                     </p>
                     <div className="mt-8 grid grid-cols-3 gap-3">
                         <div onClick={() => handleUserSelection('public')}
                             className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
-                            <h3 className="text-[15px]">Public Good</h3>
+                            <h3 className="text-[14px]">Public Good</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
                                     pillarSubs.includes('public') && <div className="bg-black size-2 rounded-full"></div>}
@@ -63,7 +52,7 @@ const SignUpPage = () => {
                         </div>
                         <div onClick={() => handleUserSelection('private')}
                             className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
-                            <h3 className="text-[15px]">Public Good</h3>
+                            <h3 className="text-[14px]">Business Empowerment</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
                                     pillarSubs.includes('private') && <div className="bg-black size-2 rounded-full"></div>}
@@ -72,7 +61,7 @@ const SignUpPage = () => {
 
                         <div onClick={() => handleUserSelection('government')}
                             className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
-                            <h3 className="text-[15px]">Public Good</h3>
+                            <h3 className="text-[14px]">Everyday AI</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
                                     pillarSubs.includes('government') && <div className="bg-black size-2 rounded-full"></div>}

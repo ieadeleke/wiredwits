@@ -29,11 +29,11 @@ export default function ContactUs() {
                 <>
                     <section className="hero-bg flex items-center justify-center text-center">
                         <div className="w-[90%] mx-auto gap-20 py-40 pb-16">
-                            <div className="w-[70%] mx-auto">
+                            <div className="w-[60%] mx-auto">
                                 <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-4 rounded-lg">
                                     <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
                                 </div>
-                                <h1 className="text-5xl font-bold mb-4 leading-tight md:leading-tight">
+                                <h1 className="text-4xl font-bold mb-4 leading-[1.4]">
                                     Three Pillars. One Mission: Protect the Ecosystem That Sustains Us.
                                     {/* Empowering People. Defending the Ecosystem. Harnessing AI for Good. */}
                                 </h1>
@@ -50,11 +50,11 @@ export default function ContactUs() {
                         </div>
                     </section>
                     <section className="px-32 mt-28">
-                        <h3 className="text-center text-4xl mb-3 font-bold leading-snug md:leading-snug">
-                            Truth Needs Defenders. <br /> We Build Their Tools.
+                        <h3 className="text-center text-3xl mb-3 font-bold leading-snug md:leading-snug w-[40%] mx-auto">
+                            Public Good:  Truth Needs Defenders, We Build Their Tools
                         </h3>
                         <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                            Wired Wits helps you cut through noise, uncover truth, and hold power accountable. Our first tool, See Clearly. Think Smarter., is live now, designed to help you spot bias, decode manipulation, and ask better questions. The journey starts here.
+                            We don&apos;t tell you what to think. We build tools that help you cut through noise, question what you&apos;re told, and make sense of a world full of spin. In today&apos;s world, truth isn&apos;t handed down, it&apos;s uncovered. And we are building the tools to help you do that, starting with Wits Newsroom.
                         </p>
                         <div className="grid grid-cols-3 gap-10 mt-7">
                             <div
@@ -86,7 +86,7 @@ export default function ContactUs() {
                                                     Our interactive news app analyzes headlines and articles for bias, emotional manipulation, and misleading framing. It&apos;s like a compass for the information age, helping you think critically and stay grounded in a world full of spin.
                                                 </p>
                                             </div>
-                                            <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                            <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Learn More
                                                 <GoArrowUpRight className="text-2xl" /></Link>
                                         </div>
                                         <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
@@ -99,10 +99,10 @@ export default function ContactUs() {
                                                         Understand legislation in plain English
                                                     </h3>
                                                     <p className="text-sm font-mediu leading-loose mb-4">
-                                                        We&apos;re building tools that make complex laws easier to understand—breaking down key points and translating them into clear, actionable summaries. No legalese, no hidden agendas — just the facts. Coming soon.
+                                                        We&apos;re building tools that make complex laws easier to understand, breaking down key points and translating them into clear, actionable summaries. No legalese, no hidden agendas, just the facts. Coming soon.
                                                     </p>
                                                 </div>
-                                                <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                                <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Learn More
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
                                             <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
@@ -115,10 +115,10 @@ export default function ContactUs() {
                                                         Hold leaders accountable with public data and transparency tools
                                                     </h3>
                                                     <p className="text-sm font-mediu leading-loose mb-4">
-                                                        Soon, you&apos;ll be able to trace political influence and follow the money, because transparency shouldn&apos;t be a luxury. These tools are in development to support those who demand more from those in power. (Coming Soon)
+                                                        In the future, you&apos;ll be able to follow political influence, campaign money, and backdoor deals, because transparency shouldn&apos;t be a privilege. These tools are in early development, built for people who believe accountability is non-negotiable.
                                                     </p>
                                                 </div>
-                                                <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Join the movement
+                                                <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Learn More
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
                                             <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
@@ -127,11 +127,12 @@ export default function ContactUs() {
                         </>
                     </section>
                     <section className="px-32 mt-28">
-                        <h3 className="text-center text-4xl mb-3 font-bold leading-snug md:leading-snug">
-                            Smarter Tools. Greater <br /> Access. Real Opportunity.
+                        <h3 className="text-center text-3xl mb-3 font-bold leading-snug md:leading-snug w-[50%] mx-auto">
+                            Business Empowerment: Smarter Tools. Greater Access. Real Opportunity.
+                            {/* Smarter Tools. Greater <br /> Access. Real Opportunity. */}
                         </h3>
                         <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                            Entrepreneurs need more than ideas, they need strategy, insight, and support. We&apos;re working on tools that help validate ideas, automate workflows, and uncover new opportunities. These are under wraps for now, but they're on the way. (Coming Soon)
+                            You&apos;ve got the vision — now you need the edge. We&apos;re building tools to help you validate smarter, automate the busywork, and spot opportunity before the market catches up. They&apos;re not here yet—but we&apos;re laying the groundwork to put serious strategy in your hands.
                         </p>
                         <div className="grid grid-cols-3 gap-10 mt-7">
                             <div
@@ -161,7 +162,7 @@ export default function ContactUs() {
                                                     Validate your business idea with AI-powered insights
                                                 </h3>
                                                 <p className="text-sm font-mediu leading-loose mb-4">
-                                                    Know before you go. We&apos;re building tools to help you evaluate your next big idea with confidence. No fluff. No guesswork. (Coming Soon)
+                                                    Before you invest your time, energy, or money, you deserve to know if your idea is built to last. We&apos;re designing tools that use real data to test your concept, explore market fit, and help you move with clarity. The groundwork is in motion, and you will be the first to know.
                                                 </p>
                                             </div>
                                             <Link href="/business-empowerment" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Unlock your edge
@@ -174,10 +175,10 @@ export default function ContactUs() {
                                             <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
                                                 <div>
                                                     <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Automate Business Processes
+                                                        Automate Business Processes with AI
                                                     </h3>
                                                     <p className="text-sm font-mediu leading-loose mb-4">
-                                                        Spend less time on tasks and more on growth. This set of tools is designed to reduce the grind and help you scale, smarter. (Coming Soon)
+                                                        Growth shouldn&apos;t mean burnout. We&apos;re developing tools that handle the repetitive stuff, content, research, outreach, so you can focus on building the business only you can build. It&apos;s not live yet, but it&apos;s coming together with builders like you in mind.
                                                     </p>
                                                 </div>
                                                 <Link href="/business-empowerment" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Unlock your edge
@@ -193,7 +194,7 @@ export default function ContactUs() {
                                                         Track emerging trends and uncover new markets.
                                                     </h3>
                                                     <p className="text-sm font-mediu leading-loose mb-4">
-                                                        See what&apos;s coming before it hits. Our trend-tracking tools are being developed to help you move fast on real opportunity. (Coming Soon)
+                                                        The best time to act? Before everyone else does. Our trend-spotting tools are in the works to help you identify where attention, demand, and opportunity are headed, so you can be ready when it matters. Stay tuned. You&apos;ll want to be early on this.
                                                     </p>
                                                 </div>
                                                 <Link href="/business-empowerment" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Unlock your edge
@@ -204,11 +205,11 @@ export default function ContactUs() {
                         </>
                     </section>
                     <section className="px-32 mt-28">
-                        <h3 className="text-center text-4xl mb-3 font-bold">
+                        <h3 className="text-center text-3xl mb-3 font-bold">
                             Live Smarter. Thrive Together.
                         </h3>
-                        <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                            We believe tech should help people—not overwhelm them. Our Everyday AI tools are designed to simplify life, reduce costs, and build stronger local communities. They&apos;re coming soon, and we can't wait to show you more. (Coming Soon)
+                        <p className="text-base text-center w-[70%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
+                            We believe tech should make life easier, not more complicated. Our Everyday AI tools are being designed to help you stretch resources, lower stress, and strengthen community connections. They&apos;re not ready yet, but what we&apos;re building is shaped by people like you, and it&apos;s all about practical impact.
                         </p>
                         <div className="grid grid-cols-3 gap-10 mt-7">
                             <div
@@ -237,7 +238,7 @@ export default function ContactUs() {
                                                     Save money and reduce waste with AI-powered budgeting
                                                 </h3>
                                                 <p className="text-sm font-mediu leading-loose mb-4">
-                                                    Financial clarity shouldn&apos;t be a luxury. Our tools will help you see where your money goes and how to make it go further. (Coming Soon)
+                                                    We&apos;re working on tools that help you stretch your dollars, track spending with ease, and spot savings that actually make sense for your life. Because peace of mind shouldn&apos;t depend on how much you earn, it should come from clarity and control.
                                                 </p>
                                             </div>
                                             <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
@@ -245,7 +246,7 @@ export default function ContactUs() {
                                         </div>
                                         <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
                                     </div> :
-                                    currView === 'thrive-resources' ?
+                                    currThirdView === 'thrive-resources' ?
                                         <div className="grid grid-cols-2 gap-8 mt-9 items-center">
                                             <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
                                                 <div>
@@ -253,7 +254,7 @@ export default function ContactUs() {
                                                         Pool resources and skills through community-led co-ops
                                                     </h3>
                                                     <p className="text-sm font-mediu leading-loose mb-4">
-                                                        We&apos;re creating ways to share more, spend less, and support each other. Because stronger communities start with smarter systems. (Coming Soon)
+                                                        We&apos;re developing systems to make sharing easier—from tool libraries to childcare swaps. These tools are being shaped with one goal in mind: help neighbors support each other and build access without extra cost.
                                                     </p>
                                                 </div>
                                                 <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
@@ -269,7 +270,7 @@ export default function ContactUs() {
                                                         Trade goods, services, or time in trusted networks
                                                     </h3>
                                                     <p className="text-sm font-mediu leading-loose mb-4">
-                                                        Need something? Trade for it. These tools will help you create barter networks in your own neighborhood—no money required. (Coming Soon)
+                                                        Imagine a neighborhood where you can trade time, skills, or extra supplies—no money needed. That&apos;s the kind of tool we&apos;re building: practical, local, and designed to make everyday life more connected and resilient.
                                                     </p>
                                                 </div>
                                                 <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started

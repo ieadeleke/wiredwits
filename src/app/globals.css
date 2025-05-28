@@ -244,3 +244,24 @@ textarea {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.values-text {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.values-text.show-text {
+  max-height: 40rem;
+  opacity: 1;
+}
+
+
+.ant-dropdown-menu .ant-dropdown-menu-item {
+  padding: 15px 25px !important;
+}
+
+.ant-dropdown-menu .ant-dropdown-menu-item a {
+  font-family: var(--font-plus-jakarta), sans-serif !important;
+}
