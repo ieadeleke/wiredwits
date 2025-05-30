@@ -144,7 +144,7 @@ const SignInPage = () => {
                     <Link href="/">
                         <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-auto" />
                     </Link>
-                    <h3 className="mb-2 text-xl font-[600]">Welcome to Witts</h3>
+                    <h3 className="mb-2 text-xl font-[600]">Welcome to Wired Wits</h3>
                     <p className="mb-5 text-sm font-medium">New to Wits? <Link className="text-primary" href={AppRoutes.signup}>Sign up</Link></p>
                 </div>
                 <form onSubmit={handleSubmit(handleUserSignIn)}>

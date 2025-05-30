@@ -10,11 +10,11 @@ interface footerProps {
 
 const Footer = ({ noSpaceOnTop }: footerProps) => {
     return (
-        <footer className={`bg-black px-28 ${noSpaceOnTop ? '' : 'mt-28'} pt-24 pb-16`}>
-            <div className="flex">
-                <div className="w-[650px]">
-                    <div className="w-[80%]">
-                        <h3 className="text-3xl leading-snug font-bold text-white mb-3">
+        <footer className={`bg-black px-5 md:px-28 ${noSpaceOnTop ? '' : 'mt-20 md:mt-28'} pt-16 md:pt-24 pb-16`}>
+            <div className="flex flex-col md:flex-row gap-16 md:gap-0">
+                <div className="md:w-[650px]">
+                    <div className="md:w-[80%]">
+                        <h3 className="text-2xl md:text-3xl leading-snug font-bold text-white mb-3">
                             WiredWits
                         </h3>
                         <p className="text-white opacity-70 leading-loose md:leading-loose text-sm mb-5">
@@ -40,7 +40,7 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <div className="flex justify-between pt-4">
+                    <div className="grid grid-cols-2 gap-y-10 md:gap-y-0 md:flex justify-between pt-4">
                         <div>
                             <h5 className="text-white mb-5 text-lg font-medium">Company</h5>
                             <ul className="flex flex-col gap-5">
@@ -92,8 +92,8 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[.1rem] bg-[#EBEBEB] opacity-30 mt-20"></div>
-            <div className="flex justify-between mt-16">
+            <div className="w-full h-[.1rem] bg-[#EBEBEB] opacity-30 mt-14 md:mt-20"></div>
+            <div className="flex flex-col md:flex-row gap-y-10 md:gap-y-0 justify-between mt-10 md:mt-16">
                 <div>
                     <p className="text-white text-sm opacity-70">
                         &copy;2023 Wired Wits, LLC. All rights reserved.</p>

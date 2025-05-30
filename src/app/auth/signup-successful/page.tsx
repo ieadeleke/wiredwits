@@ -37,7 +37,7 @@ const SignUpPage = () => {
                     <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-auto" />
                 </div>
                 <div className="text-center">
-                    <h2 className="text-2xl font-bold mb-1">Welcome to Wiredwits</h2>
+                    <h2 className="text-2xl font-bold mb-1">Welcome to Wired Wits</h2>
                     <p className="text-[15px] leading-loose md:leading-loose w-[80%] mx-auto">
                         Almost there! Choose the topics that matter to you to get updates on tools, insights, and more.
                     </p>

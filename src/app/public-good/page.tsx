@@ -33,14 +33,11 @@ export default function ContactUs() {
                                 <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-4 rounded-lg">
                                     <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
                                 </div>
-                                <h1 className="text-5xl font-bold mb-4 leading-tight md:leading-tight">
-                                    Three Pillars. One Mission: Protect the Ecosystem That Sustains Us.
-                                    {/* Empowering People. Defending the Ecosystem. Harnessing AI for Good. */}
+                                <h1 className="text-5xl font-bold mb-4 leading-tight md:leading-tight w-[70%] mx-auto">
+                                    Wits Newsroom – Clarity Tools for the Noise Age
                                 </h1>
                                 <p className="text-base text-[#111111b3] leading-relaxed md:leading-loose mb-7 w-[80%] mx-auto">
-                                    {/* <p className="text-base w-[80%] mb-6 mx-auto leading-loose md:leading-loose font-medium"> */}
-                                    We&apos;re driven by a simple mission: build tools that protect truth, expand access, and inspire action—so more people can shape a better future with confidence.
-                                    {/* At Wired Wits, we believe everyone deserves access to tools that help them cut through noise, hold power accountable, and unlock new opportunities. */}
+                                    Reclaim your power to understand what&apos;s really going on with our Interactive News app, powered by AI.  Unpack stories, spot bias, and think clearly in a world designed to confuse you.
                                 </p>
                                 <div className="flex gap-4 mx-auto mb-10 w-max">
                                     <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Create Account</Link>
@@ -50,13 +47,27 @@ export default function ContactUs() {
                         </div>
                     </section>
                     <section className="px-32 mt-28">
-                        <h3 className="text-center text-4xl mb-3 font-bold leading-snug md:leading-snug">
-                            Truth Needs Defenders. <br /> We Build Their Tools.
-                        </h3>
-                        <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                            Wired Wits helps you cut through noise, uncover truth, and hold power accountable. Our first tool, See Clearly. Think Smarter., is live now, designed to help you spot bias, decode manipulation, and ask better questions. The journey starts here.
-                        </p>
-                        <div className="grid grid-cols-3 gap-10 mt-7">
+                        <div className="grid grid-cols-2 gap-14">
+                            <div>
+                                <div className="">
+                                    <h3 className="text- text-4xl mb-3 font-bold leading-snug md:leading-snug">
+                                        What Makes This Different?
+                                    </h3>
+                                </div>
+                                <div className="">
+                                    <p className="text-base mb-6 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
+                                        Wired Wits helps you cut through noise, uncover truth, and hold power accountable. Our first tool, See Clearly. Think Smarter., is live now, designed to help you spot bias, decode manipulation, and ask better questions. The journey starts here.
+                                    </p>
+                                    <p className="text-base mb- mx-auto leading-loose md:leading-loose font-mediu opacity-80">
+                                        Wits Newsroom is an interactive news tool designed to help you ask smarter questions, see multiple sides of a story, and get the background and context you need. Think of it like a co-pilot for understanding what really matters. No spin. No labels. No agenda. Just clear, AI-powered answers that help you gain clarity on your terms.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="bg-[#A789FE] w-full h-full rounded-lg"></div>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-3 gap-10 mt-20">
                             <div
                                 onClick={() => handleCurrPageView('public-bias')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-bias' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
@@ -65,12 +76,12 @@ export default function ContactUs() {
                             <div
                                 onClick={() => handleCurrPageView('public-legislation')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-legislation' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Decode Laws. Understand Power</p>
+                                <p className="text-s font-mediu opacity-80 text-[15px]">Explore Multiple Angles</p>
                             </div>
                             <div
                                 onClick={() => handleCurrPageView('public-trends')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-trends' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Expose the Game. Demand Better</p>
+                                <p className="text-s font-mediu opacity-80 text-[15px]">Reflect. Respond. Reclaim Your Voice</p>
                             </div>
                         </div>
                         <>
@@ -80,10 +91,10 @@ export default function ContactUs() {
                                         <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
                                             <div>
                                                 <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                    Spot misinformation and bias with AI-powered tools
+                                                    Not Just News, <br /> Clarity on Your Terms
                                                 </h3>
-                                                <p className="text-sm font-mediu leading-loose mb-4">
-                                                    Our interactive news app analyzes headlines and articles for bias, emotional manipulation, and misleading framing. It&apos;s like a compass for the information age, helping you think critically and stay grounded in a world full of spin.
+                                                <p className="text-base font-mediu leading-loose mb-4">
+                                                    Ask smarter questions. Spot bias. Get the real context behind the headlines, with tools built to help you understand the story, not just skim it.
                                                 </p>
                                             </div>
                                             <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
@@ -96,10 +107,10 @@ export default function ContactUs() {
                                             <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
                                                 <div>
                                                     <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Understand legislation in plain English
+                                                        One Story. <br /> Multiple Viewpoints.
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
-                                                        We&apos;re building tools that make complex laws easier to understand—breaking down key points and translating them into clear, actionable summaries. No legalese, no hidden agendas — just the facts. Coming soon.
+                                                    <p className="text-base font-mediu leading-loose mb-4">
+                                                        Don&apos;t settle for a single source. Wits Newsroom shows you how different outlets cover the same issue, so you can think critically and make up your own mind.
                                                     </p>
                                                 </div>
                                                 <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
@@ -112,10 +123,10 @@ export default function ContactUs() {
                                             <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
                                                 <div>
                                                     <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Hold leaders accountable with public data and transparency tools
+                                                        Understand It. <br /> Then Do Something With It.
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
-                                                        Soon, you&apos;ll be able to trace political influence and follow the money, because transparency shouldn&apos;t be a luxury. These tools are in development to support those who demand more from those in power. (Coming Soon)
+                                                    <p className="text-base font-mediu leading-loose mb-4">
+                                                        Use our Pro tools to turn what you read into reflections, notes, or drafts. Reinforce your learning. Craft your perspective. Respond with clarity and confidence.
                                                     </p>
                                                 </div>
                                                 <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account

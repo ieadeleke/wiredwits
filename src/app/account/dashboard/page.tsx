@@ -26,11 +26,15 @@ import { TransactionPill } from "@/components/layout/account/pill";
 import AllSummariesListing from "@/components/pages/account/summary-listing";
 import { useGetAllSummaries } from "@/utils/apiHooks/profile/useGetAllSummaries";
 import { useGetAllSubscriptions } from "@/utils/apiHooks/profile/useSubscribedTopics";
+import { Modal } from "antd";
+import PaymentModal from "@/components/pages/account/sub-modal";
 
 
 export default function UserDashboard() {
     const { isLoading, data, error, getSummaries } = useGetAllSummaries();
     const { isLoading: allSubscriptionLoader, data: allSubscriptionData, error: allSubscriptionErrors, getSubscriptions } = useGetAllSubscriptions();
+
+    const [openPaymentModal, setOpenPaymentModal] = useState<boolean>(false);
 
     const [allArticles, setAllArticles] = useState<any>([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -79,6 +83,8 @@ export default function UserDashboard() {
         setCurrentPage(val);
     };
 
+    const toggleDisplayPaymentModal = () => setOpenPaymentModal(!openPaymentModal);
+
     return (
         <div>
             <AuthLayout>
@@ -91,6 +97,7 @@ export default function UserDashboard() {
                                     <p className="text-white">Welcome to your dashboard</p>
                                 </div>
                                 <div>
+                                    <button onClick={toggleDisplayPaymentModal} className="bg-white rounded-lg px-8 py-4 text-sm text-black">Subscribe</button>
                                 </div>
                             </div>
                         </div>
@@ -118,6 +125,7 @@ export default function UserDashboard() {
                             />
                         </div>
                     </div>
+                    <PaymentModal open={openPaymentModal} closeModal={toggleDisplayPaymentModal} />
                 </>
             </AuthLayout>
         </div>

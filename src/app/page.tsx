@@ -25,15 +25,15 @@ export default function Home() {
       <DisplayLayout>
         <>
           <section className="hero-bg h-[] flex items-center justify-center text-center">
-            <div className="w-[90%] mx-auto gap-20 py-36 pb-24">
-              <div className="w-[55%] mx-auto">
+            <div className="md:w-[90%] mx-auto gap-20 py-32 md:py-36 pb-14 md:pb-24">
+              <div className="md:w-[55%] px-5 md:px-0 mx-auto">
                 <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-6 rounded-lg">
                   <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
                 </div>
-                <h1 className="text-[45px] font-bold mb-4 leading-[1.4] md:leading-[1.4]">
+                <h1 className="text-3xl md:text-[45px] font-bold mb-4 leading-[1.4] md:leading-[1.4]">
                   Smarter Tools. Clearer Truth. Bigger Possibilities
                 </h1>
-                <p className="text-base text-[#111111b3] leading-relaxed md:leading-loose mb-7 w-[80%] mx-auto">
+                <p className="text-sm md:text-base text-[#111111b3] leading-loose md:leading-loose mb-7 md:w-[80%] mx-auto">
                   Explore AI made for everyday people, dreamers, and doers. From decoding the news to building your next big thing, this is just the beginning.
                 </p>
                 <div className="flex gap-4 mx-auto mb-10 w-max">
@@ -43,73 +43,76 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="px-28 mt-24">
-            <div className="w-[65%] mx-auto mt-20 mb-7 text-center">
-              <h3 className="text-4xl mb-4 font-[600]">
+          <section className="px-5 md:px-28 mt-10 md:mt-24">
+            <div className="md:w-[65%] mx-auto mt-20 mb-7 text-center">
+              <h3 className="text-2xl md:text-4xl mb-2 md:mb-4 font-[600]">
                 Understand the News.
               </h3>
-              <h3 className="text-4xl mb-5 font-[600]">
+              <h3 className="text-2xl md:text-4xl mb-3 md:mb-5 font-[600]">
                 Stay Ahead. On Your Terms.
               </h3>
-              <p className="text-base mb-5 leading-loose opacity-80 w-[80%] mx-auto">
+              <p className="text-base md:text-base mb-3 md:mb-5 leading-loose opacity-80 md:w-[80%] mx-auto">
                 {/* You don&apos;t need a pundit to explain the world to you. Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself. */}
                 Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself.
               </p>
             </div>
             <img alt="dashboard" src={'https://www.cortex.io/_next/image?url=https%3A%2F%2Fa-us.storyblok.com%2Ff%2F1021527%2F2012x1152%2F5c94ea8074%2Fimage-1415.webp&w=3840&q=99'} className="w-full h-full" />
-            <div className="px-20 grid grid-cols-2 gap-16 gap-y-12 items-center mt-14">
-              <div className="w-full h-full rounded-xl px-5 pt-5">
+            <div className="md:px-20 text-center md:text-left flex flex-col md:grid grid-cols-2 gap-16 gap-8 md:gap-y-12 items-center mt-14">
+              <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-2xl" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
-                <h4 className="mb-2 font-[600] text-lg">
+                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   Bias & Emotion Detection
                 </h4>
-                <p className="text-base leading-loose md:leading-loose opacity-80">
+                <p className="text-sm md:text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge the content.
                 </p>
               </div>
               <div className="w-full h-full rounded-xl px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-2xl" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
-                <h4 className="mb-2 font-[600] text-xl">
+                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   Ask the Story
                 </h4>
-                <p className="text-base leading-loose md:leading-loose opacity-80">
+                <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Curious about the bigger picture? Ask follow-up questions and get clear, AI-powered answers with historical context, different viewpoints, or background info.
                 </p>
               </div>
               <div className="w-full h-full rounded-xl px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-2xl" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
-                <h4 className="mb-2 font-[600] text-xl">
+                <h4 className="hidden md:block mb-2 md:mb-2 font-[600] text-lg">
                   Smarter Summaries, Personalized for You
                 </h4>
-                <p className="text-base leading-loose md:leading-loose opacity-80">
+                <h4 className="block md:hidden mb-2 md:mb-2 font-[600] text-lg">
+                  Smarter Summaries, <br /> Personalized for You
+                </h4>
+                <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   No more one-size-fits-all. Get quick, clean breakdowns of any article tailored to your preferred reading style. Jargon? Conversational language? You choose how you read.
                 </p>
               </div>
               <div className="w-full h-full rounded-xl px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-2xl" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
-                <h4 className="mb-2 font-[600] text-xl">
+                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   Built-In Fact-Check Prompts
                 </h4>
-                <p className="text-base leading-loose md:leading-loose opacity-80">
+                <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Get quick suggestions for what to double-check and where to look when context is missing or a claim doesn&apos;t sit right. It&apos;s your shortcut to smarter scrutiny.
                 </p>
               </div>
             </div>
           </section>
 
-          <section className="px-28 mt-28 bg-[#F5F3FF] py-24">
-            <h3 className="text-center text-4xl leading-[1.5] mb-4 font-bold">
+          <section className="px-5 md:px-28 mt-20 md:mt-28 bg-[#F5F3FF] py-16 md:py-24">
+            <h3 className="text-center text-2xl md:text-4xl leading-[1.7] md:leading-[1.5] mb-2 md:mb-4 font-bold">
               Start With One Tool. <br /> Grow With the Platform
             </h3>
-            <p className="text-base text-center w-[60%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
+            <p className="text-sm:text-base text-center md:w-[60%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
               Wired Wits is building a suite of AI-powered tools to help you in all aspects of your life.
             </p>
             <div className="grid grid-cols-3 gap-10 mt-7">
@@ -131,20 +134,20 @@ export default function Home() {
             </div><>
               {
                 currThirdView === 'thrive-money' ?
-                  <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                    <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                  <div className="flex flex-col-reverse md:grid grid-cols-2 gap-4 md:gap-8 mt-9 items-center">
+                    <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-6 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                       <div>
-                        <h3 className="text-2xl [42px] mb-3 leading-[1.6] font-bold">
+                        <h3 className="text-xl md:text-2xl [42px] mb-1 md:mb-3 leading-[1.6] font-bold">
                           See clearly. <br /> Think smarter. Demand Truth.
                         </h3>
-                        <p className="text-base font-mediu leading-loose mb-4">
+                        <p className="text-sm md:text-base font-mediu leading-loose mb-4">
                           Cut through the spin, surface what matters, and challenge bias with tools built for clarity. Whether you're reading the news, digging into policy, or holding power accountable, we help you think for yourself, not by yourself.
                         </p>
                       </div>
                       <Link href="/auth/signup" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
                         <GoArrowUpRight className="text-2xl" /></Link>
                     </div>
-                    <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                    <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
                   </div> :
                   currThirdView === 'thrive-resources' ?
                     <div className="grid grid-cols-2 gap-8 mt-9 items-center">
@@ -181,89 +184,21 @@ export default function Home() {
               }
             </>
           </section>
-          {/* <section className="bg-black px-28 mt-20 py-28">
-            <div>
-              <div className="grid grid-cols-2 gap-10">
-                <div></div>
-              </div>
-              <h3 className="text-4xl leading-snug font-bold text-white mb-5">
-                Robust & Tailored <br /> Software Security Solutions
-              </h3>
-              <div className="mt-14 grid grid-cols-3 gap-10">
-                <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
-                  <div className="size-20 rounded-full mb-16 border-2 border-solid border-[#EBEBEB]"></div>
-                  <div>
-                    <h4 className="text-white font-medium text-xl mb-3">
-                      Security Audits
-                    </h4>
-                    <p className="text-sm text-white opacity-80 leading-loose md:leading-loose mb-5">
-                      Empower your team with practical security training programs focused on secure coding practices. Comprehensive security audits.
-                    </p>
-                    <Link href="" className="text-white opacity-80 text-sm">Get Started</Link>
-                  </div>
-                </div>
-                <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
-                  <div className="size-20 rounded-full mb-16 border-2 border-solid border-[#EBEBEB]"></div>
-                  <div>
-                    <h4 className="text-white font-medium text-xl mb-3">
-                      Security Audits
-                    </h4>
-                    <p className="text-sm text-white opacity-80 leading-loose md:leading-loose mb-5">
-                      Empower your team with practical security training programs focused on secure coding practices. Comprehensive security audits.
-                    </p>
-                    <Link href="" className="text-white opacity-80 text-sm">Get Started</Link>
-                  </div>
-                </div>
-                <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
-                  <div className="size-20 rounded-full mb-16 border-2 border-solid border-[#EBEBEB]"></div>
-                  <div>
-                    <h4 className="text-white font-medium text-xl mb-3">
-                      Security Audits
-                    </h4>
-                    <p className="text-sm text-white opacity-80 leading-loose md:leading-loose mb-5">
-                      Empower your team with practical security training programs focused on secure coding practices. Comprehensive security audits.
-                    </p>
-                    <Link href="" className="text-white opacity-80 text-sm">Get Started</Link>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full h-[.1rem] bg-[#EBEBEB] opacity-30 mt-20"></div>
-              <div className="grid grid-cols-2 gap-24 mt-20">
-                <div>
-                  <div>
-                    <h3 className="text-4xl leading-tight md:leading-tight font-medium w-[80%] text-white mb-4">
-                      Team Pioneers in Online & Software Security Excellence.
-                    </h3>
-                    <p className="text-base text-white opacity-70 leading-loose md:leading-loose mb-5">
-                      With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training.
-                    </p>
-                    <p className="text-base text-white opacity-70 leading-loose md:leading-loose mb-10">
-                      With a team of seasoned security experts and developers, we offer a range of services including security assessments, secure software development training.
-                    </p>
-                    <Link className="flex items-center gap-3 border-2 border-white border-solid text-sm text-white px-8 py-4 opacity-70 rounded-full w-max" href="">Get Started <GoArrowUpRight className="text-2xl text-white" /></Link>
-                  </div>
-                </div>
-                <div>
-                  <div className="w-full h-full rounded-lg bg-[#111111]"></div>
-                </div>
-              </div>
-            </div>
-          </section> */}
-          <section className="px-28 pt-28">
-            <div className="flex gap-20">
-              <div className="w-[500px]">
+          <section className="px-5 md:px-28 pt-20 md:pt-28">
+            <div className="flex flex-col md:flex-row gap-5 md:gap-20">
+              <div className="md:w-[500px]">
                 <div className="">
-                  <h3 className="text-4xl mb-4 font-bold leading-[1.3]">
+                  <h3 className="text-2xl md:text-4xl mb-4 font-bold leading-[1.3]">
                     Questions we <br /> get asked often
                   </h3>
-                  <p className="text-base leading-relaxed md:leading-relaxed mb-14 w-[80%]">
+                  <p className="text-sm md:text-base leading-loose md:leading-relaxed mb-0 md:mb-14 md:w-[80%]">
                     Discover key information about our AI solutions, community focus, and future plans.
                   </p>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex gap-5 flex-col mx-auto">
-                  <div className="py-5 px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
                     <div onClick={() => setCurrentValuesView(0)}
                       className="flex items-center justify-between cursor-pointer">
                       <h3 className="font-medium text-base">Who are these tools for?</h3>
@@ -279,7 +214,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
                     <div onClick={() => setCurrentValuesView(1)}
                       className="flex items-center justify-between cursor-pointer">
                       <h3 className="font-medium text-base">Why do you call Wired Wits a “Quality of Life” platform?</h3>
@@ -295,7 +230,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
                     <div onClick={() => setCurrentValuesView(2)}
                       className="flex items-center justify-between cursor-pointer">
                       <h3 className="font-medium text-base">How can I get involved?</h3>
@@ -313,7 +248,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
                     <div onClick={() => setCurrentValuesView(3)}
                       className="flex items-center justify-between cursor-pointer">
                       <h3 className="font-medium text-base">How do the Wired Wits pillars work together?</h3>
@@ -328,7 +263,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
                     <div onClick={() => setCurrentValuesView(4)}
                       className="flex items-center justify-between cursor-pointer">
                       <h3 className="font-medium text-base">What kind of future is Wired Wits working toward?</h3>

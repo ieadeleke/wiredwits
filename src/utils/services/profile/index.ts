@@ -1,5 +1,5 @@
 import { request } from "@/utils/request"
-import { FetchProfileResponse, SingleSummaryParams, SingleSummaryQuestionParams, UpdatePasswordParams, UpdateProfileParams } from "./types"
+import { CancelPaymentParams, CompletePaymentParams, FetchProfileResponse, InitiatePaymentParams, SingleSummaryParams, SingleSummaryQuestionParams, UpdatePasswordParams, UpdateProfileParams } from "./types"
 import { ApiResponse } from "@/models"
 import { Profile } from "@/models/profile"
 
@@ -30,6 +30,42 @@ export function ProfileService() {
         return response as ApiResponse
     }
 
+    async function initiateSubPayment(params: InitiatePaymentParams) {
+        const response = await request({
+            path: `user/initiate-sub-process`,
+            method: "POST",
+            body: params
+        })
+        return response as ApiResponse
+    }
+
+    async function cancelSubPayment(params: CancelPaymentParams) {
+        const response = await request({
+            path: `user/cancel-sub-process`,
+            method: "POST",
+            body: params
+        })
+        return response as ApiResponse
+    }
+
+    async function completeSubPayment(params: CompletePaymentParams) {
+        const response = await request({
+            path: `user/complete-sub-process`,
+            method: "POST",
+            body: params
+        })
+        return response as ApiResponse
+    }
+
+    async function finishSubPayment(params: CancelPaymentParams) {
+        const response = await request({
+            path: `user/complete-user-subscription`,
+            method: "POST",
+            body: params
+        })
+        return response as ApiResponse
+    }
+
     async function getTokenHistory() {
         const response = await request({
             path: `user/fetch-user-history`,
@@ -42,6 +78,15 @@ export function ProfileService() {
     async function getUserSubscriptions() {
         const response = await request({
             path: `user/subscribed-topics`,
+            method: "GET",
+            body: ''
+        })
+        return response as ApiResponse
+    }
+
+    async function getSubPlans() {
+        const response = await request({
+            path: `subscriptions`,
             method: "GET",
             body: ''
         })
@@ -145,6 +190,11 @@ export function ProfileService() {
         getAllTopics,
         subscribeToTopic,
         getUserSubscriptions,
-        removeUserSubscriptions
+        removeUserSubscriptions,
+        initiateSubPayment,
+        cancelSubPayment,
+        completeSubPayment,
+        finishSubPayment,
+        getSubPlans
     }
 }

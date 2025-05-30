@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import UserContext from "@/context/UserContext";
 import { Spin } from "antd";
 import { LoadingOutlined } from '@ant-design/icons';
+import PaymentModal from "@/components/pages/account/sub-modal";
 
 interface LayoutProps {
     children: React.ReactElement,
@@ -16,34 +17,38 @@ const AuthLayout = (props: LayoutProps) => {
 
     const { updateUser, user } = useContext(UserContext);
     const [spinIcon, setSpinIcon] = useState<boolean>(false);
+    const [openPaymentModal, setOpenPaymentModal] = useState<boolean>(false);
+
 
     let antIcon = <LoadingOutlined spin style={{ fontSize: 40, color: '#9747FF' }} />
 
     const togglePageSpinner = () => setSpinIcon(!spinIcon);
 
+    const toggleDisplayPaymentModal = () => setOpenPaymentModal(!openPaymentModal);
 
     return (
         <div className="fle h-[100vh] overflow-hidden">
             <Spin spinning={spinIcon} indicator={antIcon}>
                 <div className="h-[12vh] flex items-center border-b-2 border-solid border-[#E4E4E6] w-full px-8">
                     <div className="flex items-center w-full justify-between">
-                        <div className="flex items-center gap-8">
+                        <div className="flex items-center gap-10">
                             <Image src={Logo} alt="logo" quality={100} width={100} height={100} className="h-[4rem] w-auto" />
-                            <ul className="flex gap-6">
+                            <ul className="flex gap-8">
                                 <li>
-                                    <Link href="" className="text-sm font-medium">Home</Link>
+                                    <Link href="/" className="text-sm font-medium">Home</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-sm font-medium">Dashboard</Link>
+                                    <Link href="/account/dashboard" className="text-sm font-medium">Dashboard</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="text-sm font-medium">Discover Topics</Link>
+                                    <Link href="/account/explore" className="text-sm font-medium">Discover Topics</Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <div className="flex gap-6 items-center">
-                                <Link href="" className="bg-primary text-sm text-white rounded-lg py-4 px-8">Today&apos;s Top Stories</Link>
+                                {/* <Link href="/account/summaries" className="bg-primary text-sm text-white rounded-lg py-4 px-8">Today&apos;s Top Stories</Link> */}
+                                <button onClick={toggleDisplayPaymentModal} className="bg-primary text-sm text-white rounded-lg py-4 px-8">Subscribe</button>
                                 <div>
                                     <Link href='/account/settings' className="flex items-center gap-3">
                                         {user?.profile_picture ? (
@@ -81,6 +86,7 @@ const AuthLayout = (props: LayoutProps) => {
                     </div>
                 </div>
             </Spin>
+            <PaymentModal open={openPaymentModal} closeModal={toggleDisplayPaymentModal} />
         </div>
     )
 }
