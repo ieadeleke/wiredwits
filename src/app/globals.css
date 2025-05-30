@@ -265,3 +265,7 @@ textarea {
 .ant-dropdown-menu .ant-dropdown-menu-item a {
   font-family: var(--font-plus-jakarta), sans-serif !important;
 }
+
+.faq-header.bg-style {
+  background: var(--primary-color);
+}

@@ -12,6 +12,8 @@ import { FaSquareArrowUpRight } from "react-icons/fa6";
 import { FaAngleDown } from "react-icons/fa6";
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { TiPlus } from "react-icons/ti";
+import { BiMinus } from "react-icons/bi";
 
 
 export default function Home() {
@@ -51,7 +53,7 @@ export default function Home() {
               <h3 className="text-2xl md:text-4xl mb-3 md:mb-5 font-[600]">
                 Stay Ahead. On Your Terms.
               </h3>
-              <p className="text-base md:text-base mb-3 md:mb-5 leading-loose opacity-80 md:w-[80%] mx-auto">
+              <p className="text-base md:text-base mb-3 md:mb-5 leading-loose md:leading-loose opacity-80 md:w-[80%] mx-auto">
                 {/* You don&apos;t need a pundit to explain the world to you. Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself. */}
                 Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself.
               </p>
@@ -65,7 +67,7 @@ export default function Home() {
                 <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   Bias & Emotion Detection
                 </h4>
-                <p className="text-sm md:text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge the content.
                 </p>
               </div>
@@ -107,12 +109,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-
           <section className="px-5 md:px-28 mt-20 md:mt-28 bg-[#F5F3FF] py-16 md:py-24">
-            <h3 className="text-center text-2xl md:text-4xl leading-[1.7] md:leading-[1.5] mb-2 md:mb-4 font-bold">
+            <h3 className="text-center text-3xl md:text-4xl leading-[1.4] md:leading-[1.5] mb-2 md:mb-4 font-bold">
               Start With One Tool. <br /> Grow With the Platform
             </h3>
-            <p className="text-sm:text-base text-center md:w-[60%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
+            <p className="text-sm md:text-base text-center md:w-[60%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
               Wired Wits is building a suite of AI-powered tools to help you in all aspects of your life.
             </p>
             <div className="grid grid-cols-3 gap-10 mt-7">
@@ -137,10 +138,10 @@ export default function Home() {
                   <div className="flex flex-col-reverse md:grid grid-cols-2 gap-4 md:gap-8 mt-9 items-center">
                     <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-6 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                       <div>
-                        <h3 className="text-xl md:text-2xl [42px] mb-1 md:mb-3 leading-[1.6] font-bold">
+                        <h3 className="text-xl md:text-3xl [42px] mb-1 md:mb-3 leading-[1.6] font-bold">
                           See clearly. <br /> Think smarter. Demand Truth.
                         </h3>
-                        <p className="text-sm md:text-base font-mediu leading-loose mb-4">
+                        <p className="text-sm md:text-base font-mediu leading-loose md:leading-loose mb-4">
                           Cut through the spin, surface what matters, and challenge bias with tools built for clarity. Whether you're reading the news, digging into policy, or holding power accountable, we help you think for yourself, not by yourself.
                         </p>
                       </div>
@@ -184,62 +185,64 @@ export default function Home() {
               }
             </>
           </section>
-          <section className="px-5 md:px-28 pt-20 md:pt-28">
-            <div className="flex flex-col md:flex-row gap-5 md:gap-20">
+          <section className="px-5 md:px-20 pt-20 md:pt-24">
+            <div className="flex flex-col md:flex-row md:grid grid-cols-2 gap-10 md:gap-20">
               <div className="md:w-[500px]">
-                <div className="">
-                  <h3 className="text-2xl md:text-4xl mb-4 font-bold leading-[1.3]">
-                    Questions we <br /> get asked often
+                <div className="text-center md:text-left">
+                  <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3">Frequently asked questions</p>
+                  <h3 className="text-3xl md:text-4xl mb-3 font-bold leading-[1.4] md:leading-[1.4]">
+                    Got Questions? <br /> We've Got Answers
                   </h3>
-                  <p className="text-sm md:text-base leading-loose md:leading-relaxed mb-0 md:mb-14 md:w-[80%]">
+                  <p className="text-sm md:text-base leading-loose md:leading-loose mb-0 md:mb-8 md:w-[80%]">
                     Discover key information about our AI solutions, community focus, and future plans.
                   </p>
+                  <Link href='' className="hidden md:flex bg-primary text-sm text-white py-5 px-10 items-center gap-2 justify-center w-max rounded-lg">Read all faqs <GoArrowUpRight className="text-2xl" /></Link>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex gap-5 flex-col mx-auto">
-                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="flex flex-col">
                     <div onClick={() => setCurrentValuesView(0)}
-                      className="flex items-center justify-between cursor-pointer">
+                      className={`flex items-center justify-between cursor-pointer py-5 px-4 rounded-xl faq-header ${currentValuesView === 0 ? 'bg-style text-white' : 'bg-[#F5F3FF]'}`}>
                       <h3 className="font-medium text-base">Who are these tools for?</h3>
                       {
-                        currentValuesView === 0 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                        currentValuesView === 0 ? <BiMinus className="text-xl" /> : <TiPlus className="text-xl" />
                       }
                     </div>
-                    <div className={`values-text ${currentValuesView === 0 ? 'show-text pt-5' : ''}`}>
-                      <p className="text-sm leading-loose md:leading-loose">
+                    <div className={`values-text ${currentValuesView === 0 ? 'show-text pt-5 px-5' : ''}`}>
+                      <p className="text-sm opacity-80 leading-loose md:leading-loose">
                         Wired Wits is for everyday people who want to take back control—of their time, their choices, and their understanding of the world.
                         Whether you're a small business owner, a concerned citizen, a side hustler, or someone just trying to make sense of today&apos;s chaos, our tools are built to meet you where you are.
-                        You don&apos;t need to be a tech expert or policy wonk. You just need curiosity and the desire to make better decisions in your life, business, or community.
+                        {/* You don&apos;t need to be a tech expert or policy wonk. You just need curiosity and the desire to make better decisions in your life, business, or community. */}
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="flex flex-col">
                     <div onClick={() => setCurrentValuesView(1)}
-                      className="flex items-center justify-between cursor-pointer">
+                      className={`flex items-center justify-between cursor-pointer py-5 px-4 rounded-xl faq-header ${currentValuesView === 1 ? 'bg-style text-white' : 'bg-[#F5F3FF]'}`}>
                       <h3 className="font-medium text-base">Why do you call Wired Wits a “Quality of Life” platform?</h3>
                       {
-                        currentValuesView === 1 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                        currentValuesView === 1 ? <BiMinus className="text-xl" /> : <TiPlus className="text-xl" />
                       }
                     </div>
-                    <div className={`values-text ${currentValuesView === 1 ? 'show-text pt-5' : ''}`}>
-                      <p className="text-sm leading-loose md:leading-loose">
+                    <div className={`values-text ${currentValuesView === 1 ? 'show-text pt-5 px-5' : ''}`}>
+                      <p className="text-sm opacity-80 leading-loose md:leading-loose">
                         Because everything we build is designed to protect and improve the ecosystem that supports human dignity, freedom, and growth.
                         That ecosystem is under pressure, from misinformation, unchecked greed, misused technology, and dysfunctional governance. These aren&apos;t partisan problems. They&apos;re structural threats that affect everyone.
                         Our mission is to give people the tools to navigate this landscape with more clarity, more ownership, and more opportunity, so we can all thrive.
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="flex flex-col">
                     <div onClick={() => setCurrentValuesView(2)}
-                      className="flex items-center justify-between cursor-pointer">
+                      className={`flex items-center justify-between cursor-pointer py-5 px-4 rounded-xl faq-header ${currentValuesView === 2 ? 'bg-style text-white' : 'bg-[#F5F3FF]'}`}>
                       <h3 className="font-medium text-base">How can I get involved?</h3>
                       {
-                        currentValuesView === 2 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                        currentValuesView === 2 ? <BiMinus className="text-xl" /> : <TiPlus className="text-xl" />
                       }
                     </div>
-                    <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5' : ''}`}>
-                      <p className="text-sm leading-loose md:leading-loose">
+                    <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-5' : ''}`}>
+                      <p className="text-sm opacity-80 leading-loose md:leading-loose">
                         We love that you're asking.
                         There are so many ways people have told us they want to be part of this, from signing up for updates to offering skills, support, or partnership ideas. Some want to follow along. Some want to help fund the mission. Others want to build with us.
                         Wherever you fall on that spectrum, we&apos;re here for it.
@@ -248,36 +251,85 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="flex flex-col">
+                    <div onClick={() => setCurrentValuesView(2)}
+                      className={`flex items-center justify-between cursor-pointer py-5 px-4 rounded-xl faq-header ${currentValuesView === 2 ? 'bg-style text-white' : 'bg-[#F5F3FF]'}`}>
+                      <h3 className="font-medium text-base">How do the Wired Wits pillars work together?</h3>
+                      {
+                        currentValuesView === 2 ? <BiMinus className="text-xl" /> : <TiPlus className="text-xl" />
+                      }
+                    </div>
+                    <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-5' : ''}`}>
+                      <p className="text-sm opacity-80 leading-loose md:leading-loose">
+                        Life doesn&apos;t happen in silos, and we don&apos;t build tools that way either. Yes, I can see contradiction there also, but hear us out
+                        Wired Wits is a Quality of Life platform because we believe every part of life affects the whole: how we stay informed, how we earn a living, and how we manage our time, money, and mental load. Each of our three pillars is designed to meet a different need, but they all work together to help you thrive.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
+                    <div onClick={() => setCurrentValuesView(1)}
+                      className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 1 ? 'bg-style' : ''}`}>
+                      <h3 className="font-medium text-base">Why do you call Wired Wits a “Quality of Life” platform?</h3>
+                      {
+                        currentValuesView === 1 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                      }
+                    </div>
+                    <div className={`values-text bg-white ${currentValuesView === 1 ? 'show-text pt-5' : ''}`}>
+                      <p className="text-sm leading-loose md:leading-loose">
+                        Because everything we build is designed to protect and improve the ecosystem that supports human dignity, freedom, and growth.
+                        That ecosystem is under pressure, from misinformation, unchecked greed, misused technology, and dysfunctional governance. These aren&apos;t partisan problems. They&apos;re structural threats that affect everyone.
+                        Our mission is to give people the tools to navigate this landscape with more clarity, more ownership, and more opportunity, so we can all thrive.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
+                    <div onClick={() => setCurrentValuesView(2)}
+                      className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 2 ? 'bg-style' : ''}`}>
+                      <h3 className="font-medium text-base">How can I get involved?</h3>
+                      {
+                        currentValuesView === 2 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                      }
+                    </div>
+                    <div className={`values-text bg-white ${currentValuesView === 2 ? 'show-text pt-5' : ''}`}>
+                      <p className="text-sm leading-loose md:leading-loose">
+                        We love that you're asking.
+                        There are so many ways people have told us they want to be part of this, from signing up for updates to offering skills, support, or partnership ideas. Some want to follow along. Some want to help fund the mission. Others want to build with us.
+                        Wherever you fall on that spectrum, we&apos;re here for it.
+                        We&apos;re still early in our journey, which means we can&apos;t say yes to everything (yet). But knowing what you&apos;re excited about helps us grow in the right direction, together.
+                        Use our [Feedback Hub] to tell us what you're interested in, and we'll keep you in the loop as opportunities grow.
+                      </p>
+                    </div>
+                  </div> */}
+                  {/* <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
                     <div onClick={() => setCurrentValuesView(3)}
-                      className="flex items-center justify-between cursor-pointer">
+                      className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 3 ? 'bg-style' : ''}`}>
                       <h3 className="font-medium text-base">How do the Wired Wits pillars work together?</h3>
                       {
                         currentValuesView === 3 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
                       }
                     </div>
-                    <div className={`values-text ${currentValuesView === 3 ? 'show-text pt-5' : ''}`}>
+                    <div className={`values-text bg-white ${currentValuesView === 3 ? 'show-text pt-5' : ''}`}>
                       <p className="text-sm leading-loose md:leading-loose">
                         Life doesn&apos;t happen in silos, and we don&apos;t build tools that way either. Yes, I can see contradiction there also, but hear us out
                         Wired Wits is a Quality of Life platform because we believe every part of life affects the whole: how we stay informed, how we earn a living, and how we manage our time, money, and mental load. Each of our three pillars is designed to meet a different need, but they all work together to help you thrive.
                       </p>
                     </div>
                   </div>
-                  <div className="py-5 px-3 md:px-6 flex flex-col border-2 rounded-lg border-solid border-[#EBEBEB]">
+                  <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
                     <div onClick={() => setCurrentValuesView(4)}
-                      className="flex items-center justify-between cursor-pointer">
+                      className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 4 ? 'bg-style' : ''}`}>
                       <h3 className="font-medium text-base">What kind of future is Wired Wits working toward?</h3>
                       {
                         currentValuesView === 4 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
                       }
                     </div>
-                    <div className={`values-text ${currentValuesView === 4 ? 'show-text pt-5' : ''}`}>
+                    <div className={`values-text bg-white ${currentValuesView === 4 ? 'show-text pt-5' : ''}`}>
                       <p className="text-sm leading-loose md:leading-loose">
                         We&apos;re building toward a future where opportunity isn&apos;t reserved for the few and truth isn&apos;t something you have to fight for.
                         A future where more people feel secure, not threatened. Empowered, not overwhelmed. Where doors that were once closed start to open because people finally have the tools to walk through them.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

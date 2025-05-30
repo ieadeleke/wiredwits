@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { Dropdown, MenuProps } from "antd";
+
 
 
 const Navigation = () => {
@@ -19,6 +22,41 @@ const Navigation = () => {
             }
         });
     }, []);
+
+    const items: MenuProps['items'] = [
+        {
+            key: '4',
+            label: (
+                <Link href='/pillars'>
+                    Overview
+                </Link>
+            ),
+        },
+        {
+            key: '1',
+            label: (
+                <Link href='/public-good'>
+                    Public Good
+                </Link>
+            ),
+        },
+        {
+            key: '2',
+            label: (
+                <Link href='/business-empowerment'>
+                    Business Empowerment
+                </Link>
+            ),
+        },
+        {
+            key: '3',
+            label: (
+                <Link href='/everyday-ai'>
+                    Everyday AI
+                </Link>
+            ),
+        }
+    ];
 
     return (
         <nav className={`fixed top-0 ${fixedNav ? 'bg-white shadow-lg' : ''} w-full max-w-[1800px] mx-auto z-40 shadow-2x px-5 md:px-16 bg-whit`}>
@@ -36,9 +74,9 @@ const Navigation = () => {
                         <li>
                             <Link href="about-us" className="text-sm font-[600]">About Us</Link>
                         </li>
-                        <li>
-                            <Link href="/pillars" className="text-sm font-[600]">Pillars</Link>
-                        </li>
+                        <Dropdown menu={{ items }}>
+                            <Link href="#" className="text-sm font-[600]">All Pillars</Link>
+                        </Dropdown>
                         {/* <li>
                             <Link href="/blogs" className="text-sm font-[600]">Blog</Link>
                         </li> */}
@@ -57,6 +95,9 @@ const Navigation = () => {
                             <Link href="/auth/signup" className="bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium flex gap-1 items-center">Create Account <GoArrowUpRight className="text-2xl" /></Link>
                         </li>
                     </ul>
+                </div>
+                <div className="hidden md:none">
+                    <HiOutlineMenuAlt3 className="text-3xl" />
                 </div>
             </div>
         </nav>

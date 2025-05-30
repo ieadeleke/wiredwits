@@ -19,7 +19,7 @@ const Navigation = () => {
             key: '4',
             label: (
                 <Link href='/pillars'>
-                    All pillars
+                    Overview
                 </Link>
             ),
         },

@@ -10,7 +10,7 @@ interface footerProps {
 
 const Footer = ({ noSpaceOnTop }: footerProps) => {
     return (
-        <footer className={`bg-black px-5 md:px-28 ${noSpaceOnTop ? '' : 'mt-20 md:mt-28'} pt-16 md:pt-24 pb-16`}>
+        <footer className={`bg-black px-5 md:px-28 ${noSpaceOnTop ? '' : 'mt-20 md:mt-24'} pt-16 md:pt-24 pb-16`}>
             <div className="flex flex-col md:flex-row gap-16 md:gap-0">
                 <div className="md:w-[650px]">
                     <div className="md:w-[80%]">
