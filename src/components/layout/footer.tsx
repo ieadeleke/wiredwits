@@ -51,7 +51,7 @@ const Footer = ({ noSpaceOnTop }: footerProps) => {
                                     <Link href="/about-us" className="text-white text-sm opacity-70">About Us</Link>
                                 </li>
                                 <li>
-                                    <Link href="/feedback-hub" className="text-white text-sm opacity-70">Feedback Hub</Link>
+                                    <Link href="/contact-us" className="text-white text-sm opacity-70">Contact Us</Link>
                                 </li>
                                 {/* <li>
                                     <Link href="" className="text-white text-sm opacity-70">Contact Us</Link>

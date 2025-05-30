@@ -88,7 +88,7 @@ const Navigation = () => {
                     <div></div>
                     <ul className="flex gap-8 items-center">
                         <li>
-                            <Link href="/contact-us" className="text-sm font-[600]">Contact Us</Link>
+                            <Link href="/auth/signin" className="text-sm font-[600]">Sign In</Link>
                         </li>
                         <li>
                             <Link href="/auth/signup" className="bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium flex gap-1 items-center">Create Account <GoArrowUpRight className="text-2xl" /></Link>
