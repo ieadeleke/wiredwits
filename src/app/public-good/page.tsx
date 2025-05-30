@@ -41,7 +41,7 @@ export default function ContactUs() {
                                 </p>
                                 <div className="flex gap-4 mx-auto mb-10 w-max">
                                     <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Create Account</Link>
-                                    <Link href="/contact-us" className="bg-white text-black py-4 px-8 rounded-lg text-sm font-medium">Reach out to us</Link>
+                                    <Link href="/contact-us" className="bg-white text-black py-4 px-8 rounded-lg text-sm font-medium">Contact Us</Link>
                                 </div>
                             </div>
                         </div>

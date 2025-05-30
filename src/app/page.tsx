@@ -40,7 +40,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4 mx-auto mb-10 w-max">
                   <Link href="/auth/signup" className="bg-[#9747FF] text-white py-5 px-10 rounded-lg text-sm font-medium">Get Started</Link>
-                  <Link href="/contact-us" className="bg-white text-black py-5 px-10 rounded-lg text-sm font-medium">Reach out to us</Link>
+                  <Link href="/contact-us" className="bg-white text-black py-5 px-10 rounded-lg text-sm font-medium">Contact Us</Link>
                 </div>
               </div>
             </div>
