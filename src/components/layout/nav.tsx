@@ -65,23 +65,23 @@ const Navigation = () => {
                     <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-aut" />
                     {/* <div className="w-[5rem] h-[3rem] bg-black"></div>
                     <h3 className="text-xl font-bold">WiredWits</h3> */}
-                {/* </div> */}
-                {/* <div className="hidden md:flex flex-1"> */}
+                    {/* </div> */}
+                    {/* <div className="hidden md:flex flex-1"> */}
                     <ul className="flex gap-12 items-center">
                         <li>
-                            <Link href="/" className="text-sm font-[600] text-white opacity-80">Home</Link>
+                            <Link href="/" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Home</Link>
                         </li>
                         <li>
-                            <Link href="about-us" className="text-sm font-[600] text-white opacity-80">About Us</Link>
+                            <Link href="about-us" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>About Us</Link>
                         </li>
                         <Dropdown menu={{ items }}>
-                            <Link href="#" className="text-sm font-[600] text-white opacity-80">All Pillars</Link>
+                            <Link href="#" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>All Pillars</Link>
                         </Dropdown>
                         {/* <li>
-                            <Link href="/blogs" className="text-sm font-[600] text-white opacity-80">Blog</Link>
+                            <Link href="/blogs" className={`text-sm font-[600] ${ fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Blog</Link>
                         </li> */}
                         <li>
-                            <Link href="/feedback-hub" className="text-sm font-[600] text-white opacity-80">Feedback Hub</Link>
+                            <Link href="/feedback-hub" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Feedback Hub</Link>
                         </li>
                     </ul>
                 </div>
@@ -89,10 +89,10 @@ const Navigation = () => {
                     <div></div>
                     <ul className="flex gap-8 items-center">
                         {/* <li>
-                            <Link href="/contact-us" className="text-sm font-[600] text-white opacity-80">Contact Us</Link>
+                            <Link href="/contact-us" className={`text-sm font-[600] ${ fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Contact Us</Link>
                         </li> */}
                         <li>
-                            <Link href="/auth/signin" className="text-sm font-[600] text-white opacity-80">Sign In</Link>
+                            <Link href="/auth/signin" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Sign In</Link>
                         </li>
                         <li>
                             <Link href="/auth/signup" className="bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium flex gap-1 items-center">Create Account <GoArrowUpRight className="text-2xl" /></Link>

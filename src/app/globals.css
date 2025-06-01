@@ -273,8 +273,7 @@ textarea {
 
 .new-hero {
   margin: 0;
-  height: 100vh;
-  height: 700px;
+  /* min-height: 650px; */
   background: radial-gradient(circle at center, #2b183d 0%, #0e0b17 100%);
   /* background: white; */
   background-repeat: no-repeat;
@@ -336,4 +335,12 @@ textarea {
   bottom: -50%; /* This pushes it down so half extends below */
   transform: translateX(-50%);
   z-index: 30;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(10px); /* this creates the glass blur */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* optional frosted edge */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
 }

@@ -28,14 +28,16 @@ export default function Home() {
       <DisplayLayout>
         <>
           <div className="new-hero relative overflow-hidden">
-            <div className="md:w-[55%] z-40 relative py-36 md:py-32 px-5 md:px-0 mx-auto text-center">
-              {/* <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-6 rounded-lg">
-                <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
-              </div> */}
+            <div className="md:w-[55%] z-40 relative py-36 md:pt-36 md:pb-28 px-5 md:px-0 mx-auto text-center">
+              <div className="glass-card w-max px-6 py-3 mx-auto rounded-lg font-medium mb-6">
+                <h4 className="text-sm">
+                  AI That Works for Everyone
+                </h4>
+              </div>
               <h1 className="text-3xl md:text-[52px] w- [80%] mx-auto tracking-normal font-bol mb-4 leading-[1.4] md:leading-[1.4] font-bold black">
                 Smarter Tools. Clearer Truth. Bigger Possibilities
               </h1>
-              <p className="text-sm md:text-base text-white opacity-80 [#111111b3] leading-loose md:leading-loose mb-7 md:w-[80%] mx-auto">
+              <p className="text-sm md:text-base text-white opacity-80 [#111111b3] leading-loose md:leading-loose mb-10 md:w-[75%] mx-auto">
                 Explore AI made for everyday people, dreamers, and doers. From decoding the news to building your next big thing, this is just the beginning.
               </p>
               <div className="flex gap-4 mx-auto mb-10 w-max">
@@ -45,7 +47,7 @@ export default function Home() {
             </div>
             <div className="hero-noise">
             </div>
-            <Image className="globe" alt="globe" src={GlobeImg} width={700} quality={100} height={700} />
+            {/* <Image className="globe" alt="globe" src={GlobeImg} width={700} quality={100} height={700} /> */}
           </div>
           {/* <FallingBlocks /> */}
           <section className="px-5 md:px-28 mt-10 md:mt-24">
@@ -62,7 +64,8 @@ export default function Home() {
               </p>
             </div>
             <img alt="dashboard" src={'https://www.cortex.io/_next/image?url=https%3A%2F%2Fa-us.storyblok.com%2Ff%2F1021527%2F2012x1152%2F5c94ea8074%2Fimage-1415.webp&w=3840&q=99'} className="w-full h-full" />
-            <div className="md:px-20 text-center md:text-left flex flex-col md:grid grid-cols-2 gap-16 gap-8 md:gap-y-12 items-center mt-14">
+
+            <div className="md:px-20 text-center md:text-left flex flex-col md:grid grid-cols-2 gap-16 md:gap-y-8 items-center mt-10">
               <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 <div>
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
@@ -164,15 +167,17 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="px-5 md:px-28 pt-20 md:pt-28">
+          <section className="px-5 md:px-28 pt-20 md:pt-24">
             <div className="flex flex-col md:flex-row md:gri grid-cols-2 gap-10 md:gap-16">
               <div className="md:w-[500px]">
                 <div className="text-center md:text-left">
+                  <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3">Frequently asked questions</p>
                   <h3 className="text-3xl md:text-4xl mb-3 font-bold w-[70%] leading-[1.4] md:leading-[1.4]">
-                    Frequently asked questions
+                    {/* Frequently asked questions */}
+                    Got Questions? <br /> We've Got Answers
                   </h3>
                   <p className="text-sm md:text-base leading-loose md:leading-loose text-[#3b3b3b] mb-0 md:w-[80%] mx-aut">
-                    Our affordable pricing plans are designed to cater to businesses.
+                    Discover key information about our AI solutions, community focus, and future plans.
                   </p>
                 </div>
               </div>
