@@ -7,6 +7,7 @@ import Link from "next/link";
 import { IoArrowForward } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
 import GlobeImg from "@/assets/images/globe.png";
+import EmpowerImg from "@/assets/images/empower.png";
 import { GoArrowRight } from "react-icons/go";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 import { FaAngleDown } from "react-icons/fa6";
@@ -115,7 +116,86 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="extra-props-hero py-24 mt-24">
+          <section className="px-5 md:px-28 mt-20 md:mt-28 bg-[#F5F3FF] py-16 md:py-24">
+            <h3 className="text-center text-3xl md:text-4xl leading-[1.4] md:leading-[1.5] mb-2 md:mb-4 font-bold">
+              Start With One Tool. <br /> Grow With the Platform
+            </h3>
+            <p className="text-sm md:text-base text-center md:w-[60%] mb-6 mx-auto leading-loose md:leading-loose font-medium">
+              Wired Wits is building a suite of AI-powered tools to help you in all aspects of your life.
+            </p>
+            <div className="grid grid-cols-3 gap-10 mt-7">
+              <div
+                onClick={() => setCurrThirdView('thrive-money')}
+                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-money' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
+                <p className="text-s font-mediu opacity-80 text-[15px]">Public Good</p>
+              </div>
+              <div
+                onClick={() => setCurrThirdView('thrive-resources')}
+                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-resources' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
+                <p className="text-s font-mediu opacity-80 text-[15px]">Business Empowerment</p>
+              </div>
+              <div
+                onClick={() => setCurrThirdView('thrive-goods')}
+                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-goods' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
+                <p className="text-s font-mediu opacity-80 text-[15px]">Everyday AI</p>
+              </div>
+            </div><>
+              {
+                currThirdView === 'thrive-money' ?
+                  <div className="flex flex-col-reverse md:grid grid-cols-2 gap-4 md:gap-8 mt-9 items-center">
+                    <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-6 md:py-16 px-5 md:px-16 flex justify-between flex-col">
+                      <div>
+                        <h3 className="text-xl md:text-3xl [42px] mb-1 md:mb-3 leading-[1.6] font-bold">
+                          See clearly. <br /> Think smarter. Demand Truth.
+                        </h3>
+                        <p className="text-sm md:text-base font-mediu leading-loose md:leading-loose mb-4">
+                          Cut through the spin, surface what matters, and challenge bias with tools built for clarity. Whether you're reading the news, digging into policy, or holding power accountable, we help you think for yourself, not by yourself.
+                        </p>
+                      </div>
+                      <Link href="/auth/signup" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
+                        <GoArrowUpRight className="text-2xl" /></Link>
+                    </div>
+                    <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
+                    {/* <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div> */}
+                  </div> :
+                  currThirdView === 'thrive-resources' ?
+                    <div className="grid grid-cols-2 gap-8 mt-9 items-center">
+                      <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                        <div>
+                          <h3 className="text-2xl [42px] leading-[1.6] mb-3 leading-snug font-bold">
+                            Build smarter. Move faster
+                          </h3>
+                          <p className="text-base font-mediu leading-loose mb-4">
+                            Turn ideas into action with AI tools that validate, analyze, and guide your next move. From market research to growth strategies, we give you the clarity and speed to own your future.
+                          </p>
+                        </div>
+                        <Link href="/auth/signup" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
+                          <GoArrowUpRight className="text-2xl" /></Link>
+                      </div>
+                      <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
+                      {/* <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div> */}
+                    </div>
+                    :
+                    <div className="grid grid-cols-2 gap-8 mt-9 items-center">
+                      <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                        <div>
+                          <h3 className="text-2xl [42px] leading-[1.6] mb-3 leading-snug font-bold">
+                            Live Smarter. <br /> Thrive Together.
+                          </h3>
+                          <p className="text-base font-mediu leading-loose mb-4">
+                            Use AI to make daily life a little easier and a lot more connected. Save money, reduce stress, and strengthen your community with tools designed to help you do more with what you already have
+                          </p>
+                        </div>
+                        <Link href="/auth/signup" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
+                          <GoArrowUpRight className="text-2xl" /></Link>
+                      </div>
+                      <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
+                      {/* <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div> */}
+                    </div>
+              }
+            </>
+          </section>
+          {/* <section className="extra-props-hero py-24 mt-24">
             <div className="hero-noise"></div>
             <div className="px-24">
               <h2 className="text-4xl font-bold text-white w-[60%] mb-7 leading-normal md:leading-normal">
@@ -166,7 +246,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           <section className="px-5 md:px-28 pt-20 md:pt-24">
             <div className="flex flex-col md:flex-row md:gri grid-cols-2 gap-10 md:gap-16">
               <div className="md:w-[500px]">
