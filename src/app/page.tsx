@@ -195,7 +195,7 @@ export default function Home() {
               }
             </>
           </section>
-          {/* <section className="extra-props-hero py-24 mt-24">
+          <section className="extra-props-hero py-24 mt-24">
             <div className="hero-noise"></div>
             <div className="px-24">
               <h2 className="text-4xl font-bold text-white w-[60%] mb-7 leading-normal md:leading-normal">
@@ -246,7 +246,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section> */}
+          </section>
           <section className="px-5 md:px-28 pt-20 md:pt-24">
             <div className="flex flex-col md:flex-row md:gri grid-cols-2 gap-10 md:gap-16">
               <div className="md:w-[500px]">
