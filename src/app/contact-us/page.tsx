@@ -19,13 +19,13 @@ export default function ContactUs() {
     <div>
       <DisplayLayout>
         <>
-          <section className="hero-bg px-28 pt-44 pb-14">
-            <div className="w-[50%] items-center gap-20">
+          <section className="hero-bg px-5 md:px-28 pt-32 md:pt-44 pb-14">
+            <div className="md:w-[50%] text-center md:text-left items-center gap-20">
               <div>
-                <h1 className="text-6xl font-medium mb-5 leading-tight md:leading-tight w-[70%]">
+                <h1 className="text-3xl md:text-6xl font-medium mb-2 md:mb-5 leading-relaxed md:leading-tight md:w-[70%]">
                   Get in Touch with Our Team.
                 </h1>
-                <p className="text-base leading-relaxed md:leading-loose mb-7">
+                <p className="text-sm md:text-base leading-loose md:leading-loose mb-7">
                   We&apos;d love to hear from you! Whether you have a question, want to explore a partnership, or just want to learn more about our tools, we&apos;re here to listen. Use the form on this page or reach out directly, let&apos;s build something better together.
                 </p>
               </div>
@@ -33,9 +33,9 @@ export default function ContactUs() {
               </div>
             </div>
           </section>
-          <section className="px-28 mt-28">
-            <div className="flex gap-32">
-              <div className="w-[450px]">
+          <section className="px-5 md:px-28 mt-16 md:mt-28">
+            <div className="flex flex-col md:flex-row gap-14 md:gap-32">
+              <div className="md:w-[450px]">
                 <div className="flex flex-col gap-10">
                   <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 py-8 rounded-lg">
                     <div>

@@ -23,6 +23,15 @@ export function AuthService() {
         return response as ApiResponse
     }
 
+    async function signUpPillarSelection(params: any) {
+        const response = await request({
+            path: `user/signup-pillar-selection`,
+            method: "POST",
+            body: params
+        })
+        return response as ApiResponse
+    }
+
     // async function resetPassword(params: ResetPasswordParams) {
     //     const response = await request({
     //         path: `v1/agent/ResetPassword`,
@@ -52,7 +61,8 @@ export function AuthService() {
 
     return {
         login,
-        signUp
+        signUp,
+        signUpPillarSelection
         // resetPassword,
         // confirmResetPassword,
         // changePassword

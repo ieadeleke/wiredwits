@@ -1,17 +1,23 @@
+
 'use client';
 
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AppRoutes from "@/utils/routes";
 import Image from "next/image";
 import Logo from "@/assets/images/logo.png";
 import Spinner from "@/components/ui/spin";
 import { useRouter } from 'next/navigation';
+import { useSignupPillarSelection } from "@/utils/apiHooks/auth/useSignupSuccess";
+import { GlobalActionContext } from "@/context/GlobalActionContext";
 
 
 const SignUpPage = () => {
 
 
     const Route = useRouter();
+    const { signupPillarSelection, data, error, isLoading } = useSignupPillarSelection();
+
+    const { showSnackBar } = useContext(GlobalActionContext);
 
     const [loader, setLoader] = useState<boolean>(false);
     const [pillarSubs, setPillarSubs] = useState<any>([]);
@@ -23,11 +29,27 @@ const SignUpPage = () => {
             setPillarSubs([...pillarSubs, e]);
         }
     }
-    const handlePageRedirect = () => {
-        setLoader(true);
-        setTimeout(() => {
+
+    useEffect(() => {
+        if (data?.found) {
             Route.push(AppRoutes.profile_dashboard);
-        }, 2000)
+        }
+    }, [data])
+    useEffect(() => {
+        if (error) {
+            showSnackBar({
+                severity: "error",
+                message: error,
+            });
+            setLoader(false);
+        }
+    }, [error])
+
+    const handlePillarSection = () => {
+        signupPillarSelection({
+            pillars: pillarSubs.join('-')
+        })
+        setLoader(true);
     }
 
     return (
@@ -42,33 +64,33 @@ const SignUpPage = () => {
                         Almost there! Choose the topics that matter to you to get updates on tools, insights, and more.
                     </p>
                     <div className="mt-8 grid grid-cols-3 gap-3">
-                        <div onClick={() => handleUserSelection('public')}
+                        <div onClick={() => handleUserSelection('Public Good')}
                             className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
                             <h3 className="text-[14px]">Public Good</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
-                                    pillarSubs.includes('public') && <div className="bg-black size-2 rounded-full"></div>}
+                                    pillarSubs.includes('Public Good') && <div className="bg-black size-2 rounded-full"></div>}
                             </div>
                         </div>
-                        <div onClick={() => handleUserSelection('private')}
+                        <div onClick={() => handleUserSelection('Business Empowerment')}
                             className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
                             <h3 className="text-[14px]">Business Empowerment</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
-                                    pillarSubs.includes('private') && <div className="bg-black size-2 rounded-full"></div>}
+                                    pillarSubs.includes('Business Empowerment') && <div className="bg-black size-2 rounded-full"></div>}
                             </div>
                         </div>
 
-                        <div onClick={() => handleUserSelection('government')}
+                        <div onClick={() => handleUserSelection('Everyday AI')}
                             className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
                             <h3 className="text-[14px]">Everyday AI</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
-                                    pillarSubs.includes('government') && <div className="bg-black size-2 rounded-full"></div>}
+                                    pillarSubs.includes('Everyday AI') && <div className="bg-black size-2 rounded-full"></div>}
                             </div>
                         </div>
                     </div>
-                    <button onClick={handlePageRedirect} className="bg-primary text-white py-5 px-8 rounded-lg text-sm font-medium mt-12 w-full">{
+                    <button onClick={handlePillarSection} className="bg-primary text-white py-5 px-8 rounded-lg text-sm font-medium mt-12 w-full">{
                         loader ? <Spinner /> : 'Continue'
                     }</button>
                 </div>

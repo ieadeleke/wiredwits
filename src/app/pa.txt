@@ -27,56 +27,157 @@ export default function Home() {
     <div>
       <DisplayLayout>
         <>
-          <div className="new-hero relative overflow-hidden">
-            <div className="md:w-[55%] z-40 relative py-36 md:py-32 px-5 md:px-0 mx-auto text-center">
-              {/* <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-6 rounded-lg">
-                <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
-              </div> */}
-              <h1 className="text-3xl md:text-[52px] w- [80%] mx-auto tracking-normal font-bol mb-4 leading-[1.4] md:leading-[1.4] font-bold black">
-                Smarter Tools. Clearer Truth. Bigger Possibilities
-              </h1>
-              <p className="text-sm md:text-base text-white opacity-80 [#111111b3] leading-loose md:leading-loose mb-7 md:w-[80%] mx-auto">
-                Explore AI made for everyday people, dreamers, and doers. From decoding the news to building your next big thing, this is just the beginning.
-              </p>
-              <div className="flex gap-4 mx-auto mb-10 w-max">
-                <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-10 rounded-lg text-sm font-medium">Get Started</Link>
-                <Link href="/contact-us" className="bg-white text-black py-4 px-10 rounded-lg text-sm font-medium">Contact Us</Link>
+          <FallingBlocks />
+          <section className="px-5 md:px-20 mt-10 md:mt-24">
+            <div className="flex flex-col md:grid grid-cols-1/2/1 mb-16 md:gap-5">
+              <div>
+                <h4 className="text-lg font-bold uppercase mb-10">About us</h4>
+                {/* <Image src={ArrowImage} alt="hero image" className="absolute md:relative top-0 w-full -ml-20 opacity-30" /> */}
+              </div>
+              <div>
+                <h4 className="font-black text-3xl md:text-4xl mb-5 w-[70%] md:mb-4 leading-[1.4] md:leading-[1.4] tracking-tighter">the Venture Capital for Tomorrow&apos;s Startups.</h4>
+                <p className="text-accent leading-loose md:leading-loose mb-5 text-sm md:text-base font-mediu">
+                  Sura Vision - is a trailblazing investment firm that envisions a future of innovation and transformative impact. Our
+                  journey began with a passionate group of visionary investors who saw the immense potential in supporting startups that.
+                </p>
+                <p className="text-accent leading-loose md:leading-loose text-sm md:text-base font-mediu">
+                  Sura Vision - is a trailblazing investment firm that envisions a future of innovation and transformative impact. Our
+                  journey began with a passionate group of visionary investors who saw the immense potential in supporting startups that
+                  challenge the status quo and drive positive change in various industries.
+                </p>
+              </div>
+              <div className="relative">
+                {/* <Image src={FlowerImage} alt="hero image" className="h-[15rem] md:h-[30rem] w-auto md:w-max absolute -right-5 md:-right-20 -bottom-20" /> */}
               </div>
             </div>
-            <div className="hero-noise">
+            <div className="grid grid-cols-3 gap-10">
+              <div className="border w-full border-solid rounded-lg py-3 px-3 border-[#3b3b3b1f]">
+                <div className="size-14 rounded-lg border-2 border-primary mb-20"></div>
+                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                  Bias & Emotion Detection
+                </h4>
+                <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                  Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking.
+                </p>
+              </div>
+              <div className="border w-full border-solid rounded-lg py-3 px-3 border-[#3b3b3b1f]">
+                <div className="size-14 rounded-lg border-2 border-primary mb-20"></div>
+                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                  Bias & Emotion Detection
+                </h4>
+                <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                  Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking.
+                </p>
+              </div>
+              <div className="border w-full border-solid rounded-lg py-3 px-3 border-[#3b3b3b1f]">
+                <div className="size-14 rounded-lg border-2 border-primary mb-20"></div>
+                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                  Bias & Emotion Detection
+                </h4>
+                <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                  Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking.
+                </p>
+              </div>
             </div>
-            <Image className="globe" alt="globe" src={GlobeImg} width={700} quality={100} height={700} />
-          </div>
-          {/* <FallingBlocks /> */}
-          <section className="px-5 md:px-28 mt-10 md:mt-24">
-            <div className="md:w-[65%] mx-auto mt-20 mb-7 text-center">
-              <h3 className="text-2xl md:text-4xl mb-2 md:mb-4 font-[600]">
-                Understand the News.
-              </h3>
-              <h3 className="text-2xl md:text-4xl mb-3 md:mb-5 font-[600]">
-                Stay Ahead. On Your Terms.
-              </h3>
-              <p className="text-base md:text-base mb-3 md:mb-5 leading-loose md:leading-loose opacity-80 md:w-[80%] mx-auto">
-                {/* You don&apos;t need a pundit to explain the world to you. Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself. */}
-                Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself.
+            {/* <img alt="dashboard" src={'https://www.cortex.io/_next/image?url=https%3A%2F%2Fa-us.storyblok.com%2Ff%2F1021527%2F2012x1152%2F5c94ea8074%2Fimage-1415.webp&w=3840&q=99'} className="w-full h-full" />
+            <div className="md:px-20 text-center md:text-left flex flex-col md:grid grid-cols-2 gap-16 gap-8 md:gap-y-12 items-center mt-14"> */}
+            {/* <div className="w-full h-full rounded-xl md:px-5 pt-5">
+              <div>
+                <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+              </div>
+              <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                Bias & Emotion Detection
+              </h4>
+              <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge the content.
               </p>
             </div>
-            <img alt="dashboard" src={'https://www.cortex.io/_next/image?url=https%3A%2F%2Fa-us.storyblok.com%2Ff%2F1021527%2F2012x1152%2F5c94ea8074%2Fimage-1415.webp&w=3840&q=99'} className="w-full h-full" />
-            <div className="md:px-20 text-center md:text-left flex flex-col md:grid grid-cols-2 gap-16 gap-8 md:gap-y-12 items-center mt-14">
+            <div className="w-full h-full rounded-xl px-5 pt-5">
+              <div>
+                <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+              </div>
+              <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                Ask the Story
+              </h4>
+              <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                Curious about the bigger picture? Ask follow-up questions and get clear, AI-powered answers with historical context, different viewpoints, or background info.
+              </p>
+            </div>
+            <div className="w-full h-full rounded-xl px-5 pt-5">
+              <div>
+                <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+              </div>
+              <h4 className="hidden md:block mb-2 md:mb-2 font-[600] text-lg">
+                Smarter Summaries, Personalized for You
+              </h4>
+              <h4 className="block md:hidden mb-2 md:mb-2 font-[600] text-lg">
+                Smarter Summaries, <br /> Personalized for You
+              </h4>
+              <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                No more one-size-fits-all. Get quick, clean breakdowns of any article tailored to your preferred reading style. Jargon? Conversational language? You choose how you read.
+              </p>
+            </div>
+            <div className="w-full h-full rounded-xl px-5 pt-5">
+              <div>
+                <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+              </div>
+              <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                Built-In Fact-Check Prompts
+              </h4>
+              <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
+                Get quick suggestions for what to double-check and where to look when context is missing or a claim doesn&apos;t sit right. It&apos;s your shortcut to smarter scrutiny.
+              </p>
+            </div> */}
+            {/* </div> */}
+          </section>
+          <section className="px-5 md:px-20 mt-20 md:mt-20 bg-[#F5F3FF bg-[#3F2A8C] py-16 md:py-24">
+            <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3 text-center text-[#f6f7f9]">What we do</p>
+            <h3 className="text-center text-3xl md:text-5xl tracking-tight text-white leading-[1.4] md:leading-[1.5] mb-2 md:mb-4 font-bold">
+              Start With One Tool. <br /> Grow With the Platform
+            </h3>
+            <p className="text-sm md:text-base text-[#f6f7f9] font-mediu leading-loose md:leading-loose mb-6 w-[45%] text-center mx-auto">
+              Cut through the spin, surface what matters, and challenge bias with tools built for clarity. Whether you're reading the news, digging into.
+            </p>
+            <div className="grid grid-cols-3 gap-10 text-center">
+              <div>
+                <div className="h-[20rem]"></div>
+                <h4 className="font-[600] text-white mb-2 text-xl">Demand Truth</h4>
+                <p className="text-sm md:text-base text-[#f6f7f9] font-mediu leading-loose md:leading-loose mb-4">
+                  Cut through the spin, surface what matters, and challenge bias with tools built for clarity. Whether you're reading the news, digging into.
+                </p>
+              </div>
+              <div>
+                <div className="h-[20rem]"></div>
+                <h4 className="font-[600] text-white mb-2 text-xl">Demand Truth</h4>
+                <p className="text-sm md:text-base text-[#f6f7f9] font-mediu leading-loose md:leading-loose mb-4">
+                  Cut through the spin, surface what matters, and challenge bias with tools built for clarity. Whether you're reading the news, digging into.
+                </p>
+              </div>
+              <div>
+                <div className="h-[20rem]"></div>
+                <h4 className="font-[600] text-white mb-2 text-xl">Demand Truth</h4>
+                <p className="text-sm md:text-base text-[#f6f7f9] font-mediu leading-loose md:leading-loose mb-4">
+                  Cut through the spin, surface what matters, and challenge bias with tools built for clarity. Whether you're reading the news, digging into.
+                </p>
+              </div>
+            </div>
+          </section>
+          <div className="section px-5 md:px-20 bg-[#F6F7F9] py-16 md:py-16">
+            <div className="grid grid-cols-3 gap-10">
               <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-3xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
                 <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   Bias & Emotion Detection
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
-                  Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge the content.
+                  Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking.
                 </p>
               </div>
-              <div className="w-full h-full rounded-xl px-5 pt-5">
+              {/* <div className="w-full h-full rounded-xl px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-3xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
                 <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   Ask the Story
@@ -84,10 +185,10 @@ export default function Home() {
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Curious about the bigger picture? Ask follow-up questions and get clear, AI-powered answers with historical context, different viewpoints, or background info.
                 </p>
-              </div>
+              </div> */}
               <div className="w-full h-full rounded-xl px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-3xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
                 <h4 className="hidden md:block mb-2 md:mb-2 font-[600] text-lg">
                   Smarter Summaries, Personalized for You
@@ -96,88 +197,37 @@ export default function Home() {
                   Smarter Summaries, <br /> Personalized for You
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
-                  No more one-size-fits-all. Get quick, clean breakdowns of any article tailored to your preferred reading style. Jargon? Conversational language? You choose how you read.
+                  No more one-size-fits-all. Get quick, clean breakdowns of any article tailored to your preferred reading style. Jargon?
                 </p>
               </div>
               <div className="w-full h-full rounded-xl px-5 pt-5">
                 <div>
-                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
+                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-3xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
                 <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   Built-In Fact-Check Prompts
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
-                  Get quick suggestions for what to double-check and where to look when context is missing or a claim doesn&apos;t sit right. It&apos;s your shortcut to smarter scrutiny.
+                  Get quick suggestions for what to double-check and where to look when context is missing or a claim doesn&apos;t sit right.
                 </p>
               </div>
             </div>
-          </section>
-          <section className="extra-props-hero py-24 mt-24">
-            <div className="hero-noise"></div>
-            <div className="px-24">
-              <h2 className="text-4xl font-bold text-white w-[60%] mb-7 leading-normal md:leading-normal">
-                Everything you need to protect & secure sensitive data in your SaaS apps
-              </h2>
-              <div className="grid grid-cols-3 gap-10">
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
-                  </p>
-                </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
-                  </p>
-                </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
-                  </p>
-                </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
-                  </p>
-                </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
-                  </p>
-                </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="px-5 md:px-28 pt-20 md:pt-28">
-            <div className="flex flex-col md:flex-row md:gri grid-cols-2 gap-10 md:gap-16">
-              <div className="md:w-[500px]">
-                <div className="text-center md:text-left">
-                  <h3 className="text-3xl md:text-4xl mb-3 font-bold w-[70%] leading-[1.4] md:leading-[1.4]">
+          </div>
+          <section className="px-5 md:px-20 pt-20 md:pt-28">
+            {/* <div className="flex flex-col md:flex-row md:grid grid-cols-2 gap-10 md:gap-20"> */}
+            <div className="flex flex-col gap-10 md:gap-10">
+              <div className="w-[50%] mx-auto">
+                <div className="text-center">
+                  <h3 className="text-3xl md:text-5xl mb-3 font-bold leading-[1.4] md:leading-[1.4]">
                     Frequently asked questions
                   </h3>
-                  <p className="text-sm md:text-base leading-loose md:leading-loose text-[#3b3b3b] mb-0 md:w-[80%] mx-aut">
+                  <p className="text-sm md:text-base leading-loose md:leading-loose text-[#3b3b3b] mb-0 md:w-[80%] mx-auto">
                     Our affordable pricing plans are designed to cater to businesses.
                   </p>
                 </div>
               </div>
               <div className="flex-1">
-                <div className="flex gap-5 flex-col w-[70% mx-auto">
+                <div className="flex gap-5 flex-col w-[70%] mx-auto">
                   <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 0 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                     <div onClick={() => setCurrentValuesView(0)}
                       className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>

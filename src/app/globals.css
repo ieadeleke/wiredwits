@@ -269,3 +269,71 @@ textarea {
 .faq-header.bg-style {
   background: var(--primary-color);
 }
+
+
+.new-hero {
+  margin: 0;
+  height: 100vh;
+  height: 700px;
+  background: radial-gradient(circle at center, #2b183d 0%, #0e0b17 100%);
+  /* background: white; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+
+.hero-noise {
+  inset: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+  background: url('/noise.svg');
+  z-index: 10;
+}
+
+.extra-props-hero {
+  background: radial-gradient(circle at center, #2b183d 0%, #0e0b17 100%);
+  /* background: white; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+
+.extra-props-hero .hero-noise {}
+
+.new-hero::before {
+  /* content: "";
+  position: fixed;
+  inset: 0;
+  background: url('/noise.svg');
+  opacity: 0.07;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 1; */
+
+  /* content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px);
+  pointer-events: none;
+  z-index: 1; */
+}
+
+.new-hero .globe {
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 40; */
+
+  position: absolute;
+  left: 50%;
+  bottom: -50%; /* This pushes it down so half extends below */
+  transform: translateX(-50%);
+  z-index: 30;
+}

@@ -63,10 +63,14 @@ const PaymentModal = (props: PaymentProps) => {
             setActiveView('card');
         }
     }
-
+    const handleModalClose = () => {
+        props.closeModal();
+        setActiveSelection(1000);
+        setActiveView('plans');
+    }
     return (
         <div>
-            <Modal open={props.open} onCancel={props.closeModal} footer={null}>
+            <Modal open={props.open} onCancel={handleModalClose} footer={null}>
                 <div className="">
                     <div className="text-center mb-7">
                         <h3 className="text-xl font-bold">Add New Subscription</h3>

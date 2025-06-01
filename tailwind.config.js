@@ -7,14 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-        fontFamily: {
-          sans: ['var(--font-plus-jakarta)'],
-          jakarta: ['var(--font-plus-jakarta)'],
-          inter: ['var(--font-inter)'],
-        },
-        colors: {
-          primary: "var(--primary-color)"
-        }
+      fontFamily: {
+        sans: ['var(--font-plus-jakarta)'],
+        jakarta: ['var(--font-plus-jakarta)'],
+        inter: ['var(--font-inter)'],
+      },
+      colors: {
+        primary: "var(--primary-color)"
+      },
+      gridTemplateColumns: {
+        "1/2/1": "1fr 2fr 1fr"
+      }
     },
   },
   plugins: [],

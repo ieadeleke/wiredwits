@@ -28,16 +28,16 @@ export default function ContactUs() {
             <DisplayLayout>
                 <>
                     <section className="hero-bg flex items-center justify-center text-center">
-                        <div className="w-[90%] mx-auto gap-20 py-40 pb-16">
-                            <div className="w-[60%] mx-auto">
+                        <div className="md:w-[90%] mx-auto gap-20 py-32 md:py-40 pb-16">
+                            <div className="px-5 md:px-0 md:w-[60%] mx-auto">
                                 <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-4 rounded-lg">
-                                    <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
+                                    <h4 className="text-[#9747FF] font-medium text-xs md:text-sm">AI That Works for Everyone</h4>
                                 </div>
-                                <h1 className="text-4xl font-bold mb-4 leading-[1.4]">
+                                <h1 className="text-2xl md:text-4xl font-bold mb-4 leading-[1.4]">
                                     Three Pillars. One Mission: Protect the Ecosystem That Sustains Us.
                                     {/* Empowering People. Defending the Ecosystem. Harnessing AI for Good. */}
                                 </h1>
-                                <p className="text-base text-[#111111b3] leading-relaxed md:leading-loose mb-7 w-[80%] mx-auto">
+                                <p className="text-sm md:text-base text-[#111111b3] leading-loose md:leading-loose mb-7 md:w-[80%] mx-auto">
                                     {/* <p className="text-base w-[80%] mb-6 mx-auto leading-loose md:leading-loose font-medium"> */}
                                     We&apos;re driven by a simple mission: build tools that protect truth, expand access, and inspire action—so more people can shape a better future with confidence.
                                     {/* At Wired Wits, we believe everyone deserves access to tools that help them cut through noise, hold power accountable, and unlock new opportunities. */}
@@ -49,119 +49,119 @@ export default function ContactUs() {
                             </div>
                         </div>
                     </section>
-                    <section className="px-32 mt-28">
-                        <h3 className="text-center text-3xl mb-3 font-bold leading-snug md:leading-snug w-[40%] mx-auto">
+                    <section className="px-5 md:px-32 mt-20 md:mt-28">
+                        <h3 className="text-center text-2xl md:text-3xl mb-3 font-bold leading-relaxed md:leading-snug md:w-[40%] mx-auto">
                             Public Good:  Truth Needs Defenders, We Build Their Tools
                         </h3>
-                        <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
+                        <p className="text-sm md:text-base text-center md:w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
                             We don&apos;t tell you what to think. We build tools that help you cut through noise, question what you&apos;re told, and make sense of a world full of spin. In today&apos;s world, truth isn&apos;t handed down, it&apos;s uncovered. And we are building the tools to help you do that, starting with Wits Newsroom.
                         </p>
-                        <div className="grid grid-cols-3 gap-10 mt-7">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 mt-4 md:mt-7">
                             <div
                                 onClick={() => handleCurrPageView('public-bias')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-bias' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">See Clearly. Think Smarter.</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">See Clearly. Think Smarter.</p>
                             </div>
                             <div
                                 onClick={() => handleCurrPageView('public-legislation')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-legislation' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Decode Laws. Understand Power</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Decode Laws. Understand Power</p>
                             </div>
                             <div
                                 onClick={() => handleCurrPageView('public-trends')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-trends' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Expose the Game. Demand Better</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Expose the Game. Demand Better</p>
                             </div>
                         </div>
                         <>
                             {
                                 currView === 'public-bias' ?
-                                    <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                    <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                             <div>
-                                                <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                     Spot misinformation and bias with AI-powered tools
                                                 </h3>
-                                                <p className="text-sm font-mediu leading-loose mb-4">
+                                                <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                     Our interactive news app analyzes headlines and articles for bias, emotional manipulation, and misleading framing. It&apos;s like a compass for the information age, helping you think critically and stay grounded in a world full of spin.
                                                 </p>
                                             </div>
                                             <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Learn More
                                                 <GoArrowUpRight className="text-2xl" /></Link>
                                         </div>
-                                        <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                                        <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
                                     </div> :
                                     currView === 'public-legislation' ?
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                        <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                                 <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                         Understand legislation in plain English
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
+                                                    <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                         We&apos;re building tools that make complex laws easier to understand, breaking down key points and translating them into clear, actionable summaries. No legalese, no hidden agendas, just the facts. Coming soon.
                                                     </p>
                                                 </div>
                                                 <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Learn More
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                                            <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
                                         </div>
                                         :
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                        <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                                 <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                         Hold leaders accountable with public data and transparency tools
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
+                                                    <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                         In the future, you&apos;ll be able to follow political influence, campaign money, and backdoor deals, because transparency shouldn&apos;t be a privilege. These tools are in early development, built for people who believe accountability is non-negotiable.
                                                     </p>
                                                 </div>
                                                 <Link href="/public-good" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Learn More
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                                            <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
                                         </div>
                             }
                         </>
                     </section>
-                    <section className="px-32 mt-28">
-                        <h3 className="text-center text-3xl mb-3 font-bold leading-snug md:leading-snug w-[50%] mx-auto">
+                    <section className="px-5 md:px-32 mt-20 md:mt-28">
+                        <h3 className="text-center text-2xl md:text-3xl mb-3 font-bold leading-relaxed md:leading-snug md:w-[50%] mx-auto">
                             Business Empowerment: Smarter Tools. Greater Access. Real Opportunity.
                             {/* Smarter Tools. Greater <br /> Access. Real Opportunity. */}
                         </h3>
-                        <p className="text-base text-center w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
+                        <p className="text-sm md:text-base text-center md:w-[60%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
                             You&apos;ve got the vision — now you need the edge. We&apos;re building tools to help you validate smarter, automate the busywork, and spot opportunity before the market catches up. They&apos;re not here yet—but we&apos;re laying the groundwork to put serious strategy in your hands.
                         </p>
-                        <div className="grid grid-cols-3 gap-10 mt-7">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 mt-4 md:mt-7">
                             <div
                                 onClick={() => setCurrSecView('business-idea')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currSecView === 'business-idea' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Build Smarter. Move Faster.</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Build Smarter. Move Faster.</p>
                             </div>
                             <div
                                 onClick={() => setCurrSecView('business-automate')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currSecView === 'business-automate' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Automate the Grind</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Automate the Grind</p>
                             </div>
                             <div
                                 onClick={() => setCurrSecView('business-track')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currSecView === 'everyday' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Spot Trends. Seize Opportunity</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Spot Trends. Seize Opportunity</p>
                             </div>
                         </div>
                         <>
                             {
                                 currSecView === 'business-idea' ?
-                                    <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                        <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                    <div className="flex flex-col md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                        <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
+                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                             <div>
-                                                <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                     Validate your business idea with AI-powered insights
                                                 </h3>
-                                                <p className="text-sm font-mediu leading-loose mb-4">
+                                                <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                     Before you invest your time, energy, or money, you deserve to know if your idea is built to last. We&apos;re designing tools that use real data to test your concept, explore market fit, and help you move with clarity. The groundwork is in motion, and you will be the first to know.
                                                 </p>
                                             </div>
@@ -170,14 +170,14 @@ export default function ContactUs() {
                                         </div>
                                     </div> :
                                     currSecView === 'business-automate' ?
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                        <div className="flex flex-col md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                            <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
+                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                                 <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                         Automate Business Processes with AI
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
+                                                    <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                         Growth shouldn&apos;t mean burnout. We&apos;re developing tools that handle the repetitive stuff, content, research, outreach, so you can focus on building the business only you can build. It&apos;s not live yet, but it&apos;s coming together with builders like you in mind.
                                                     </p>
                                                 </div>
@@ -186,14 +186,14 @@ export default function ContactUs() {
                                             </div>
                                         </div>
                                         :
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                        <div className="flex flex-col md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                            <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
+                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                                 <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                         Track emerging trends and uncover new markets.
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
+                                                    <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                         The best time to act? Before everyone else does. Our trend-spotting tools are in the works to help you identify where attention, demand, and opportunity are headed, so you can be ready when it matters. Stay tuned. You&apos;ll want to be early on this.
                                                     </p>
                                                 </div>
@@ -204,79 +204,78 @@ export default function ContactUs() {
                             }
                         </>
                     </section>
-                    <section className="px-32 mt-28">
-                        <h3 className="text-center text-3xl mb-3 font-bold">
-                            Live Smarter. Thrive Together.
+                    <section className="px-5 md:px-32 mt-20 md:mt-28">
+                        <h3 className="text-center text-2xl md:text-3xl mb-3 font-bold">Live Smarter. Thrive Together.
                         </h3>
-                        <p className="text-base text-center w-[70%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
+                        <p className="text-sm md:text-base text-center md:w-[70%] mb-4 md:mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
                             We believe tech should make life easier, not more complicated. Our Everyday AI tools are being designed to help you stretch resources, lower stress, and strengthen community connections. They&apos;re not ready yet, but what we&apos;re building is shaped by people like you, and it&apos;s all about practical impact.
                         </p>
-                        <div className="grid grid-cols-3 gap-10 mt-7">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 mt-4 md:mt-7">
                             <div
                                 onClick={() => setCurrThirdView('thrive-money')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-money' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Spend Less. Stress Less.</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Spend Less. Stress Less.</p>
                             </div>
                             <div
                                 onClick={() => setCurrThirdView('thrive-resources')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-resources' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Share More. Build Together.</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Share More. Build Together.</p>
                             </div>
                             <div
                                 onClick={() => setCurrThirdView('thrive-goods')}
                                 className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currThirdView === 'thrive-goods' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-[15px]">Trade Smarter. Stay Local.</p>
+                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Trade Smarter. Stay Local.</p>
                             </div>
                         </div>
                         <>
                             {
                                 currThirdView === 'thrive-money' ?
-                                    <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                    <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                             <div>
-                                                <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                     Save money and reduce waste with AI-powered budgeting
                                                 </h3>
-                                                <p className="text-sm font-mediu leading-loose mb-4">
+                                                <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                     We&apos;re working on tools that help you stretch your dollars, track spending with ease, and spot savings that actually make sense for your life. Because peace of mind shouldn&apos;t depend on how much you earn, it should come from clarity and control.
                                                 </p>
                                             </div>
                                             <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
                                                 <GoArrowUpRight className="text-2xl" /></Link>
                                         </div>
-                                        <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                                        <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
                                     </div> :
                                     currThirdView === 'thrive-resources' ?
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                        <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                                 <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                         Pool resources and skills through community-led co-ops
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
+                                                    <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                         We&apos;re developing systems to make sharing easier—from tool libraries to childcare swaps. These tools are being shaped with one goal in mind: help neighbors support each other and build access without extra cost.
                                                     </p>
                                                 </div>
                                                 <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                                            <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
                                         </div>
                                         :
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-16 px-16 flex justify-between flex-col">
+                                        <div className="flex flex-col-reverse md:grid grid-cols-2 gap-8 mt-9 items-center">
+                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
                                                 <div>
-                                                    <h3 className="text-2xl [42px] mb-3 leading-snug font-bold">
+                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-relaxed md:leading-snug font-bold">
                                                         Trade goods, services, or time in trusted networks
                                                     </h3>
-                                                    <p className="text-sm font-mediu leading-loose mb-4">
+                                                    <p className="text-sm font-mediu leading-loose mb-8 md:mb-4">
                                                         Imagine a neighborhood where you can trade time, skills, or extra supplies—no money needed. That&apos;s the kind of tool we&apos;re building: practical, local, and designed to make everyday life more connected and resilient.
                                                     </p>
                                                 </div>
                                                 <Link href="/everyday-ai" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Get Started
                                                     <GoArrowUpRight className="text-2xl" /></Link>
                                             </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
+                                            <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div>
                                         </div>
                             }
                         </>

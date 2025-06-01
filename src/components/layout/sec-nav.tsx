@@ -61,12 +61,12 @@ const Navigation = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-0 ${fixedNav ? 'bg-white shadow-lg' : ''} w-full max-w-[1800px] mx-auto z-40 shadow-2x px-16 bg-whit`}>
+        <nav className={`fixed top-0 ${fixedNav ? 'bg-white shadow-lg' : ''} w-full max-w-[1800px] mx-auto z-40 shadow-2x px-5 md:px-16 bg-whit`}>
             <div className="w-full py-1 flex justify-between items-center">
                 <div className="flex flex-1 items-center gap-5">
                     <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-aut" />
                 </div>
-                <div className="flex-1">
+                <div className="hidden md:flex flex-1">
                     <ul className="flex gap-12 items-center">
                         <li>
                             <Link href="/" className="text-sm font-[600]">Home</Link>
@@ -84,7 +84,7 @@ const Navigation = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex-1 flex justify-between">
+                <div className="flex-1 hidden md:flex justify-between">
                     <div></div>
                     <ul className="flex gap-8 items-center">
                         <li>
