@@ -8,6 +8,7 @@ import { IoArrowForward } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
 import GlobeImg from "@/assets/images/globe.png";
 import EmpowerImg from "@/assets/images/empower.png";
+import HomeHero from "@/assets/images/home-hero.jpg";
 import { GoArrowRight } from "react-icons/go";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 import { FaAngleDown } from "react-icons/fa6";
@@ -51,31 +52,34 @@ export default function Home() {
             {/* <Image className="globe" alt="globe" src={GlobeImg} width={700} quality={100} height={700} /> */}
           </div>
           {/* <FallingBlocks /> */}
-          <section className="px-5 md:px-28 mt-10 md:mt-24">
+          <section className="px-5 md:px-28 mt-10 md:mt-24 max-w-[1200px] mx-auto">
             <div className="md:w-[65%] mx-auto mt-20 mb-7 text-center">
               <h3 className="text-2xl md:text-4xl mb-2 md:mb-4 font-[600]">
-                Understand the News.
+                We&apos;re Not Just Building Tools.
               </h3>
               <h3 className="text-2xl md:text-4xl mb-3 md:mb-5 font-[600]">
-                Stay Ahead. On Your Terms.
+                We&apos;re Building a Better Way to Live.
               </h3>
-              <p className="text-base md:text-base mb-3 md:mb-5 leading-loose md:leading-loose opacity-80 md:w-[80%] mx-auto">
+              <p className="text-base md:text-base mb-3 md:mb-5 leading-loose md:leading-loose opacity-80 md:w-[90%] mx-auto">
                 {/* You don&apos;t need a pundit to explain the world to you. Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself. */}
-                Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself.
+                {/* Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself. */}
+                Wired Wits is a platform of AI-powered solutions designed to improve your quality of life intellectually, economically, and emotionally. Our tools span three pillars:
+                {/* Each product serves a specific need. Together, they form a connected ecosystem to help people think clearly, build freely, and live more securely &mdash; no matter where they&apos; starting from. */}
               </p>
             </div>
-            <img alt="dashboard" src={'https://www.cortex.io/_next/image?url=https%3A%2F%2Fa-us.storyblok.com%2Ff%2F1021527%2F2012x1152%2F5c94ea8074%2Fimage-1415.webp&w=3840&q=99'} className="w-full h-full" />
-
-            <div className="md:px-20 text-center md:text-left flex flex-col md:grid grid-cols-2 gap-16 md:gap-y-8 items-center mt-10">
+            <img alt="dashboard" src={HomeHero.src} className="w-full h-full" />
+            <div className=" text-center md:text-left flex flex-col md:grid grid-cols-3 gap-6 md:gap-y-8 items-center mt-10">
               <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 <div>
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
                 <h4 className="mb-2 md:mb-2 font-[600] text-lg">
-                  Bias & Emotion Detection
+                  {/* Bias & Emotion Detection */}
+                  For truth, transparency & accountability
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
-                  Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge the content.
+                  Cut through the noise with tools that challenge bias, expose spin and help you make sense of the world on your terms
+                  {/* Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge. */}
                 </p>
               </div>
               <div className="w-full h-full rounded-xl px-5 pt-5">
@@ -83,10 +87,11 @@ export default function Home() {
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
                 <h4 className="mb-2 md:mb-2 font-[600] text-lg">
-                  Ask the Story
+                  For strategy and ownership
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
-                  Curious about the bigger picture? Ask follow-up questions and get clear, AI-powered answers with historical context, different viewpoints, or background info.
+                  Turn your ideas into reality with reports, insights, and future ready tools built for everyday enterpreneurs
+                  {/* Curious about the bigger picture? Ask follow-up questions and get clear, AI-powered answers with historical context, different viewpoints, or. */}
                 </p>
               </div>
               <div className="w-full h-full rounded-xl px-5 pt-5">
@@ -94,16 +99,17 @@ export default function Home() {
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
                 <h4 className="hidden md:block mb-2 md:mb-2 font-[600] text-lg">
-                  Smarter Summaries, Personalized for You
+                  For life&apos;s day-to-day demand
                 </h4>
                 <h4 className="block md:hidden mb-2 md:mb-2 font-[600] text-lg">
-                  Smarter Summaries, <br /> Personalized for You
+                  Smarter Summaries, <br /> Personalized
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
-                  No more one-size-fits-all. Get quick, clean breakdowns of any article tailored to your preferred reading style. Jargon? Conversational language? You choose how you read.
+                  Use tech to thrive, not just survive. From budgeting to barter, our tools help real people simplify and strengthen their lives
+                  {/* No more one-size-fits-all. Get quick, clean breakdowns of any article tailored to your preferred reading style. Jargon? Conversational language? */}
                 </p>
               </div>
-              <div className="w-full h-full rounded-xl px-5 pt-5">
+              {/* <div className="w-full h-full rounded-xl px-5 pt-5">
                 <div>
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div>
@@ -113,10 +119,10 @@ export default function Home() {
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Get quick suggestions for what to double-check and where to look when context is missing or a claim doesn&apos;t sit right. It&apos;s your shortcut to smarter scrutiny.
                 </p>
-              </div>
+              </div> */}
             </div>
           </section>
-          <section className="px-5 md:px-28 mt-20 md:mt-28 bg-[#F5F3FF] py-16 md:py-24">
+          {/* <section className="px-5 md:px-28 mt-20 md:mt-28 bg-[#F5F3FF] py-16 md:py-24">
             <h3 className="text-center text-3xl md:text-4xl leading-[1.4] md:leading-[1.5] mb-2 md:mb-4 font-bold">
               Start With One Tool. <br /> Grow With the Platform
             </h3>
@@ -156,7 +162,6 @@ export default function Home() {
                         <GoArrowUpRight className="text-2xl" /></Link>
                     </div>
                     <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
-                    {/* <div className="bg-[#A789FE] w-full h-[20rem] md:h-[30rem] rounded-lg"></div> */}
                   </div> :
                   currThirdView === 'thrive-resources' ?
                     <div className="grid grid-cols-2 gap-8 mt-9 items-center">
@@ -173,7 +178,6 @@ export default function Home() {
                           <GoArrowUpRight className="text-2xl" /></Link>
                       </div>
                       <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
-                      {/* <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div> */}
                     </div>
                     :
                     <div className="grid grid-cols-2 gap-8 mt-9 items-center">
@@ -190,57 +194,56 @@ export default function Home() {
                           <GoArrowUpRight className="text-2xl" /></Link>
                       </div>
                       <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
-                      {/* <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div> */}
                     </div>
               }
             </>
-          </section>
-          <section className="extra-props-hero py-24 mt-24">
+          </section> */}
+          <section className="extra-props-her bg-[#F5F3FF] py-24 mt-24">
             <div className="hero-noise"></div>
             <div className="px-24">
-              <h2 className="text-4xl font-bold text-white w-[60%] mb-7 leading-normal md:leading-normal">
+              <h2 className="text-4xl font-bold text-whit w-[60%] mb-7 leading-normal md:leading-normal">
                 Everything you need to protect & secure sensitive data in your SaaS apps
               </h2>
               <div className="grid grid-cols-3 gap-10">
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
+                <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <p className="text-sm text-black leading-loose md:leading-loose">
                     Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
                   </p>
                 </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
+                <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <p className="text-sm text-black leading-loose md:leading-loose">
                     Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
                   </p>
                 </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
+                <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <p className="text-sm text-black leading-loose md:leading-loose">
                     Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
                   </p>
                 </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
+                <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <p className="text-sm text-black leading-loose md:leading-loose">
                     Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
                   </p>
                 </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
+                <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <p className="text-sm text-black leading-loose md:leading-loose">
                     Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
                   </p>
                 </div>
-                <div className="border border-solid border-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-20 rounded-lg mb-14 bg-[#8267E2]"></div>
-                  <h4 className="text-white text-xl font-medium mb-3">Data Discovery</h4>
-                  <p className="text-sm text-white leading-loose md:leading-loose">
+                <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <p className="text-sm text-black leading-loose md:leading-loose">
                     Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
                   </p>
                 </div>
