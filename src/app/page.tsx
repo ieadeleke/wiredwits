@@ -68,7 +68,12 @@ export default function Home() {
               </p>
             </div>
             <img alt="dashboard" src={HomeHero.src} className="w-full h-full" />
-            <div className=" text-center md:text-left flex flex-col md:grid grid-cols-3 gap-6 md:gap-y-8 items-center mt-7">
+            <div className="mt-7 mb-10 text-center">
+              <p className="w-[70%] mx-auto leading-loose md:leading-loose text-lg">
+                Each product serves a specific need. Together, they form a connected ecosystem to help people think clearly, build freely, and live more securely no matter where they&apos;re starting from.
+              </p>
+            </div>
+            <div className=" text-center md:text-left flex flex-col md:grid grid-cols-3 gap-10 items-center mt-7">
               <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 {/* <div>
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
@@ -76,7 +81,7 @@ export default function Home() {
                 <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3">Public good</p>
                 <h4 className="mb-2 md:mb-2 font-[600] text-lg">
                   {/* Bias & Emotion Detection */}
-                  For truth, transparency & accountability
+                  Truth, Transparency & Accountability
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Cut through the noise with tools that challenge bias, expose spin and help you make sense of the world on your terms
