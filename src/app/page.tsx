@@ -209,50 +209,50 @@ export default function Home() {
           <section className="extra-props-her bg-[#F5F3FF] py-24 mt-24">
             <div className="hero-noise"></div>
             <div className="px-24">
-              <h2 className="text-4xl font-bold text-whit w-[60%] mb-7 leading-normal md:leading-normal">
-                Everything you need to protect & secure sensitive data in your SaaS apps
+              <h2 className="text-4xl font-bold text-whit w-[90%] mb-7 leading-normal md:leading-normal">
+                Our flagship tool, Wits Newsroom, helps you read smarter, ask better questions, and reclaim clarity on your terms.
               </h2>
               <div className="grid grid-cols-3 gap-10">
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
-                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <h4 className="text-black text-xl font-medium mb-3">Ask Smarter Questions</h4>
                   <p className="text-sm text-black leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
+                    Dig deeper than headlines. Ask follow-ups to get context, history, and multiple angles on any story.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
-                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <h4 className="text-black text-xl font-medium mb-3">Spot Spin Fast</h4>
                   <p className="text-sm text-black leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
+                    Catch emotionally charged language and bias triggers instantly so you can focus on what&apos;s actually being said.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
-                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <h4 className="text-black text-xl font-medium mb-3">See all Sides</h4>
                   <p className="text-sm text-black leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
+                    View how the same issue is covered across different outlets, regions, or perspectives—side by side.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
-                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <h4 className="text-black text-xl font-medium mb-3">Understand the Roots</h4>
                   <p className="text-sm text-black leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
+                    Don&apos;t just react. Trace events back to their origins and understand the full story before you form an opinion.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
-                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <h4 className="text-black text-xl font-medium mb-3">Make It Make Sense</h4>
                   <p className="text-sm text-black leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
+                    From legal jargon to policy details, get personalized summaries that explain complex topics in plain language.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
-                  <h4 className="text-black text-xl font-medium mb-3">Data Discovery</h4>
+                  <h4 className="text-black text-xl font-medium mb-3">Think for Yourseld</h4>
                   <p className="text-sm text-black leading-loose md:leading-loose">
-                    Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem. Real-time and holistic visibility of sensitive data across your entire SaaS ecosystem holistic visibility.
+                    This isn&apos;t about telling you what to believe. It&apos;s about giving you the tools to decide on your own terms.
                   </p>
                 </div>
               </div>
