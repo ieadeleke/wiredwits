@@ -52,7 +52,7 @@ export default function Home() {
             {/* <Image className="globe" alt="globe" src={GlobeImg} width={700} quality={100} height={700} /> */}
           </div>
           {/* <FallingBlocks /> */}
-          <section className="px-5 md:px-28 mt-10 md:mt-24 max-w-[1200px] mx-auto">
+          <section className="px-5 md:px-28 mt-10 md:mt-24 max-w-[1500px] mx-auto">
             <div className="md:w-[65%] mx-auto mt-20 mb-7 text-center">
               <h3 className="text-2xl md:text-4xl mb-2 md:mb-4 font-[600]">
                 We&apos;re Not Just Building Tools.
