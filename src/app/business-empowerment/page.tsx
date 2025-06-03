@@ -12,9 +12,10 @@ import { RiDoorOpenLine } from "react-icons/ri";
 import PillarsLayout from "@/components/layout/PillarsLayout";
 import { IoIosArrowForward } from "react-icons/io";
 import HomeHero from "@/assets/images/home-hero.jpg";
+import Everyday from "@/assets/images/business.jpg";
 import { TiPlus } from "react-icons/ti";
 import { BiMinus } from "react-icons/bi";
-import BusinessImg from "@/assets/images/business.jpg";
+
 
 
 
@@ -40,10 +41,10 @@ export default function ContactUs() {
                                     <h4 className="text-[#9747FF] font-medium text-xs md:text-sm">AI That Works for Everyone</h4>
                                 </div>
                                 <h1 className="text-3xl md:text-5xl font-bold mb-2 md:mb-4 leading-relaxed md:leading-tight">
-                                    Smarter Living. <br /> Stronger Together
+                                    Validate smarter. <br /> Build faster. Own your future.
                                 </h1>
-                                <p className="text-sm md:text-base text-[#111111b3] leading-loose md:leading-loose mb-7 md:w-[70%] mx-auto">
-                                    We&apos;re building AI tools for real life designed to stretch your resources, ease your day-to-day, and help communities thrive together. From saving money to sharing more, these tools are made for the moments that matter most.
+                                <p className="text-sm md:text-base text-[#111111b3] leading-loose md:leading-loose mb-7 md:w-[80%] mx-auto">
+                                    Turn insight into action with research-backed, AI-powered reports and tools that help you launch with confidence. No fluff. No guesswork. Just clarity, strategy, and momentum.
                                 </p>
                                 <div className="flex gap-4 mx-auto mb-10 w-max">
                                     <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Create Account</Link>
@@ -54,14 +55,14 @@ export default function ContactUs() {
                     </section>
                     <section className="px-5 md:px-28 mt-10 md:mt-24 max-w-[1500px] mx-auto">
                         <div className="">
-                            <h3 className="text-center text-2xl md:text-4xl mb-2 md:mb-3 font-bold">
-                                Live Smarter. Thrive Together.
+                            <h3 className="text-center text-2xl md:text-4xl mb-2 md:mb-3 font-bold w-[35%] leading-relaxed md:leading-normal mx-auto">
+                                Smart AI tools to turn your ideas into action
                             </h3>
                             <p className="text-sm md:text-base text-center md:w-[50%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                                We believe technology should lift people up not wear them down. Our Everyday AI tools are built to help you stretch your dollars, share what you have, and build stronger communities that can weather hard times together
+                                Starting a business shouldn&apos;t mean starting from scratch. Our Business Empowerment tools use advanced AI to distill complex data into clear, strategic reports giving you the edge without the overwhelm.
                             </p>
                         </div>
-                        <Image src={BusinessImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-full rounded-lg object-fit object-cover" />
+                        <Image src={Everyday} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-full rounded-lg object-fit object-cover" />
                         <div className="text-center md:text-left flex flex-col md:grid grid-cols-3 gap-5 md:gap-10 items-center mt-7">
                             <div className="w-full h-full rounded-xl md:px-5 pt-5">
                                 <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Start Smart</p>
@@ -73,7 +74,7 @@ export default function ContactUs() {
                                 </p>
                             </div>
                             <div className="w-full h-full rounded-xl md:px-5 pt-5">
-                                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Go Deeper.</p>
+                                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Go Deeper</p>
                                 <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
                                     Full Industry Reports</h4>
                                 <p className="text-sm md:text-sm leading-loose md:leading-loose opacity-80">
@@ -93,7 +94,7 @@ export default function ContactUs() {
                     <section className="px-5 md:px-28 py-24 mt-24 md:mt-24 bg-[#F5F3FF]">
                         <div>
                             <h3 className="text-2xl md:text-4xl leading-snug font-bold">
-                                Tools That Lift Everyone Up
+                                Clarity for Your Ideas
                             </h3>
                             <div className="mt-5 md:mt-10 flex flex-col md:grid grid-cols-3 gap-5 md:gap-10">
                                 <div className="border-2 border-solid border-[#EBEBEB] px-5 py-8 rounded-lg">
@@ -102,10 +103,10 @@ export default function ContactUs() {
                                     </div>
                                     <div>
                                         <h4 className="font-medium md:font-[400] text-lg md:text-xl mb-3">
-                                            Build Stronger Communities
+                                            Tailored to You
                                         </h4>
                                         <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                            From food-sharing to carpooling to child care swaps — these tools help you connect, and share more easily with neighbors. When communities come together, everyone stands taller.
+                                            Get custom, AI-powered reports built around your specific business idea because big visions deserve more than generic advice.
                                         </p>
                                     </div>
                                 </div>
@@ -115,10 +116,10 @@ export default function ContactUs() {
                                     </div>
                                     <div>
                                         <h4 className="font-medium md:font-[400] text-lg md:text-xl mb-3">
-                                            Confidence in the Day-to-Day
+                                            Insight That Moves You Forward
                                         </h4>
                                         <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                            Whether it&apos;s budgeting, organizing, or just keeping up—our tools are built to simplify tasks and help you take back time, money, and peace of mind. It&apos;s power in your hands, one smart step at a time.
+                                            Understand your market, spot gaps your competitors missed, and uncover how tech and AI can give you a winning edge.
                                         </p>
                                     </div>
                                 </div>
@@ -128,10 +129,10 @@ export default function ContactUs() {
                                     </div>
                                     <div>
                                         <h4 className="font-medium md:font-[400] text-lg md:text-xl mb-3">
-                                            Open Doors to New Possibilities
+                                            Decide with Confidence
                                         </h4>
                                         <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                            Get access to tools that help you barter, build micro-income streams, or pool resources for group buying. We&apos;re here to make sure opportunity isn&apos;t just for those with deep pockets.
+                                            You&apos;ll walk away with clear, strategic recommendations so you can move forward, pivot smartly, or rethink without second-guessing.
                                         </p>
                                     </div>
                                 </div>
