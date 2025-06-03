@@ -17,6 +17,12 @@ import { IoIosArrowForward } from "react-icons/io";
 import { TiPlus } from "react-icons/ti";
 import { BiMinus } from "react-icons/bi";
 import FallingBlocks from "@/components/hero";
+import { FaBrain } from "react-icons/fa";
+import { GiTreeRoots } from "react-icons/gi";
+import { TbBorderSides } from "react-icons/tb";
+import { MdOutlineFlightClass } from "react-icons/md";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { PiChalkboardTeacherBold } from "react-icons/pi";
 
 
 export default function Home() {
@@ -29,8 +35,8 @@ export default function Home() {
     <div>
       <DisplayLayout>
         <>
-          <div className="new-hero relative overflow-hidden">
-            <div className="md:w-[55%] z-40 relative py-36 md:pt-36 md:pb-28 px-5 md:px-0 mx-auto text-center">
+          {/* <div className="new-hero relative overflow-hidden">
+            <div className="md:w-[55%] z-40 relative pt-36 pb-20 md:pt-36 md:pb-28 px-5 md:px-0 mx-auto text-center">
               <div className="glass-card w-max px-6 py-3 mx-auto rounded-lg font-medium mb-6">
                 <h4 className="text-sm">
                   AI That Works for Everyone
@@ -49,37 +55,33 @@ export default function Home() {
             </div>
             <div className="hero-noise">
             </div>
-            {/* <Image className="globe" alt="globe" src={GlobeImg} width={700} quality={100} height={700} /> */}
-          </div>
-          {/* <FallingBlocks /> */}
+          </div> */}
+          <FallingBlocks />
           <section className="px-5 md:px-28 mt-10 md:mt-24 max-w-[1500px] mx-auto">
             <div className="md:w-[65%] mx-auto mt-20 mb-7 text-center">
-              <h3 className="text-2xl md:text-4xl mb-2 md:mb-4 font-[600]">
+              <h3 className="text-2xl md:text-4xl mb-2 md:mb-5 font-[600]">
                 We&apos;re Not Just Building Tools.
               </h3>
-              <h3 className="text-2xl md:text-4xl mb-3 md:mb-5 font-[600]">
+              <h3 className="text-2xl md:text-4xl mb-3 md:mb-6 font-[600]">
                 We&apos;re Building a Better Way to Live.
               </h3>
-              <p className="text-base md:text-base mb-3 md:mb-5 leading-loose md:leading-loose opacity-80 md:w-[90%] mx-auto">
-                {/* You don&apos;t need a pundit to explain the world to you. Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself. */}
-                {/* Wits Newsroom gives you the power to recognize bias, ask smarter questions, and explore every angle, so you can decide for yourself. */}
+              <p className="text-sm md:text-base mb-3 md:mb-5 leading-[2.1] md:leading-[2.1] opacity-80 md:w-[90%] mx-auto">
                 Wired Wits is a platform of AI-powered solutions designed to improve your quality of life intellectually, economically, and emotionally. Our tools span three pillars:
-                {/* Each product serves a specific need. Together, they form a connected ecosystem to help people think clearly, build freely, and live more securely &mdash; no matter where they&apos; starting from. */}
               </p>
             </div>
-            <img alt="dashboard" src={HomeHero.src} className="w-full h-full" />
-            <div className="mt-7 mb-10 text-center">
-              <p className="w-[70%] mx-auto leading-loose md:leading-loose text-lg">
+            <img alt="dashboard" src={HomeHero.src} className="w-full h-full rounded-lg" />
+            <div className="mt-8 mb-3 md:mb-10 text-center">
+              <p className="md:w-[50%] text-base md:text-lg font-medium mx-auto leading-loose md:leading-loose">
                 Each product serves a specific need. Together, they form a connected ecosystem to help people think clearly, build freely, and live more securely no matter where they&apos;re starting from.
               </p>
             </div>
-            <div className=" text-center md:text-left flex flex-col md:grid grid-cols-3 gap-10 items-center mt-7">
+            <div className="text-center md:text-left flex flex-col md:grid grid-cols-3 gap-5 md:gap-10 items-center mt-7">
               <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 {/* <div>
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div> */}
-                <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3">Public good</p>
-                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Public good</p>
+                <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
                   {/* Bias & Emotion Detection */}
                   Truth, Transparency & Accountability
                 </h4>
@@ -88,12 +90,12 @@ export default function Home() {
                   {/* Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge. */}
                 </p>
               </div>
-              <div className="w-full h-full rounded-xl px-5 pt-5">
+              <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 {/* <div>
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div> */}
-                <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3">Business empowerment</p>
-                <h4 className="mb-2 md:mb-2 font-[600] text-lg">
+                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Business empowerment</p>
+                <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
                   For strategy and ownership
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
@@ -101,16 +103,13 @@ export default function Home() {
                   {/* Curious about the bigger picture? Ask follow-up questions and get clear, AI-powered answers with historical context, different viewpoints, or. */}
                 </p>
               </div>
-              <div className="w-full h-full rounded-xl px-5 pt-5">
+              <div className="w-full h-full rounded-xl md:px-5 pt-5">
                 {/* <div>
                   <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
                 </div> */}
-                <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3">Everyday AI</p>
-                <h4 className="hidden md:block mb-2 md:mb-2 font-[600] text-lg">
+                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Everyday AI</p>
+                <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
                   For life&apos;s day-to-day demand
-                </h4>
-                <h4 className="block md:hidden mb-2 md:mb-2 font-[600] text-lg">
-                  Smarter Summaries, <br /> Personalized
                 </h4>
                 <p className="text-sm md:text-base leading-loose md:leading-loose opacity-80">
                   Use tech to thrive, not just survive. From budgeting to barter, our tools help real people simplify and strengthen their lives
@@ -206,52 +205,64 @@ export default function Home() {
               }
             </>
           </section> */}
-          <section className="extra-props-her bg-[#F5F3FF] py-24 mt-24">
-            <div className="hero-noise"></div>
-            <div className="px-24">
-              <h2 className="text-4xl font-bold text-whit w-[90%] mb-7 leading-normal md:leading-normal">
-                Our flagship tool, Wits Newsroom, helps you read smarter, ask better questions, and reclaim clarity on your terms.
+          <section className="extra-props-her relative bg-[#F5F3FF] py-20 md:py-24 mt-20 md:mt-24">
+            {/* <div className="hero-noise"></div> */}
+            <div className="px-5 md:px-24">
+              <h2 className="text-xl md:text-4xl font-bold text-left md:text-left md:w-[90%] mb-7 leading-loose md:leading-normal">
+                Our flagship tool, Wits Newsroom, helps you read smarter, ask better questions, and reclaim clarity on your terms.
               </h2>
-              <div className="grid grid-cols-3 gap-10">
+              <div className="flex flex-col gap-5 md:grid grid-cols-3 md:gap-10">
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
+                    <MdOutlineFlightClass className="text-2xl" />
+                  </div>
                   <h4 className="text-black text-xl font-medium mb-3">Ask Smarter Questions</h4>
-                  <p className="text-sm text-black leading-loose md:leading-loose">
+                  <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     Dig deeper than headlines. Ask follow-ups to get context, history, and multiple angles on any story.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
+                    <FaMagnifyingGlass className="text-2xl" />
+                  </div>
                   <h4 className="text-black text-xl font-medium mb-3">Spot Spin Fast</h4>
-                  <p className="text-sm text-black leading-loose md:leading-loose">
+                  <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     Catch emotionally charged language and bias triggers instantly so you can focus on what&apos;s actually being said.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
+                    <TbBorderSides className="text-2xl" />
+                  </div>
                   <h4 className="text-black text-xl font-medium mb-3">See all Sides</h4>
-                  <p className="text-sm text-black leading-loose md:leading-loose">
+                  <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     View how the same issue is covered across different outlets, regions, or perspectives—side by side.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
+                    <GiTreeRoots className="text-2xl" />
+                  </div>
                   <h4 className="text-black text-xl font-medium mb-3">Understand the Roots</h4>
-                  <p className="text-sm text-black leading-loose md:leading-loose">
+                  <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     Don&apos;t just react. Trace events back to their origins and understand the full story before you form an opinion.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
+                    <PiChalkboardTeacherBold className="text-2xl" />
+                  </div>
                   <h4 className="text-black text-xl font-medium mb-3">Make It Make Sense</h4>
-                  <p className="text-sm text-black leading-loose md:leading-loose">
+                  <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     From legal jargon to policy details, get personalized summaries that explain complex topics in plain language.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
-                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2]"></div>
-                  <h4 className="text-black text-xl font-medium mb-3">Think for Yourseld</h4>
-                  <p className="text-sm text-black leading-loose md:leading-loose">
+                  <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
+                    <FaBrain className="text-2xl" />
+                  </div>
+                  <h4 className="text-black text-xl font-medium mb-3">Think for Yourself</h4>
+                  <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     This isn&apos;t about telling you what to believe. It&apos;s about giving you the tools to decide on your own terms.
                   </p>
                 </div>
@@ -263,7 +274,7 @@ export default function Home() {
               <div className="md:w-[500px]">
                 <div className="text-center md:text-left">
                   <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-3">Frequently asked questions</p>
-                  <h3 className="text-3xl md:text-4xl mb-3 font-bold w-[70%] leading-[1.4] md:leading-[1.4]">
+                  <h3 className="text-3xl md:text-4xl mb-3 font-bold md:w-[70%] leading-[1.4] md:leading-[1.4]">
                     {/* Frequently asked questions */}
                     Got Questions? <br /> We've Got Answers
                   </h3>
@@ -274,17 +285,17 @@ export default function Home() {
               </div>
               <div className="flex-1">
                 <div className="flex gap-5 flex-col w-[70% mx-auto">
-                  <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 0 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                  <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 0 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                     <div onClick={() => setCurrentValuesView(0)}
-                      className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
-                      <h3 className="font-bold text-lg">Who are these tools for?</h3>
+                      className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
+                      <h3 className="font-bold text-base md:text-lg">Who are these tools for?</h3>
                       <div className="size-8 rounded-full flex items-center justify-center bg-black">
                         {
                           currentValuesView === 0 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
                         }
                       </div>
                     </div>
-                    <div className={`values-text ${currentValuesView === 0 ? 'show-text pt-5 px-5' : ''}`}>
+                    <div className={`values-text ${currentValuesView === 0 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                       <p className="text-sm opacity-80 leading-loose md:leading-loose">
                         Wired Wits is for everyday people who want to take back control—of their time, their choices, and their understanding of the world.
                         Whether you're a small business owner, a concerned citizen, a side hustler, or someone just trying to make sense of today&apos;s chaos, our tools are built to meet you where you are.
@@ -292,17 +303,17 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 1 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                  <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 1 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                     <div onClick={() => setCurrentValuesView(1)}
-                      className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
-                      <h3 className="font-bold text-lg">Why do you call Wired Wits a &apos;Quality of Life&apos; platform?</h3>
+                      className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
+                      <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">Why do you call Wired Wits a &apos;Quality of Life&apos; platform?</h3>
                       <div className="size-8 rounded-full flex items-center justify-center bg-black">
                         {
                           currentValuesView === 1 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
                         }
                       </div>
                     </div>
-                    <div className={`values-text ${currentValuesView === 1 ? 'show-text pt-5 px-5' : ''}`}>
+                    <div className={`values-text ${currentValuesView === 1 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                       <p className="text-sm opacity-80 leading-loose md:leading-loose">
                         Because everything we build is designed to protect and improve the ecosystem that supports human dignity, freedom, and growth.
                         That ecosystem is under pressure, from misinformation, unchecked greed, misused technology, and dysfunctional governance. These aren&apos;t partisan problems. They&apos;re structural threats that affect everyone.
@@ -310,17 +321,17 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 2 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                  <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 2 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                     <div onClick={() => setCurrentValuesView(2)}
-                      className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
-                      <h3 className="font-bold text-lg">How can I get involved?</h3>
+                      className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
+                      <h3 className="font-bold text-base md:text-lg">How can I get involved?</h3>
                       <div className="size-8 rounded-full flex items-center justify-center bg-black">
                         {
                           currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
                         }
                       </div>
                     </div>
-                    <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-5' : ''}`}>
+                    <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                       <p className="text-sm opacity-80 leading-loose md:leading-loose">
                         We love that you're asking.
                         There are so many ways people have told us they want to be part of this, from signing up for updates to offering skills, support, or partnership ideas. Some want to follow along. Some want to help fund the mission. Others want to build with us.
@@ -330,17 +341,17 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 3 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                  <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 3 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                     <div onClick={() => setCurrentValuesView(2)}
-                      className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
-                      <h3 className="font-bold text-lg">How do the Wired Wits pillars work together?</h3>
+                      className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
+                      <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">How do the Wired Wits pillars work together?</h3>
                       <div className="size-8 rounded-full flex items-center justify-center bg-black">
                         {
                           currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
                         }
                       </div>
                     </div>
-                    <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-5' : ''}`}>
+                    <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                       <p className="text-sm opacity-80 leading-loose md:leading-loose">
                         Life doesn&apos;t happen in silos, and we don&apos;t build tools that way either. Yes, I can see contradiction there also, but hear us out
                         Wired Wits is a Quality of Life platform because we believe every part of life affects the whole: how we stay informed, how we earn a living, and how we manage our time, money, and mental load. Each of our three pillars is designed to meet a different need, but they all work together to help you thrive.
@@ -350,7 +361,7 @@ export default function Home() {
                   {/* <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] border border-black border-solid py-5">
                     <div onClick={() => setCurrentValuesView(1)}
                       className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 1 ? 'bg-style' : ''}`}>
-                      <h3 className="font-bold text-lg">Why do you call Wired Wits a “Quality of Life” platform?</h3>
+                      <h3 className="font-bold text-base md:text-lg">Why do you call Wired Wits a “Quality of Life” platform?</h3>
                       {
                         currentValuesView === 1 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
                       }
@@ -366,7 +377,7 @@ export default function Home() {
                   <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
                     <div onClick={() => setCurrentValuesView(2)}
                       className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 2 ? 'bg-style' : ''}`}>
-                      <h3 className="font-bold text-lg">How can I get involved?</h3>
+                      <h3 className="font-bold text-base md:text-lg">How can I get involved?</h3>
                       {
                         currentValuesView === 2 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
                       }

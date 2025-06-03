@@ -1,6 +1,5 @@
 'use client';
 
-import DisplayLayout from "@/components/layout/layout";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -11,6 +10,11 @@ import { RiUserCommunityLine } from "react-icons/ri";
 import { IoSettingsSharp } from "react-icons/io5";
 import { RiDoorOpenLine } from "react-icons/ri";
 import PillarsLayout from "@/components/layout/PillarsLayout";
+import { IoIosArrowForward } from "react-icons/io";
+import HomeHero from "@/assets/images/home-hero.jpg";
+import Public from "@/assets/images/good.jpg";
+import { TiPlus } from "react-icons/ti";
+import { BiMinus } from "react-icons/bi";
 
 
 
@@ -18,6 +22,8 @@ export default function ContactUs() {
     const [currView, setCurrView] = useState<string>('public-bias');
     const [currSecView, setCurrSecView] = useState<string>('business-idea');
     const [currThirdView, setCurrThirdView] = useState<string>('thrive-money');
+
+    const [currentValuesView, setCurrentValuesView] = useState<number>(0);
 
     const handleCurrPageView = (e: string) => {
         setCurrView(e)
@@ -28,12 +34,12 @@ export default function ContactUs() {
             <PillarsLayout>
                 <>
                     <section className="hero-bg flex items-center justify-center text-center">
-                        <div className="md:w-[90%] mx-auto gap-20 py-32 md:py-40 pb-16">
+                        <div className="md:w-[90%] mx-auto gap-20 py-32 md:pt-36 pb-16">
                             <div className="px-5 md:px-0 md:w-[70%] mx-auto">
                                 <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-4 rounded-lg">
                                     <h4 className="text-[#9747FF] font-medium text-xs md:text-sm">AI That Works for Everyone</h4>
                                 </div>
-                                <h1 className="text-3xl md:text-5xl font-bold mb-2 md:mb-4 leading-relaxed md:leading-tight md:w-[70%] mx-auto">
+                                <h1 className="text-3xl md:text-5xl font-bold mb-2 md:mb-4 w-[80%] mx-auto leading-relaxed md:leading-tight">
                                     Wits Newsroom – Clarity Tools for the Noise Age
                                 </h1>
                                 <p className="text-sm md:text-base text-[#111111b3] leading-loose md:leading-loose mb-7 md:w-[80%] mx-auto">
@@ -46,98 +52,45 @@ export default function ContactUs() {
                             </div>
                         </div>
                     </section>
-                    <section className="px-5 md:px-32 mt-20 md:mt-28">
-                        <div className="grid grid-cols-2 gap-14">
-                            <div>
-                                <div className="">
-                                    <h3 className="text- text-4xl mb-3 font-bold leading-snug md:leading-snug">
-                                        What Makes This Different?
-                                    </h3>
-                                </div>
-                                <div className="">
-                                    <p className="text-base mb-6 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                                        Wired Wits helps you cut through noise, uncover truth, and hold power accountable. Our first tool, See Clearly. Think Smarter., is live now, designed to help you spot bias, decode manipulation, and ask better questions. The journey starts here.
-                                    </p>
-                                    <p className="text-base mb- mx-auto leading-loose md:leading-loose font-mediu opacity-80">
-                                        Wits Newsroom is an interactive news tool designed to help you ask smarter questions, see multiple sides of a story, and get the background and context you need. Think of it like a co-pilot for understanding what really matters. No spin. No labels. No agenda. Just clear, AI-powered answers that help you gain clarity on your terms.
-                                    </p>
-                                </div>
+                    <section className="px-5 md:px-28 mt-10 md:mt-24 max-w-[1500px] mx-auto">
+                        <div className="">
+                            <h3 className="text-center text-2xl md:text-4xl mb-2 md:mb-3 font-bold leading-relaxed md:leading-relaxed">
+                                Truth Needs Defenders, <br /> We Build Their Tools
+                            </h3>
+                            <p className="text-sm md:text-base text-center md:w-[57%] mb-8 mx-auto leading-loose md:leading-loose font-mediu opacity-80">
+                                Wits Newsroom is an interactive news tool designed to help you ask smarter questions, see multiple sides of a story, and get the background and context you need. Just clear, AI-powered answers that help you gain clarity on your terms.
+                            </p>
+                        </div>
+                        <Image src={Public} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-full rounded-lg object-fit object-cover" />
+                        <div className="text-center md:text-left flex flex-col md:grid grid-cols-3 gap-5 md:gap-10 items-center mt-7">
+                            <div className="w-full h-full rounded-xl md:px-5 pt-5">
+                                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">See Clearly. Think Smarter.</p>
+                                <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
+                                    Not Just News, Clarity on Your Terms
+                                </h4>
+                                <p className="text-sm md:text-sm leading-loose md:leading-loose opacity-80">
+                                    Ask smarter questions. Spot bias. Go beyond the headline with tools built to help you understand the story, not just skim it.
+                                </p>
                             </div>
-                            <div>
-                                <div className="bg-[#A789FE] w-full h-full rounded-lg"></div>
+                            <div className="w-full h-full rounded-xl md:px-5 pt-5">
+                                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Explore Multiple Angles</p>
+                                <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
+                                    One Story. Different Viewpoints</h4>
+                                <p className="text-sm md:text-sm leading-loose md:leading-loose opacity-80">
+                                    See how various outlets cover the same issue. Compare perspectives and make up your own mind with clarity, not noise.
+                                </p>
+                            </div>
+                            <div className="w-full h-full rounded-xl md:px-5 pt-5">
+                                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Reclaim Your Voice</p>
+                                <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
+                                    Turn Insight Into Action</h4>
+                                <p className="text-sm md:text-sm leading-loose md:leading-loose opacity-80">
+                                    Use our Pro tools to journal, annotate, and draft thoughtful responses. Reinforce your understanding and speak up with confidence.
+                                </p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 gap-10 mt-20">
-                            <div
-                                onClick={() => handleCurrPageView('public-bias')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-bias' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">See Clearly. Think Smarter.</p>
-                            </div>
-                            <div
-                                onClick={() => handleCurrPageView('public-legislation')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-legislation' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Explore Multiple Angles</p>
-                            </div>
-                            <div
-                                onClick={() => handleCurrPageView('public-trends')}
-                                className={`px-4 py-4 border border-solid rounded-[4px] border-[#DBDEE4] ${currView === 'public-trends' ? 'bg-[#EFF1F3]' : ''} cursor-pointer text-center`}>
-                                <p className="text-s font-mediu opacity-80 text-sm md:text-[15px]">Reflect. Respond. Reclaim Your Voice</p>
-                            </div>
-                        </div>
-                        <>
-                            {
-                                currView === 'public-bias' ?
-                                    <div className="flex flex-col-reverse md:grid grid-cols-2 gap-5 md:gap-8 mt-9 items-center">
-                                        <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
-                                            <div>
-                                                <h3 className="text-xl md:text-2xl [42px] mb-3 leading-snug font-bold">
-                                                    Not Just News, <br /> Clarity on Your Terms
-                                                </h3>
-                                                <p className="text-sm md:text-base font-mediu leading-loose mb-8 md:mb-4">
-                                                    Ask smarter questions. Spot bias. Get the real context behind the headlines, with tools built to help you understand the story, not just skim it.
-                                                </p>
-                                            </div>
-                                            <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
-                                                <GoArrowUpRight className="text-2xl" /></Link>
-                                        </div>
-                                        <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                    </div> :
-                                    currView === 'public-legislation' ?
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
-                                                <div>
-                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        One Story. <br /> Multiple Viewpoints.
-                                                    </h3>
-                                                    <p className="text-sm md:text-base font-mediu leading-loose mb-8 md:mb-4">
-                                                        Don&apos;t settle for a single source. Wits Newsroom shows you how different outlets cover the same issue, so you can think critically and make up your own mind.
-                                                    </p>
-                                                </div>
-                                                <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
-                                                    <GoArrowUpRight className="text-2xl" /></Link>
-                                            </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                        </div>
-                                        :
-                                        <div className="grid grid-cols-2 gap-8 mt-9 items-center">
-                                            <div className="border-2 border-[#E6E8EC] h-full rounded-lg border-solid py-5 md:py-16 px-5 md:px-16 flex justify-between flex-col">
-                                                <div>
-                                                    <h3 className="text-xl md:text-2xl [42px] mb-3 leading-snug font-bold">
-                                                        Understand It. <br /> Then Do Something With It.
-                                                    </h3>
-                                                    <p className="text-sm md:text-base font-mediu leading-loose mb-8 md:mb-4">
-                                                        Use our Pro tools to turn what you read into reflections, notes, or drafts. Reinforce your learning. Craft your perspective. Respond with clarity and confidence.
-                                                    </p>
-                                                </div>
-                                                <Link href="" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
-                                                    <GoArrowUpRight className="text-2xl" /></Link>
-                                            </div>
-                                            <div className="bg-[#A789FE] w-full h-[30rem] rounded-lg"></div>
-                                        </div>
-                            }
-                        </>
                     </section>
-                    <section className="px-5 md:px-28 py-24 mt-24 md:mt-28 bg-[#F5F3FF]">
+                    <section className="px-5 md:px-28 py-24 mt-24 md:mt-24 bg-[#F5F3FF]">
                         <div>
                             <h3 className="text-2xl md:text-4xl leading-snug font-bold">
                                 Clear, Connected, <br /> Collaborative Solutions
@@ -183,61 +136,165 @@ export default function ContactUs() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-full h-[.1rem] bg-[#EBEBEB] opacity-30 mt-20"></div>
-                            <div className="flex flex-col-reverse md:grid grid-cols-2 gap-10 md:gap-24 mt-20">
-                                <div>
-                                    <div>
-                                        <h3 className="text-2xl md:text-4xl leading-relaxed md:leading-tight font-bold w-[80%] mb-3 md:mb-4">
-                                            Empowering Smarter Decisions Together
+                            <div className="w-full h-[.2rem] bg-[#3b3b3b1f] mt-20"></div>
+                        </div>
+                        <section className="pt-20 md:pt-24">
+                            <div className="flex flex-col md:flex-row md:gri grid-cols-2 gap-10 md:gap-16">
+                                <div className="md:w-[500px]">
+                                    <div className="text-center md:text-left">
+                                        <p className="text-xs uppercase font-medium opacity-60 mb-3 md:mb-4">Frequently asked questions</p>
+                                        <h3 className="text-3xl md:text-4xl mb-3 font-bold w-[70%] leading-[1.4] md:leading-[1.6]">
+                                            {/* Frequently asked questions */}
+                                            Got Questions? <br /> We've Got Answers
                                         </h3>
-                                        <p className="text-sm md:text-base opacity-70 leading-loose md:leading-loose mb-3 md:w-[95%]">
-                                            Advanced AI tools that offer clear insights, remove barriers, and foster collaboration for individuals, entrepreneurs, and communities—making powerful technology accessible to all.
+                                        <p className="text-sm md:text-base leading-loose md:leading-loose text-[#3b3b3b] mb-0 md:w-[80%] mx-aut">
+                                            Discover key information about our AI solutions, community focus, and future plans.
                                         </p>
-                                        <p className="text-sm md:text-base opacity-70 leading-loose md:leading-loose mb-10 md:w-[95%]">
-                                            From spotting misinformation and simplifying laws to automating workflows and building stronger networks, we empower users to make smarter decisions, grow ideas, and thrive together.
-                                        </p>
-                                        <Link className="flex items-center gap-3 bg-[#9747FF] border-2 border-white border-solid text-sm text-white px-8 py-4 rounded-lg w-max" href="">Create Account <GoArrowUpRight className="text-2xl text-white" /></Link>
                                     </div>
                                 </div>
-                                <div>
-                                    <div className="w-full h-[20rem] md:h-full rounded-lg bg-[#111111]"></div>
+                                <div className="flex-1">
+                                    <div className="flex gap-5 flex-col w-[70% mx-auto">
+                                        <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 0 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                                            <div onClick={() => setCurrentValuesView(0)}
+                                                className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
+                                                <h3 className="font-bold text-lg">Who are these tools for?</h3>
+                                                <div className="size-8 rounded-full flex items-center justify-center bg-black">
+                                                    {
+                                                        currentValuesView === 0 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div className={`values-text ${currentValuesView === 0 ? 'show-text pt-5 px-5' : ''}`}>
+                                                <p className="text-sm opacity-80 leading-loose md:leading-loose">
+                                                    Wired Wits is for everyday people who want to take back control—of their time, their choices, and their understanding of the world.
+                                                    Whether you're a small business owner, a concerned citizen, a side hustler, or someone just trying to make sense of today&apos;s chaos, our tools are built to meet you where you are.
+                                                    {/* You don&apos;t need to be a tech expert or policy wonk. You just need curiosity and the desire to make better decisions in your life, business, or community. */}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 1 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                                            <div onClick={() => setCurrentValuesView(1)}
+                                                className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
+                                                <h3 className="font-bold text-lg">Why do you call Wired Wits a &apos;Quality of Life&apos; platform?</h3>
+                                                <div className="size-8 rounded-full flex items-center justify-center bg-black">
+                                                    {
+                                                        currentValuesView === 1 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div className={`values-text ${currentValuesView === 1 ? 'show-text pt-5 px-5' : ''}`}>
+                                                <p className="text-sm opacity-80 leading-loose md:leading-loose">
+                                                    Because everything we build is designed to protect and improve the ecosystem that supports human dignity, freedom, and growth.
+                                                    That ecosystem is under pressure, from misinformation, unchecked greed, misused technology, and dysfunctional governance. These aren&apos;t partisan problems. They&apos;re structural threats that affect everyone.
+                                                    Our mission is to give people the tools to navigate this landscape with more clarity, more ownership, and more opportunity, so we can all thrive.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 2 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                                            <div onClick={() => setCurrentValuesView(2)}
+                                                className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
+                                                <h3 className="font-bold text-lg">How can I get involved?</h3>
+                                                <div className="size-8 rounded-full flex items-center justify-center bg-black">
+                                                    {
+                                                        currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-5' : ''}`}>
+                                                <p className="text-sm opacity-80 leading-loose md:leading-loose">
+                                                    We love that you're asking.
+                                                    There are so many ways people have told us they want to be part of this, from signing up for updates to offering skills, support, or partnership ideas. Some want to follow along. Some want to help fund the mission. Others want to build with us.
+                                                    Wherever you fall on that spectrum, we&apos;re here for it.
+                                                    We&apos;re still early in our journey, which means we can&apos;t say yes to everything (yet). But knowing what you&apos;re excited about helps us grow in the right direction, together.
+                                                    Use our [Feedback Hub] to tell us what you're interested in, and we'll keep you in the loop as opportunities grow.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className={`py-6 flex flex-col px-2 rounded-lg ${currentValuesView === 3 ? 'bg-[#F9F9FB]' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
+                                            <div onClick={() => setCurrentValuesView(2)}
+                                                className={`flex items-center justify-between cursor-pointer px-4 rounded-xl faq-header`}>
+                                                <h3 className="font-bold text-lg">How do the Wired Wits pillars work together?</h3>
+                                                <div className="size-8 rounded-full flex items-center justify-center bg-black">
+                                                    {
+                                                        currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
+                                                    }
+                                                </div>
+                                            </div>
+                                            <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-5' : ''}`}>
+                                                <p className="text-sm opacity-80 leading-loose md:leading-loose">
+                                                    Life doesn&apos;t happen in silos, and we don&apos;t build tools that way either. Yes, I can see contradiction there also, but hear us out
+                                                    Wired Wits is a Quality of Life platform because we believe every part of life affects the whole: how we stay informed, how we earn a living, and how we manage our time, money, and mental load. Each of our three pillars is designed to meet a different need, but they all work together to help you thrive.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        {/* <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] border border-black border-solid py-5">
+                                            <div onClick={() => setCurrentValuesView(1)}
+                                              className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 1 ? 'bg-style' : ''}`}>
+                                              <h3 className="font-bold text-lg">Why do you call Wired Wits a “Quality of Life” platform?</h3>
+                                              {
+                                                currentValuesView === 1 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                                              }
+                                            </div>
+                                            <div className={`values-text bg-white ${currentValuesView === 1 ? 'show-text pt-5' : ''}`}>
+                                              <p className="text-sm leading-loose md:leading-loose">
+                                                Because everything we build is designed to protect and improve the ecosystem that supports human dignity, freedom, and growth.
+                                                That ecosystem is under pressure, from misinformation, unchecked greed, misused technology, and dysfunctional governance. These aren&apos;t partisan problems. They&apos;re structural threats that affect everyone.
+                                                Our mission is to give people the tools to navigate this landscape with more clarity, more ownership, and more opportunity, so we can all thrive.
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
+                                            <div onClick={() => setCurrentValuesView(2)}
+                                              className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 2 ? 'bg-style' : ''}`}>
+                                              <h3 className="font-bold text-lg">How can I get involved?</h3>
+                                              {
+                                                currentValuesView === 2 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                                              }
+                                            </div>
+                                            <div className={`values-text bg-white ${currentValuesView === 2 ? 'show-text pt-5' : ''}`}>
+                                              <p className="text-sm leading-loose md:leading-loose">
+                                                We love that you're asking.
+                                                There are so many ways people have told us they want to be part of this, from signing up for updates to offering skills, support, or partnership ideas. Some want to follow along. Some want to help fund the mission. Others want to build with us.
+                                                Wherever you fall on that spectrum, we&apos;re here for it.
+                                                We&apos;re still early in our journey, which means we can&apos;t say yes to everything (yet). But knowing what you&apos;re excited about helps us grow in the right direction, together.
+                                                Use our [Feedback Hub] to tell us what you're interested in, and we'll keep you in the loop as opportunities grow.
+                                              </p>
+                                            </div>
+                                          </div> */}
+                                        {/* <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
+                                            <div onClick={() => setCurrentValuesView(3)}
+                                              className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 3 ? 'bg-style' : ''}`}>
+                                              <h3 className="font-medium text-base">How do the Wired Wits pillars work together?</h3>
+                                              {
+                                                currentValuesView === 3 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                                              }
+                                            </div>
+                                            <div className={`values-text bg-white ${currentValuesView === 3 ? 'show-text pt-5' : ''}`}>
+                                              <p className="text-sm leading-loose md:leading-loose">
+                                                Life doesn&apos;t happen in silos, and we don&apos;t build tools that way either. Yes, I can see contradiction there also, but hear us out
+                                                Wired Wits is a Quality of Life platform because we believe every part of life affects the whole: how we stay informed, how we earn a living, and how we manage our time, money, and mental load. Each of our three pillars is designed to meet a different need, but they all work together to help you thrive.
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div className="py-5 px-3 md:px-4 flex flex-col border-2 rounded-xl border-solid border-[#EBEBEB border-[#F5F3FF] bg-[#F5F3FF]">
+                                            <div onClick={() => setCurrentValuesView(4)}
+                                              className={`flex items-center justify-between cursor-pointer faq-header ${currentValuesView === 4 ? 'bg-style' : ''}`}>
+                                              <h3 className="font-medium text-base">What kind of future is Wired Wits working toward?</h3>
+                                              {
+                                                currentValuesView === 4 ? <FaAngleDown className="text-xl" /> : <IoIosArrowForward className="text-xl" />
+                                              }
+                                            </div>
+                                            <div className={`values-text bg-white ${currentValuesView === 4 ? 'show-text pt-5' : ''}`}>
+                                              <p className="text-sm leading-loose md:leading-loose">
+                                                We&apos;re building toward a future where opportunity isn&apos;t reserved for the few and truth isn&apos;t something you have to fight for.
+                                                A future where more people feel secure, not threatened. Empowered, not overwhelmed. Where doors that were once closed start to open because people finally have the tools to walk through them.
+                                              </p>
+                                            </div>
+                                          </div> */}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section className="px-5 md:px-28 pt-24 md:pt-28">
-                        <div className="flex flex-col md:flex-row gap-8 md:gap-20">
-                            <div className="md:w-[500px]">
-                                <div className="text-center md:text-left">
-                                    <h3 className="text-2xl md:text-4xl mb-4 font-bold leading-[1.4] md:leading-[1.3] capitalize">
-                                        Some Questions we <br /> get asked often
-                                    </h3>
-                                    <p className="text-sm md:text-base leading-loose md:leading-relaxed mb-0 md:mb-14 md:w-[80%]">
-                                        Discover key information about our AI solutions, community focus, and future plans.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex-1">
-                                <div className="flex gap-5 flex-col mx-auto">
-                                    <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
-                                        <h3 className="font-medium text-base leading-[1.5] md:leading-[1.3]">How does your AI detect misinformation?</h3>
-                                        <FaAngleDown className="text-xl" />
-                                    </div>
-                                    <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
-                                        <h3 className="font-medium text-base leading-[1.5] md:leading-[1.3]">Can I customize the tools to fit my needs?</h3>
-                                        <FaAngleDown className="text-xl" />
-                                    </div>
-                                    <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
-                                        <h3 className="font-medium text-base leading-[1.5] md:leading-[1.3]">Are there any costs involved?</h3>
-                                        <FaAngleDown className="text-xl" />
-                                    </div>
-                                    <div className="border-2 rounded-lg border-solid border-[#EBEBEB] py-5 px-6 flex items-center justify-between">
-                                        <h3 className="font-medium text-base leading-[1.5] md:leading-[1.3]">Can businesses use your platform to automate workflows?</h3>
-                                        <FaAngleDown className="text-xl" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </section>
                     </section>
                 </>
             </PillarsLayout>

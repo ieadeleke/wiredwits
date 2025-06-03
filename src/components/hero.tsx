@@ -156,9 +156,9 @@ const FallingBlocks: React.FC = () => {
     };
 
     return (
-        <div className="h-[650px] hero-bg relative">
+        <div className="pb-0 md:min-h-[650px] hero-bg relative">
             <div className="py-8">
-                <div className="md:w-[55%] z-40 relative py-32 md:py-28 px-5 md:px-0 mx-auto text-center">
+                <div className="md:w-[55%] z-40 relative pt-28 pb-10 md:pt-28 md:pb-16 px-5 md:px-0 mx-auto text-center">
                     <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-6 rounded-lg">
                         <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
                     </div>

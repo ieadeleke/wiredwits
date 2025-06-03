@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Logo from "@/assets/images/logo.png";
+import LogoWhite from "@/assets/images/logo_white.png";
 import Image from "next/image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { Dropdown, MenuProps } from "antd";
@@ -60,28 +61,29 @@ const Navigation = () => {
 
     return (
         <nav className={`fixed top-0 ${fixedNav ? 'bg-white shadow-lg' : ''} w-full max-w-[1800px] mx-auto z-50 shadow-2x px-5 md:px-16 bg-whit`}>
-            <div className="w-full py-1 flex justify-between items-center">
+            <div className="w-full py-1 flex justify-between items-center text-white">
                 <div className="flex items-center gap-20 flex-1">
-                    <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-aut" />
+                            <Image src={Logo} alt="logo" quality={100} width={700} height={1000} className="w-auto h-[4rem] mb-2 mx-aut" />
+                    {/* <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-aut" /> */}
                     {/* <div className="w-[5rem] h-[3rem] bg-black"></div>
                     <h3 className="text-xl font-bold">WiredWits</h3> */}
                     {/* </div> */}
                     {/* <div className="hidden md:flex flex-1"> */}
-                    <ul className="flex gap-12 items-center">
+                    <ul className="hidden md:flex gap-12 items-center">
                         <li>
-                            <Link href="/" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Home</Link>
+                            <Link href="/" className={`text-sm font-[600] text-black opacity-80`}>Home</Link>
                         </li>
                         <li>
-                            <Link href="about-us" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>About Us</Link>
+                            <Link href="about-us" className={`text-sm font-[600] text-black opacity-80`}>About Us</Link>
                         </li>
                         <Dropdown menu={{ items }}>
-                            <Link href="#" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>All Pillars</Link>
+                            <Link href="#" className={`text-sm font-[600] text-black opacity-80`}>All Pillars</Link>
                         </Dropdown>
                         {/* <li>
                             <Link href="/blogs" className={`text-sm font-[600] ${ fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Blog</Link>
                         </li> */}
                         <li>
-                            <Link href="/feedback-hub" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Feedback Hub</Link>
+                            <Link href="/feedback-hub" className={`text-sm font-[600] text-black opacity-80`}>Feedback Hub</Link>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +94,7 @@ const Navigation = () => {
                             <Link href="/contact-us" className={`text-sm font-[600] ${ fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Contact Us</Link>
                         </li> */}
                         <li>
-                            <Link href="/auth/signin" className={`text-sm font-[600] ${fixedNav ? 'text-black' : 'text-white'} opacity-80`}>Sign In</Link>
+                            <Link href="/auth/signin" className={`text-sm font-[600] text-black opacity-80`}>Sign In</Link>
                         </li>
                         <li>
                             <Link href="/auth/signup" className="bg-primary text-white py-4 px-6 rounded-lg text-sm font-medium flex gap-1 items-center">Create Account <GoArrowUpRight className="text-2xl" /></Link>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Work_Sans } from "next/font/google";
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
 import RootLayoutClient from "@/components/client/RootLayout";
@@ -22,6 +22,13 @@ const plusJakarta = Plus_Jakarta_Sans({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
 });
 
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-work-sans',
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+});
+
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -40,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`}>
+    <html lang="en" className={`${plusJakarta.variable} ${workSans.variable} ${inter.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
