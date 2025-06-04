@@ -82,11 +82,11 @@ export default function Communities() {
             <AuthLayout>
                 <>
                     <div className="">
-                        <div ref={scrollableRef} className="flex items-end justify-between">
-                            <h3 className="text-2xl font-bold">
+                        <div ref={scrollableRef} className="flex items-center md:items-end justify-between">
+                            <h3 className="text-base md:text-2xl font-bold">
                                 Today&apos;s Top Stories
                             </h3>
-                            <Link href={AppRoutes.explore} className="block bg-primary py-4 px-12 rounded-lg text-sm text-white">Discover More Topics</Link>
+                            <Link href={AppRoutes.explore} className="block bg-primary py-3 md:py-4 px-6 md:px-12 rounded-lg text-sm text-white">Discover More Topics</Link>
                         </div>
                         <div className="mt-5">
                             <AllSummariesListing

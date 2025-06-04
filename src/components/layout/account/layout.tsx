@@ -9,6 +9,7 @@ import { Spin } from "antd";
 import { LoadingOutlined } from '@ant-design/icons';
 import PaymentModal from "@/components/pages/account/sub-modal";
 import Footer from "../footer";
+import Navigation from "../nav";
 
 interface LayoutProps {
     children: React.ReactElement,
@@ -47,6 +48,9 @@ const AuthLayout = (props: LayoutProps) => {
     return (
         <div className="fle md:h-[100vh] md:overflow-hidden">
             <Spin spinning={spinIcon} indicator={antIcon}>
+                <div className="block md:hidden">
+                    <Navigation />
+                </div>
                 <div className="h-[12vh] hidden md:flex items-center border-b-2 border-solid border-[#E4E4E6] w-full px-8">
                     <div className="flex items-center w-full justify-between">
                         <div className="flex items-center gap-10">
@@ -91,7 +95,7 @@ const AuthLayout = (props: LayoutProps) => {
                     <Image src={Logo} alt="logo" quality={100} width={100} height={100} className="h-[3rem] w-auto" />
                 </div> */}
                 </div>
-                <div className="flex md:h-[88vh]">
+                <div className="flex pt-20 md:pt-0 md:h-[88vh]">
                     <div className="hidden md:flex w-[250px] bg-[#F3F5F7] h-full relative border-r-2 border-solid border-[#E4E4E6] py-10">
                         {/* <div className="h-[6rem] border-b-2 border-solid border-[#E4E4E6] w-full mb-8"></div> */}
                         <SideNav togglePageSpinner={togglePageSpinner} />

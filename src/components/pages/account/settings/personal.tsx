@@ -52,7 +52,7 @@ export default function PersonalSettings() {
         <div>
             <>
                 <form onSubmit={handleSubmit(handleUserProfileUpdate)}>
-                    <div className="grid grid-cols-2 gap-5 mb-5">
+                    <div className="grid grid-cols-2 gap-3 md:gap-5 mb-5">
                         <div className="form-group">
                             <Label className="mb-1">First name</Label>
                             <Controller name="first_name" control={control} defaultValue={user?.first_name}

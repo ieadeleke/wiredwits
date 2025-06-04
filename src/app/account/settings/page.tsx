@@ -95,16 +95,16 @@ export default function Settings() {
                     <>
                         <div className="">
                             <div className="flex flex-col bg-primary h-32 rounded-tl-lg rounded-tr-lg"></div>
-                            <div className="flex gap-5 items-center px-10 -mt-12">
+                            <div className="flex gap-5 items-center px-5 md:px-10 -mt-12">
                                 <div className="relative">
                                     {user?.profile_picture ? (
                                         <img
                                             src={user?.profile_picture}
-                                            alt="profile" className="size-32 rounded-full object-center object-cover"
+                                            alt="profile" className="size-20 md:size-32 rounded-full object-center object-cover"
                                         />
                                     ) : (
-                                        <div className="size-32 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
-                                            <h4 className="text-black uppercase font-medium text-2xl">
+                                        <div className="size-24 md:size-32 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
+                                            <h4 className="text-black uppercase font-medium text-xl md:text-2xl">
                                                 {user?.first_name?.slice(0, 1)} {user?.last_name?.slice(0, 1)}
                                             </h4>
                                         </div>
@@ -116,12 +116,12 @@ export default function Settings() {
                                     </Upload>
                                 </div>
                                 <div>
-                                    <h4 className="mb-2 font-[600] text-lg">{user?.first_name} {user?.last_name}</h4>
+                                    <h4 className="mb-2 font-[600] text-base md:text-lg">{user?.first_name} {user?.last_name}</h4>
                                     <p className="text-sm">{user?.email_address}</p>
                                 </div>
                             </div>
 
-                            <div className="mt-12 px-10">
+                            <div className="mt-12 px-0 md:px-10">
                                 <ul className="flex items-center gap-10">
                                     <li onClick={() => handleCurrentDisplay('personal')} className={`current-view cursor-pointer text-sm font-medium ${currentDisplay === 'personal' ? 'bg-[#EEECFD] p-4 px-8 rounded-full text-primary' : ''}`}>Personal Settings</li>
                                     <li onClick={() => handleCurrentDisplay('password')}
@@ -130,7 +130,7 @@ export default function Settings() {
                                     <li onClick={() => handleCurrentDisplay('subscriptions')} className={`current-view cursor-pointer text-sm font-medium ${currentDisplay === 'subscriptions' ? 'bg-[#EEECFD] p-4 px-8 rounded-full text-primary' : ''}`}>Subscribed Topics</li>
                                 </ul>
                             </div>
-                            <div className="mt-10 px-10">
+                            <div className="mt-10 px-0 md:px-10">
                                 {
                                     currentDisplay === 'personal' ?
                                         <PersonalSettings />
