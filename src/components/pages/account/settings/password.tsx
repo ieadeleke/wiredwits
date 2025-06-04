@@ -57,7 +57,7 @@ export default function PasswordSettings() {
         <div>
             <>
                 <form onSubmit={handleSubmit(handleUserProfileUpdate)}>
-                    <div className="grid grid-cols-2 gap-5 mb-5">
+                    <div className="flex flex-col md:grid grid-cols-2 gap-5 mb-5">
                         <div className="form-group">
                             <Label className="mb-1">Current Password</Label>
                             <Controller name="curr_password" control={control} defaultValue=""

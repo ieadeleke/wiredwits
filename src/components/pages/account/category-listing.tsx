@@ -117,7 +117,7 @@ export default function CategoryListing(props: CategoryProps) {
             <div className="">
                 {
                     props?.search?.length ?
-                        <div className="grid grid-cols-3 gap-5">
+                        <div className="flex flex-col md:grid grid-cols-3 gap-5">
                             {
                                 allSubTopics.map((subtopic: any, index: number) => (
                                     <div key={index} className="border-2 border-solid border-[#F3F5F7] rounded-2xl p-4">

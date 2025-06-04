@@ -95,15 +95,15 @@ export default function Settings() {
                     <>
                         <div className="">
                             <div className="flex flex-col bg-primary h-32 rounded-tl-lg rounded-tr-lg"></div>
-                            <div className="flex gap-5 items-center px-5 md:px-10 -mt-12">
+                            <div className="flex gap-5 items-center px-5 md:px-10 -mt-8 md:-mt-12">
                                 <div className="relative">
                                     {user?.profile_picture ? (
                                         <img
                                             src={user?.profile_picture}
-                                            alt="profile" className="size-20 md:size-32 rounded-full object-center object-cover"
+                                            alt="profile" className="size-28 md:size-32 rounded-full object-center object-cover"
                                         />
                                     ) : (
-                                        <div className="size-24 md:size-32 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
+                                        <div className="size-28 md:size-32 rounded-full bg-[#EBEBEB] relative flex items-center justify-center">
                                             <h4 className="text-black uppercase font-medium text-xl md:text-2xl">
                                                 {user?.first_name?.slice(0, 1)} {user?.last_name?.slice(0, 1)}
                                             </h4>
@@ -130,7 +130,7 @@ export default function Settings() {
                                     <li onClick={() => handleCurrentDisplay('subscriptions')} className={`current-view cursor-pointer text-sm font-medium ${currentDisplay === 'subscriptions' ? 'bg-[#EEECFD] p-4 px-8 rounded-full text-primary' : ''}`}>Subscribed Topics</li>
                                 </ul>
                             </div>
-                            <div className="mt-10 px-0 md:px-10">
+                            <div className="mt-5 md:mt-10 px-0 md:px-10">
                                 {
                                     currentDisplay === 'personal' ?
                                         <PersonalSettings />

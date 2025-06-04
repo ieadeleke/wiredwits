@@ -52,12 +52,12 @@ export default function PersonalSettings() {
         <div>
             <>
                 <form onSubmit={handleSubmit(handleUserProfileUpdate)}>
-                    <div className="grid grid-cols-2 gap-3 md:gap-5 mb-5">
+                    <div className="flex flex-col md:grid grid-cols-2 gap-3 md:gap-5 mb-5">
                         <div className="form-group">
                             <Label className="mb-1">First name</Label>
                             <Controller name="first_name" control={control} defaultValue={user?.first_name}
                                 render={({ field }) => (
-                                    <Input {...field} className="py-7" />
+                                    <Input {...field} className="py-7 w-full" />
                                 )} />
                             {errors.first_name && <p className="form-error">{errors.first_name.message}</p>}
                         </div>
@@ -65,17 +65,17 @@ export default function PersonalSettings() {
                             <Label className="mb-1">Last name</Label>
                             <Controller name="last_name" control={control} defaultValue={user?.last_name}
                                 render={({ field }) => (
-                                    <Input {...field} className="py-7" />
+                                    <Input {...field} className="py-7 w-full" />
                                 )} />
                             {errors.last_name && <p className="form-error">{errors.last_name.message}</p>}
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-5 mb-5">
+                    <div className="flex flex-col md:grid grid-cols-2 gap-3 ,md:gap-5 mb-5">
                         <div className="form-group">
                             <Label className="mb-1">Phone number</Label>
                             <Controller name="phone" control={control} defaultValue={user?.phone}
                                 render={({ field }) => (
-                                    <Input {...field} className="py-7" />
+                                    <Input {...field} className="py-7 w-full" />
                                 )} />
                             {errors.phone && <p className="form-error">{errors.phone.message}</p>}
                         </div>
@@ -83,7 +83,7 @@ export default function PersonalSettings() {
                             <Label className="mb-1">Email address</Label>
                             <Controller name="email_address" control={control} defaultValue={user?.email_address} disabled
                                 render={({ field }) => (
-                                    <Input {...field} className="py-7" />
+                                    <Input {...field} className="py-7 w-full" />
                                 )} />
                         </div>
                     </div>
