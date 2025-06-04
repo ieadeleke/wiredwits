@@ -124,7 +124,7 @@ export default function CategoryListing(props: CategoryProps) {
                                         <div className="flex gap-3 justify-between items-center mb-5">
                                             <div className="flex gap-3 items-center">
                                                 <div className="size-14 rounded-full bg-[#E6E2E0] flex items-center justify-center">
-                                                    <h3 className="text-lg font-medium">{subtopic?.name?.slice(0, 1)}</h3>
+                                                    <h3 className="text-base md:text-lg font-medium">{subtopic?.name?.slice(0, 1)}</h3>
                                                 </div>
                                                 <div>
                                                     <h4 className="text-sm font-medium">{subtopic?.name}</h4>

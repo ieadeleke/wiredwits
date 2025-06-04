@@ -29,10 +29,10 @@ export default function Explore() {
                 <>
                     <div className="">
                         <div className="flex items-center justify-between">
-                            <h3 className="text-2xl font-bold">
+                            <h3 className="text-base w-max md:text-2xl font-bold">
                                 Explore Communities
                             </h3>
-                            <Input className="py-6 w-[350px] text-sm" value={searchKey} placeholder="Search topic title" onChange={(e: any) => setSearchKey(e.target.value)} />
+                            <Input className="py-5 md:py-6 flex-1 md:w-[350px] text-sm" value={searchKey} placeholder="Search topic title" onChange={(e: any) => setSearchKey(e.target.value)} />
                         </div>
                         <div className="mt-10">
                             <CategoryListing search={searchKey} />
