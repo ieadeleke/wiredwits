@@ -1,12 +1,19 @@
+'use client';
+
 import DisplayLayout from "@/components/layout/layout";
+import UserContext from "@/context/UserContext";
 import { Divider } from "antd";
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
 
 
 export default function Home() {
+
+  const { user } = useContext(UserContext);
+
   return (
     <div>
       <DisplayLayout>
@@ -25,7 +32,12 @@ export default function Home() {
                   At Wired Wits, we believe everyone deserves access to tools that help them cut through noise, hold power accountable, and unlock new opportunities.
                 </p>
                 <div className="flex gap-4 mx-auto mb-10 w-max">
-                  <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Get Started</Link>
+                  {
+                    user?.first_name ?
+                      <Link href="/account/dashboard" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Account Dashboard</Link>
+                      :
+                      <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Get Started</Link>
+                  }
                   <Link href="/contact-us" className="bg-white text-black py-4 px-8 rounded-lg text-sm font-medium">Reach out to us</Link>
                 </div>
               </div>
@@ -64,10 +76,10 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm md:text-base text-black opacity-80 leading-loose mb-4">
+                  <p className="text-sm md:text-base text-black opacity-80 leading-loose md:leading-loose mb-4">
                     Wired Wits was founded by Anthony Palmer, a veteran and longtime project management professional, who saw a growing gap between powerful technology and the people who could benefit from it the most. What began as a blog evolved into a platform built to educate, empower, and inspire action, with AI at its core.
                   </p>
-                  <p className="text-sm md:text-base text-black opacity-80 leading-loose">
+                  <p className="text-sm md:text-base text-black opacity-80 leading-loose md:leading-loose">
                     Even though we&apos;re just getting started, our purpose is clear: build tools that solve real problems, and make sure those tools are accessible to everyone — not just the already-privileged.
                   </p>
                 </div>

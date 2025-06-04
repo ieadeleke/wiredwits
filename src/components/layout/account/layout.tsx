@@ -1,8 +1,9 @@
+'use client';
 import Image from "next/image";
 import SideNav from "./sidenav";
 import Logo from "@/assets/images/logo.png";
 import Link from "next/link";
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import UserContext from "@/context/UserContext";
 import { Spin } from "antd";
 import { LoadingOutlined } from '@ant-design/icons';
@@ -25,6 +26,22 @@ const AuthLayout = (props: LayoutProps) => {
     const togglePageSpinner = () => setSpinIcon(!spinIcon);
 
     const toggleDisplayPaymentModal = () => setOpenPaymentModal(!openPaymentModal);
+
+    const scrollableRef = useRef<any>(null);
+
+    const scrollToTop = () => {
+        console.log('hiii')
+        console.log('scrollableRef.current:', scrollableRef.current); // Add this line
+        if (scrollableRef.current) {
+            console.log('Inside if block')
+            scrollableRef.current.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            console.log('scrollableRef.current is null or undefined'); // Add this too
+        }
+    };
 
     return (
         <div className="fle h-[100vh] overflow-hidden">
@@ -78,10 +95,13 @@ const AuthLayout = (props: LayoutProps) => {
                         {/* <div className="h-[6rem] border-b-2 border-solid border-[#E4E4E6] w-full mb-8"></div> */}
                         <SideNav togglePageSpinner={togglePageSpinner} />
                     </div>
-                    <div className="flex-1 h-full overflow-y-auto overflow-x-hidden pb-10">
+                    <div ref={scrollableRef} className="flex-1 h-full overflow-y-auto overflow-x-hidden pb-10">
                         <div className="w-[90%] mx-auto mt-10">
                             {/* <div className="h-[6rem] border-b-2 border-solid border-[#E4E4E6] w-full"></div> */}
                             {props.children}
+                            <button onClick={scrollToTop} className="mb-4 bg-primary py-4 px-6">
+                                Scroll to Topp
+                            </button>
                         </div>
                     </div>
                 </div>

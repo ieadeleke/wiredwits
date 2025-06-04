@@ -71,16 +71,16 @@ export default function Home() {
             </div>
             <img alt="dashboard" src={HomeHero.src} className="w-full h-full rounded-lg" />
             <div className="mt-8 mb-3 md:mb-10 text-center">
-              <p className="md:w-[50%] text-base md:text-lg font-medium mx-auto leading-loose md:leading-loose">
+              <p className="md:w-[50%] text-base md:text-lg font-medium mx-auto leading-loose md:leading-loose hidden md:block">
                 Each product serves a specific need. Together, they form a connected ecosystem to help people think clearly, build freely, and live more securely no matter where they&apos;re starting from.
               </p>
             </div>
-            <div className="text-center md:text-left flex flex-col md:grid grid-cols-3 gap-5 md:gap-10 items-center mt-7">
-              <div className="w-full h-full rounded-xl md:px-5 pt-5">
-                {/* <div>
-                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
-                </div> */}
-                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Public good</p>
+            <div className="text-center md:text-left flex flex-col md:grid grid-cols-3 gap-5 md:gap-10 items-center mt-5 md:mt-7">
+              <div className="w-full h-full rounded-xl md:px-5 pt-3">
+                <div>
+                  <FaSquareArrowUpRight className="mb-4 text-3xl block md:hidden md:text-2xl md:w-max md:w-auto mx-auto md:ml-0" />
+                </div>
+                <p className="text-xs uppercase font-medium opacity-60 mb-2 md:mb-3">Public good</p>
                 <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
                   {/* Bias & Emotion Detection */}
                   Truth, Transparency & Accountability
@@ -90,11 +90,11 @@ export default function Home() {
                   {/* Spot language that may be emotionally charged or potentially biased. We highlight these flags to support critical thinking, not to label or judge. */}
                 </p>
               </div>
-              <div className="w-full h-full rounded-xl md:px-5 pt-5">
-                {/* <div>
-                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
-                </div> */}
-                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Business empowerment</p>
+              <div className="w-full h-full rounded-xl md:px-5 pt-3">
+                <div>
+                  <FaSquareArrowUpRight className="mb-4 text-3xl block md:hidden md:text-2xl md:w-max md:w-auto mx-auto md:ml-0" />
+                </div>
+                <p className="text-xs uppercase font-medium opacity-60 mb-2 md:mb-3">Business empowerment</p>
                 <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
                   For strategy and ownership
                 </h4>
@@ -103,11 +103,11 @@ export default function Home() {
                   {/* Curious about the bigger picture? Ask follow-up questions and get clear, AI-powered answers with historical context, different viewpoints, or. */}
                 </p>
               </div>
-              <div className="w-full h-full rounded-xl md:px-5 pt-5">
-                {/* <div>
-                  <FaSquareArrowUpRight className="mb-4 text-4xl md:text-2xl w-max md:w-auto mx-auto md:ml-0" />
-                </div> */}
-                <p className="text-xs uppercase font-medium opacity-60 mb-1 md:mb-3">Everyday AI</p>
+              <div className="w-full h-full rounded-xl md:px-5 pt-3">
+                <div>
+                  <FaSquareArrowUpRight className="mb-4 text-3xl block md:hidden md:text-2xl md:w-max md:w-auto mx-auto md:ml-0" />
+                </div>
+                <p className="text-xs uppercase font-medium opacity-60 mb-2 md:mb-3">Everyday AI</p>
                 <h4 className="mb-2 md:mb-2 font-[600] text-base md:text-lg">
                   For life&apos;s day-to-day demand
                 </h4>
@@ -166,7 +166,7 @@ export default function Home() {
                         </p>
                       </div>
                       <Link href="/auth/signup" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
-                        <GoArrowUpRight className="text-2xl" /></Link>
+                        <GoArrowUpRight className="text-xl md:text-2xl" /></Link>
                     </div>
                     <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
                   </div> :
@@ -182,7 +182,7 @@ export default function Home() {
                           </p>
                         </div>
                         <Link href="/auth/signup" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
-                          <GoArrowUpRight className="text-2xl" /></Link>
+                          <GoArrowUpRight className="text-xl md:text-2xl" /></Link>
                       </div>
                       <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
                     </div>
@@ -198,7 +198,7 @@ export default function Home() {
                           </p>
                         </div>
                         <Link href="/auth/signup" className="bg-primary text-white px-6 py-4 text-sm rounded-lg w-max flex items-center gap-2 opacity-80">Create Account
-                          <GoArrowUpRight className="text-2xl" /></Link>
+                          <GoArrowUpRight className="text-xl md:text-2xl" /></Link>
                       </div>
                       <Image src={EmpowerImg} alt="dashboard" quality={100} height={1000} width={1000} className="w-full h-[30rem]" />
                     </div>
@@ -214,58 +214,61 @@ export default function Home() {
               <div className="flex flex-col gap-5 md:grid grid-cols-3 md:gap-10">
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
-                    <MdOutlineFlightClass className="text-2xl" />
+                    <MdOutlineFlightClass className="text-xl md:text-2xl" />
                   </div>
-                  <h4 className="text-black text-xl font-medium mb-3">Ask Smarter Questions</h4>
+                  <h4 className="text-black text-base md:text-xl font-medium mb-3">Ask Smarter Questions</h4>
                   <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     Dig deeper than headlines. Ask follow-ups to get context, history, and multiple angles on any story.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
-                    <FaMagnifyingGlass className="text-2xl" />
+                    <FaMagnifyingGlass className="text-xl md:text-2xl" />
                   </div>
-                  <h4 className="text-black text-xl font-medium mb-3">Spot Spin Fast</h4>
+                  <h4 className="text-black text-base md:text-xl font-medium mb-3">Spot Spin Fast</h4>
                   <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     Catch emotionally charged language and bias triggers instantly so you can focus on what&apos;s actually being said.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
-                    <TbBorderSides className="text-2xl" />
+                    <TbBorderSides className="text-xl md:text-2xl" />
                   </div>
-                  <h4 className="text-black text-xl font-medium mb-3">See all Sides</h4>
+                  <h4 className="text-black text-base md:text-xl font-medium mb-3">See all Sides</h4>
                   <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     View how the same issue is covered across different outlets, regions, or perspectives—side by side.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
-                    <GiTreeRoots className="text-2xl" />
+                    <GiTreeRoots className="text-xl md:text-2xl" />
                   </div>
-                  <h4 className="text-black text-xl font-medium mb-3">Understand the Roots</h4>
+                  <h4 className="text-black text-base md:text-xl font-medium mb-3">Understand the Roots</h4>
                   <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     Don&apos;t just react. Trace events back to their origins and understand the full story before you form an opinion.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
-                    <PiChalkboardTeacherBold className="text-2xl" />
+                    <PiChalkboardTeacherBold className="text-xl md:text-2xl" />
                   </div>
-                  <h4 className="text-black text-xl font-medium mb-3">Make It Make Sense</h4>
+                  <h4 className="text-black text-base md:text-xl font-medium mb-3">Make It Make Sense</h4>
                   <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     From legal jargon to policy details, get personalized summaries that explain complex topics in plain language.
                   </p>
                 </div>
                 <div className="border-2 border-solid border-[#e5e5e5] bg-[#fff] rounded-lg py-5 px-5">
                   <div className="size-16 rounded-lg mb-14 bg-[#EAEAEA] [#8267E2] flex items-center justify-center">
-                    <FaBrain className="text-2xl" />
+                    <FaBrain className="text-xl md:text-2xl" />
                   </div>
-                  <h4 className="text-black text-xl font-medium mb-3">Think for Yourself</h4>
+                  <h4 className="text-black text-base md:text-xl font-medium mb-3">Think for Yourself</h4>
                   <p className="text-sm md:text-base text-black leading-loose md:leading-loose">
                     This isn&apos;t about telling you what to believe. It&apos;s about giving you the tools to decide on your own terms.
                   </p>
                 </div>
+              </div>
+              <div className="flex items-center justify-center mt-12">
+                <Link href="/public-good" className="w-max py-5 px-8 text-sm bg-primary rounded-lg text-sm text-white">Check out Wits Newsroom</Link>
               </div>
             </div>
           </section>

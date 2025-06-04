@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import { DateTime } from "luxon";
 import { Pagination, Skeleton } from "antd";
@@ -21,8 +21,24 @@ const AllSummariesListing = (props: SummariesProps) => {
         props.paginationControl(val);
     };
 
+    const scrollableRef = useRef<any>(null);
+
+    const scrollToTop = () => {
+        console.log('hiii')
+        console.log('scrollableRef.current:', scrollableRef.current); // Add this line
+        if (scrollableRef.current) {
+            console.log('Inside if block')
+            scrollableRef.current.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            console.log('scrollableRef.current is null or undefined'); // Add this too
+        }
+    };
+
     return (
-        <div className="blog-layout">
+        <div className="blog-layout" ref={scrollableRef}>
             <div className="blog-grid-display mt_2 mb_4">
                 {/* <h5 className="blog-sect-title">Featured Posts</h5> */}
                 {props?.data?.length ? (
@@ -78,6 +94,7 @@ const AllSummariesListing = (props: SummariesProps) => {
                                 onChange={paginationControl}
                             />
                         </div>
+                        <button onClick={() => scrollToTop()} className="bg-primary text-sm py-4 px-6">click me</button>
                     </>
                 ) : (
                     <SkeletonLoader />

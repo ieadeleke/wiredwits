@@ -37,9 +37,9 @@ export default function ContactUs() {
             <div className="flex flex-col md:flex-row gap-14 md:gap-32">
               <div className="md:w-[450px]">
                 <div className="flex flex-col gap-10">
-                  <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 py-8 rounded-lg">
+                  <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 pt-8 pb-4 md:pb-8 rounded-lg text-center md:text-left">
                     <div>
-                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-14 flex items-center justify-center">
+                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-5 md:mb-14 flex items-center justify-center mx-auto md:ml-left">
                         <IoMailOpen className="text-primary text-2xl" />
                       </div>
                       <h5 className="text-lg mb-2 font-medium">Email</h5>
@@ -47,9 +47,9 @@ export default function ContactUs() {
                       <a className="text-[#9747FF]" href="mailto:support@codepunk.com">support@wiredwits.com</a>
                     </div>
                   </div>
-                  <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 py-8 rounded-lg">
+                  <div className="border-2 border-solid border-[#EBEBEB] [#0a0a0a99] px-6 pt-8 pb-4 md:pb-8 rounded-lg text-center md:text-left">
                     <div>
-                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-10 flex items-center justify-center">
+                      <div className="size-14 rounded-lg bg-[#E8DEFF] mb-5 md:mb-14 flex items-center justify-center mx-auto md:ml-left">
                         <PiSignpostBold className="text-primary text-2xl" />
                       </div>
                       <h5 className="text-lg mb-2 font-medium">Mailing Address</h5>
@@ -62,7 +62,7 @@ export default function ContactUs() {
               </div>
               <div className="flex-1">
                 <form action="">
-                  <div className="grid grid-cols-2 gap-5 mb-3">
+                  <div className="grid grid-cols-2 gap-3 md:gap-5 mb-3">
                     <div className="form-group">
                       <label htmlFor="" className="text-sm">First name</label>
                       {/* <Controller name="firstName" control={control}
@@ -71,7 +71,7 @@ export default function ContactUs() {
                       {/* )} /> */}
                     </div>
                     <div className="form-group">
-                      <label htmlFor="" className="text-sm">First name</label>
+                      <label htmlFor="" className="text-sm">Last name</label>
                       {/* <Controller name="firstName" control={control}
                         render={({ field }) => ( */}
                       <input className="text-sm border-2 border-solid border-[#EBEBEB] block w-full h-[4rem] px-2 rounded-lg" name="firstName" />
@@ -115,7 +115,7 @@ export default function ContactUs() {
                     <textarea name="message" rows={6} className="text-sm border-2 border-solid border-[#EBEBEB] block w-full px-2 rounded-lg" />
                     {/* )} /> */}
                   </div>
-                  <button className="bg-[#9747FF] text-white py-5 px-8 rounded-lg text-sm font-medium mt-14">Submit</button>
+                  <button className="bg-[#9747FF] text-white py-5 px-8 rounded-lg text-sm font-medium mt-14 w-full md:w-max">Submit</button>
                 </form>
               </div>
             </div>

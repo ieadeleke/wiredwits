@@ -1,5 +1,8 @@
+'use client';
+
+import UserContext from '@/context/UserContext';
 import Link from 'next/link';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 
 interface Block {
     id: number;
@@ -20,6 +23,9 @@ interface StackHeights {
 }
 
 const FallingBlocks: React.FC = () => {
+
+    const { user } = useContext(UserContext);
+
     const [blocks, setBlocks] = useState<Block[]>([]);
     const [isAnimating, setIsAnimating] = useState<boolean>(false);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -160,7 +166,7 @@ const FallingBlocks: React.FC = () => {
             <div className="py-8">
                 <div className="md:w-[55%] z-40 relative pt-28 pb-10 md:pt-28 md:pb-16 px-5 md:px-0 mx-auto text-center">
                     <div className="py-3 px-4 text-center bg-[#EEECFD] w-max mx-auto mb-6 rounded-lg">
-                        <h4 className="text-[#9747FF] font-medium text-sm">AI That Works for Everyone</h4>
+                        <h4 className="text-[#9747FF] font-medium text-xs md:text-sm">AI That Works for Everyone</h4>
                     </div>
                     <h1 className="text-3xl md:text-6xl [45px] w- [80%] mx-auto tracking-tighter font-bol mb-4 leading-[1.4] md:leading-[1.4] font-black">
                         Smarter Tools. Clearer Truth. Bigger Possibilities
@@ -169,7 +175,12 @@ const FallingBlocks: React.FC = () => {
                         Explore AI made for everyday people, dreamers, and doers. From decoding the news to building your next big thing, this is just the beginning.
                     </p>
                     <div className="flex gap-4 mx-auto mb-10 w-max">
-                        <Link href="/auth/signup" className="bg-[#9747FF] text-white py-5 px-10 rounded-lg text-sm font-medium">Get Started</Link>
+                        {
+                            user?.first_name ?
+                                <Link href="/account/dashboard" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium flex items-center justify-center">Account Dashboard</Link>
+                                :
+                                <Link href="/auth/signup" className="bg-[#9747FF] text-white py-4 px-8 rounded-lg text-sm font-medium">Get Started</Link>
+                        }
                         <Link href="/contact-us" className="bg-white text-black py-5 px-10 rounded-lg text-sm font-medium">Contact Us</Link>
                     </div>
                 </div>

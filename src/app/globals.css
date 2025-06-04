@@ -337,15 +337,39 @@ textarea {
 
   position: absolute;
   left: 50%;
-  bottom: -50%; /* This pushes it down so half extends below */
+  bottom: -50%;
+  /* This pushes it down so half extends below */
   transform: translateX(-50%);
   z-index: 30;
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
-  backdrop-filter: blur(10px); /* this creates the glass blur */
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* optional frosted edge */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
+  background: rgba(255, 255, 255, 0.1);
+  /* semi-transparent */
+  backdrop-filter: blur(10px);
+  /* this creates the glass blur */
+  -webkit-backdrop-filter: blur(10px);
+  /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* optional frosted edge */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* soft shadow */
+}
+
+
+.ant-drawer-body {
+  padding: 0px !important;
+  font-family: var(--font-plus-jakarta), sans-serif !important;
+}
+
+.ant-drawer-content {
+  width: 100% !important;
+}
+
+.ant-drawer-content-wrapper {
+  width: 100% !important;
+}
+
+.ant-drawer-header {
+  display: none !important;
 }
