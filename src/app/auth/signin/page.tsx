@@ -139,7 +139,7 @@ const SignInPage = () => {
 
     return (
         <div className="auth-bg flex items-center justify-center">
-            <div className="bg-white px-5 pt-8 pb-5 rounded-xl shadow-xl w-[35%]">
+            <div className="bg-white px-5 pt-8 pb-5 rounded-xl shadow-xl w-[95%] md:w-[35%]">
                 <div className="text-center">
                     <Link href="/">
                         <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-auto" />
@@ -164,9 +164,9 @@ const SignInPage = () => {
                             )} />
                         {errors.password && <p className="form-error">{errors.password.message}</p>}
                     </div>
-                    <div className="mb-5">
+                    {/* <div className="mb-5">
                         <Link className="text-sm" href={AppRoutes.reset}>Forgot Password? <span className="text-primary">Reset Here</span></Link>
-                    </div>
+                    </div> */}
                     <div className="mt-5">
                         <Button className="w-full py-7 text-sm" disabled={formLoader}>
                             {

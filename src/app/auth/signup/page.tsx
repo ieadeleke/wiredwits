@@ -143,7 +143,7 @@ const SignUpPage = () => {
 
     return (
         <div className="auth-bg flex items-center justify-center">
-            <div className="bg-white px-5 pt-8 pb-5 rounded-xl shadow-xl w-[35%]">
+            <div className="bg-white px-5 pt-8 pb-5 rounded-xl shadow-xl w-[95%] md:w-[35%]">
                 <div className="text-center">
                     <Link href="/">
                         <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-auto" />
@@ -152,7 +152,7 @@ const SignUpPage = () => {
                     <p className="mb-5 text-sm font-medium">Have an account? <Link className="text-primary" href={AppRoutes.signin}>Sign in</Link></p>
                 </div>
                 <form onSubmit={handleSubmit(handleUserSignUp)}>
-                    <div className="grid grid-cols-2 gap-5">
+                    <div className="grid grid-cols-2 gap-3 md:gap-5">
                         <div className="form-group mb-3">
                             <Label className="mb-1">First name</Label>
                             <Controller name="first_name" control={control}

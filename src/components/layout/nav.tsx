@@ -80,7 +80,7 @@ const Navigation = () => {
                             <Link href="/" className={`text-sm font-[600] text-black opacity-80`}>Home</Link>
                         </li>
                         <li>
-                            <Link href="about-us" className={`text-sm font-[600] text-black opacity-80`}>About Us</Link>
+                            <Link href="/about-us" className={`text-sm font-[600] text-black opacity-80`}>About Us</Link>
                         </li>
                         <Dropdown menu={{ items }}>
                             <Link href="#" className={`text-sm font-[600] text-black opacity-80`}>All Pillars</Link>

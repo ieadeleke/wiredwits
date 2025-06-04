@@ -54,18 +54,18 @@ const SignUpPage = () => {
 
     return (
         <div className="auth-bg flex items-center justify-center">
-            <div className="bg-white px-5 pt-8 pb-5 rounded-xl shadow-xl w-[35%]">
+            <div className="bg-white px-5 pt-8 pb-5 rounded-xl shadow-xl w-[95%] md:w-[35%]">
                 <div className="text-center">
                     <Image src={Logo} alt="logo" quality={100} width={60} height={100} className="w-auto h-[4rem] mb-2 mx-auto" />
                 </div>
                 <div className="text-center">
                     <h2 className="text-2xl font-bold mb-1">Welcome to Wired Wits</h2>
-                    <p className="text-[15px] leading-loose md:leading-loose w-[80%] mx-auto">
+                    <p className="text-[15px] leading-loose md:leading-loose md:w-[80%] mx-auto">
                         Almost there! Choose the topics that matter to you to get updates on tools, insights, and more.
                     </p>
-                    <div className="mt-8 grid grid-cols-3 gap-3">
+                    <div className="mt-4 md:mt-8 flex flex-col md:grid grid-cols-3 gap-3">
                         <div onClick={() => handleUserSelection('Public Good')}
-                            className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
+                            className="border-2 border-solid border-black cursor-pointer rounded-xl py-8 md:py-7 px-8 relative">
                             <h3 className="text-[14px]">Public Good</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
@@ -73,7 +73,7 @@ const SignUpPage = () => {
                             </div>
                         </div>
                         <div onClick={() => handleUserSelection('Business Empowerment')}
-                            className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
+                            className="border-2 border-solid border-black cursor-pointer rounded-xl py-8 md:py-7 px-8 relative">
                             <h3 className="text-[14px]">Business Empowerment</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
@@ -82,7 +82,7 @@ const SignUpPage = () => {
                         </div>
 
                         <div onClick={() => handleUserSelection('Everyday AI')}
-                            className="border-2 border-solid border-black cursor-pointer rounded-xl py-7 px-8 relative">
+                            className="border-2 border-solid border-black cursor-pointer rounded-xl py-8 md:py-7 px-8 relative">
                             <h3 className="text-[14px]">Everyday AI</h3>
                             <div className="absolute size-5 border-2 border-solid border-black rounded-full top-2 left-2 flex items-center justify-center">
                                 {
@@ -90,7 +90,7 @@ const SignUpPage = () => {
                             </div>
                         </div>
                     </div>
-                    <button onClick={handlePillarSection} className="bg-primary text-white py-5 px-8 rounded-lg text-sm font-medium mt-12 w-full">{
+                    <button onClick={handlePillarSection} className="bg-primary text-white py-5 px-8 rounded-lg text-sm font-medium mt-9 md:mt-12 w-full">{
                         loader ? <Spinner /> : 'Continue'
                     }</button>
                 </div>
