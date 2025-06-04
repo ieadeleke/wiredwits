@@ -30,7 +30,7 @@ import { Modal } from "antd";
 import PaymentModal from "@/components/pages/account/sub-modal";
 
 
-export default function UserDashboard() {
+export default function UserProfileDashboard() {
     const { isLoading, data, error, getSummaries } = useGetAllSummaries();
     const { isLoading: allSubscriptionLoader, data: allSubscriptionData, error: allSubscriptionErrors, getSubscriptions } = useGetAllSubscriptions();
 

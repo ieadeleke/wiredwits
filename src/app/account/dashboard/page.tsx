@@ -1,5 +1,6 @@
 'use client';
 
+import UserProfileDashboard from "@/components/layout/account/dashboard";
 import AuthLayout from "@/components/layout/account/layout";
 
 
@@ -9,7 +10,7 @@ export default function UserDashboard() {
         <div>
             <AuthLayout>
                 <>
-                    <UserDashboard />
+                    <UserProfileDashboard />
                 </>
             </AuthLayout>
         </div>
