@@ -86,7 +86,7 @@ export default function Communities() {
                             <h3 className="text-base md:text-2xl font-bold">
                                 Today&apos;s Top Stories
                             </h3>
-                            <Link href={AppRoutes.explore} className="block bg-primary py-3 md:py-4 px-6 md:px-12 rounded-lg text-sm text-white">Discover More Topics</Link>
+                            <Link href={AppRoutes.explore} className="block bg-primary py-3 md:py-4 px-6 md:px-12 rounded-lg text-xs md:text-sm text-white">Discover More Topics</Link>
                         </div>
                         <div className="mt-5">
                             <AllSummariesListing

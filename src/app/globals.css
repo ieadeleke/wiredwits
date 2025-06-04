@@ -378,3 +378,10 @@ textarea {
   transform-origin: left top;
   transform: scale(0.875);
 } */
+
+@media screen and (max-width: 720px) {
+  .inner-article-text {
+    font-size: .8rem !important;
+    line-height: 2.1 !important;
+  }
+}

@@ -28,9 +28,12 @@ export default function Explore() {
             <AuthLayout>
                 <>
                     <div className="">
-                        <div className="flex items-center justify-between">
-                            <h3 className="text-base w-max md:text-2xl font-bold">
+                        <div className="flex items-center gap-4 justify-between">
+                            <h3 className="hidden md:block text-base w-[50%] md:w-full md:text-2xl font-bold">
                                 Explore Communities
+                            </h3>
+                            <h3 className="block md:hidden text-base w-[50%] md:w-full md:text-2xl font-bold">
+                                Communities
                             </h3>
                             <Input className="py-6 md:py-6 flex-1 md:w-[350px] text-sm" value={searchKey} placeholder="Search topic title" onChange={(e: any) => setSearchKey(e.target.value)} />
                         </div>

@@ -265,13 +265,13 @@ const ViewSummaryPage = () => {
                                                                 <Link href='/account/summaries' className="gap-3 flex items-center text-sm mb-7 w-max">
                                                                     <FaArrowLeftLong className="text-xl" /> Go Back
                                                                 </Link>
-                                                                <p className="text-base text-center mb-4">
+                                                                <p className="text-sm md:text-base text-center mb-4">
                                                                     {DateTime.fromISO(dataDisplay.dateTime).toLocaleString(
                                                                         DateTime.DATE_HUGE
                                                                     )}
                                                                 </p>
                                                                 <div>
-                                                                    <h3 className="text-3xl text-center font-bold leading-tight mb-5 w-[80%] mx-auto">
+                                                                    <h3 className="text-xl md:text-3xl text-center font-bold leading-tight mb-5 md:w-[80%] mx-auto">
                                                                         {dataDisplay.title}
                                                                     </h3>
                                                                 </div>
@@ -338,7 +338,7 @@ const ViewSummaryPage = () => {
                                                                             defaultValue=""
                                                                             control={control}
                                                                             render={({ field }) => (
-                                                                                <div className="relative w-full h-[4rem] flex gap-4">
+                                                                                <div className="relative w-full h-[4rem] flex flex-col md:flex-row gap-2 md:gap-4">
                                                                                     <Input
                                                                                         name="comment"
                                                                                         onKeyDown={
@@ -355,10 +355,15 @@ const ViewSummaryPage = () => {
                                                                                     />
                                                                                     <div
                                                                                         onClick={handleQuestionTab}
-                                                                                        className="w-[4rem] flex items-center justify-center bg-primary rounded-full h-[4rem]">
+                                                                                        className="md:w-[4rem] flex items-center justify-center bg-primary rounded-lg md:rounded-full md:h-[4rem]">
                                                                                         {
                                                                                             !loadQuestion ?
-                                                                                                <IoIosSend className="text-white text-2xl" />
+                                                                                                <>
+                                                                                                    <p className="block md:hidden">
+                                                                                                        Submit
+                                                                                                    </p>
+                                                                                                    <IoIosSend className="hidden md:block text-white text-2xl" />
+                                                                                                </>
                                                                                                 :
                                                                                                 <Spinner />
                                                                                         }
@@ -367,17 +372,9 @@ const ViewSummaryPage = () => {
                                                                             )}
                                                                         />
                                                                     </div>
-                                                                    <p className="leading-relaxed md:leading-relaxed text-sm mt-5 block">
+                                                                    <p className="leading-relaxed md:leading-relaxed text-xs md:text-sm mt-5 block">
                                                                         AI-generated responses may include general knowledge or insights not found in the article. Always verify critical information using trusted sources. This beta feature is designed to support independent thinking and help you explore the facts from multiple angles.
                                                                     </p>
-                                                                </div>
-                                                                <div className="block md:hidden mt-14">
-                                                                    <button
-                                                                        onClick={displayContentGenerationPage}
-                                                                        className="bg-primary px-6 rounded-lg py-4 text-sm text-white"
-                                                                    >
-                                                                        Generate New Content
-                                                                    </button>
                                                                 </div>
                                                                 {/* <Collapse items={items} defaultActiveKey={['1']} /> */}
                                                             </div>
