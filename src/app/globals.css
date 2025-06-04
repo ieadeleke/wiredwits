@@ -374,7 +374,7 @@ textarea {
   display: none !important;
 }
 
-input, textarea, select {
+/* input, textarea, select {
   transform-origin: left top;
-  transform: scale(0.875); /* Scale down from 16px to ~14px visually */
-}
+  transform: scale(0.875);
+} */

@@ -163,9 +163,9 @@ export default function CategoryListing(props: CategoryProps) {
                                     <div key={index} className="mb-10">
                                         <div className="">
                                             <div>
-                                                <h3 className="text-lg font-bold mb-2">{topic.topic}</h3>
+                                                <h3 className="text-base md:text-lg font-bold mb-2">{topic.topic}</h3>
                                             </div>
-                                            <div className="grid grid-cols-3 gap-5">
+                                            <div className="flex flex-col md:grid grid-cols-3 gap-5">
                                                 {
                                                     topic?.subtopics?.map((subtopic: any, index: number) => (
                                                         <div key={index} className="border-2 border-solid border-[#F3F5F7] rounded-2xl p-4">
