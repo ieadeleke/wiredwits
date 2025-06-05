@@ -191,6 +191,7 @@ export default function CategoryListing(props: CategoryProps) {
                                                                 </div>
                                                             </div>
                                                             <p className="text-xs leading-loose opacity-70">
+                                                                {subtopic.description}
                                                                 Indulge in handheld gaming and computing power with the Valve Steam Deck.
                                                             </p>
                                                         </div>
