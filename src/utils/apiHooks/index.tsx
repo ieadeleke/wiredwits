@@ -28,7 +28,7 @@ export const useApi = () => {
         setIsLoading(true);
         setError(null);
         let apiCall = await callback();
-        if (apiCall?.success) {
+        if (apiCall?.success ) {
           return apiCall;
         } else {
           if (apiCall.statusCode == 401) {

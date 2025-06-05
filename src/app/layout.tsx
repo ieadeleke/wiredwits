@@ -3,6 +3,9 @@ import { Geist, Geist_Mono, Work_Sans } from "next/font/google";
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
 import RootLayoutClient from "@/components/client/RootLayout";
+import Script from 'next/script';
+import { GA_TRACKING_ID } from '@/lib/gtag';
+import AnalyticsProvider from '@/app/providers';
 
 
 const geistSans = Geist({
@@ -59,9 +62,29 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+        <AnalyticsProvider>
         <RootLayoutClient>
           {children}
         </RootLayoutClient>
+        </AnalyticsProvider>
       </body>
     </html >
   );

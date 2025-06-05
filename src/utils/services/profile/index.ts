@@ -111,6 +111,18 @@ export function ProfileService() {
         return response as ApiResponse
     }
 
+    async function getAllPageContents() {
+        const response = await request({
+            path: `page-content`,
+            method: "GET",
+            body: ''
+        })
+        return {
+            success: true,
+            data: response
+        };
+    }
+
     async function getAllTopics() {
         const response = await request({
             path: `user/topics`,
@@ -195,6 +207,7 @@ export function ProfileService() {
         cancelSubPayment,
         completeSubPayment,
         finishSubPayment,
-        getSubPlans
+        getSubPlans,
+        getAllPageContents
     }
 }
