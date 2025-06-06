@@ -167,7 +167,7 @@ export default function ContactUs() {
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 0 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                                             <div onClick={() => setCurrentValuesView(0)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
-                                                <h3 className="font-bold text-base md:text-lg">Who are these tools for?</h3>
+                                                <h3 className="font-bold text-base md:text-lg">How does this fit into the bigger Quality of Life ecosystem?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
                                                         currentValuesView === 0 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
@@ -176,16 +176,14 @@ export default function ContactUs() {
                                             </div>
                                             <div className={`values-text ${currentValuesView === 0 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    Wired Wits is for everyday people who want to take back control—of their time, their choices, and their understanding of the world.
-                                                    Whether you're a small business owner, a concerned citizen, a side hustler, or someone just trying to make sense of today&apos;s chaos, our tools are built to meet you where you are.
-                                                    {/* You don&apos;t need to be a tech expert or policy wonk. You just need curiosity and the desire to make better decisions in your life, business, or community. */}
+                                                    The Public Good pillar is all about reclaiming clarity, accountability, and truth. Foundations that impact every part of life. When people are misinformed or manipulated, it affects their decisions, their communities, and their future. This pillar supports the rest by making sure people have the tools to think critically and challenge what doesn&apos;t serve them, so they can build lives and systems that do.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 1 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                                             <div onClick={() => setCurrentValuesView(1)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
-                                                <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">Why do you call Wired Wits a &apos;Quality of Life&apos; platform?</h3>
+                                                <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">What&apos;s next for the Public Good pillar?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
                                                         currentValuesView === 1 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
@@ -194,16 +192,14 @@ export default function ContactUs() {
                                             </div>
                                             <div className={`values-text ${currentValuesView === 1 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    Because everything we build is designed to protect and improve the ecosystem that supports human dignity, freedom, and growth.
-                                                    That ecosystem is under pressure, from misinformation, unchecked greed, misused technology, and dysfunctional governance. These aren&apos;t partisan problems. They&apos;re structural threats that affect everyone.
-                                                    Our mission is to give people the tools to navigate this landscape with more clarity, more ownership, and more opportunity, so we can all thrive.
+                                                    First up is Wits Newsroom, our interactive news app designed to help you ask smarter questions, explore multiple viewpoints, and get context that headlines often leave out. Check it on now.  After that, we&apos;re rolling out a tool to better understand legislation and citizen journalist tools that help people better understand laws, hold power accountable, and create credible content of their own. The goal: make truth easier to find and harder to twist.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 2 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                                             <div onClick={() => setCurrentValuesView(2)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
-                                                <h3 className="font-bold text-base md:text-lg">How can I get involved?</h3>
+                                                <h3 className="font-bold text-base md:text-lg">Is Wired Wits neutral? Do you take political sides?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
                                                         currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
@@ -212,28 +208,23 @@ export default function ContactUs() {
                                             </div>
                                             <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    We love that you're asking.
-                                                    There are so many ways people have told us they want to be part of this, from signing up for updates to offering skills, support, or partnership ideas. Some want to follow along. Some want to help fund the mission. Others want to build with us.
-                                                    Wherever you fall on that spectrum, we&apos;re here for it.
-                                                    We&apos;re still early in our journey, which means we can&apos;t say yes to everything (yet). But knowing what you&apos;re excited about helps us grow in the right direction, together.
-                                                    Use our [Feedback Hub] to tell us what you're interested in, and we'll keep you in the loop as opportunities grow.
+                                                    No. In fact, we work hard to avoid the trap of partisan framing entirely.  All of us have our beliefs, but we recognize the importance of checking them at the door to ensure we earn and continually build on your trust.  We don&apos;t care which party you support or where you fall on the political spectrum. We care that your beliefs are grounded in truth, not manipulation.  And it is our mission to provide you with the tools to do it. Supporting a politician and holding them accountable aren't mutually exclusive, you can do both, just like you would with a close friend or family member. Real leadership invites scrutiny, speaks clearly about values, and trusts you to think for yourself.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 3 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
-                                            <div onClick={() => setCurrentValuesView(2)}
+                                            <div onClick={() => setCurrentValuesView(3)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
                                                 <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">How do the Wired Wits pillars work together?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
-                                                        currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
+                                                        currentValuesView === 3 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
                                                     }
                                                 </div>
                                             </div>
-                                            <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
+                                            <div className={`values-text ${currentValuesView === 3 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    Life doesn&apos;t happen in silos, and we don&apos;t build tools that way either. Yes, I can see contradiction there also, but hear us out
-                                                    Wired Wits is a Quality of Life platform because we believe every part of life affects the whole: how we stay informed, how we earn a living, and how we manage our time, money, and mental load. Each of our three pillars is designed to meet a different need, but they all work together to help you thrive.
+                                                    You shouldn&apos;t, blind trust is part of the problem, whether it&apos;s AI, pundits, or elected leaders. That&apos;s why we lean into transparency. Our tool is built to clarify, not persuade. It helps you explore multiple angles, spot bias, and dig deeper into context. It doesn&apos;t tell you what to think. It gives you the tools to think better. And if something doesn&apos;t add up, we want you to question it. That&apos;s how trust should work. We know it&apos;s not perfect, and we&apos;re constantly working to make it better, more transparent, more accurate, and more useful to people who care about truth
                                                 </p>
                                             </div>
                                         </div>

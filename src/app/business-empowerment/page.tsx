@@ -168,7 +168,7 @@ export default function ContactUs() {
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 0 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                                             <div onClick={() => setCurrentValuesView(0)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
-                                                <h3 className="font-bold text-base md:text-lg">Who are these tools for?</h3>
+                                                <h3 className="font-bold text-base md:text-lg">What makes Wired Wits reports different from others I can find online?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
                                                         currentValuesView === 0 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
@@ -177,16 +177,14 @@ export default function ContactUs() {
                                             </div>
                                             <div className={`values-text ${currentValuesView === 0 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    Wired Wits is for everyday people who want to take back control—of their time, their choices, and their understanding of the world.
-                                                    Whether you're a small business owner, a concerned citizen, a side hustler, or someone just trying to make sense of today&apos;s chaos, our tools are built to meet you where you are.
-                                                    {/* You don&apos;t need to be a tech expert or policy wonk. You just need curiosity and the desire to make better decisions in your life, business, or community. */}
+                                                    Our reports are powered by advanced AI trained to surface strategic, practical insights faster and more affordably than traditional research. Each one is crafted to help real people make confident business decisions without drowning in jargon or fluff. We focus on clarity, opportunity, and action.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 1 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                                             <div onClick={() => setCurrentValuesView(1)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
-                                                <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">Why do you call Wired Wits a &apos;Quality of Life&apos; platform?</h3>
+                                                <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">Can I trust AI-generated reports to make major business decisions?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
                                                         currentValuesView === 1 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
@@ -195,16 +193,14 @@ export default function ContactUs() {
                                             </div>
                                             <div className={`values-text ${currentValuesView === 1 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    Because everything we build is designed to protect and improve the ecosystem that supports human dignity, freedom, and growth.
-                                                    That ecosystem is under pressure, from misinformation, unchecked greed, misused technology, and dysfunctional governance. These aren&apos;t partisan problems. They&apos;re structural threats that affect everyone.
-                                                    Our mission is to give people the tools to navigate this landscape with more clarity, more ownership, and more opportunity, so we can all thrive.
+                                                    AI can accelerate insight, but it shouldn't replace your judgment. That&apos;s why we&apos;re transparent about what AI can (and can&apos;t) do. Our reports are designed to guide your decision-making providing clear data, highlighting risks, and offering direction. We always recommend validating key info and using our tools as a trusted co-pilot, not a final authority.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 2 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
                                             <div onClick={() => setCurrentValuesView(2)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
-                                                <h3 className="font-bold text-base md:text-lg">How can I get involved?</h3>
+                                                <h3 className="font-bold text-base md:text-lg">Will you offer more than just reports in the future?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
                                                         currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
@@ -213,28 +209,23 @@ export default function ContactUs() {
                                             </div>
                                             <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    We love that you're asking.
-                                                    There are so many ways people have told us they want to be part of this, from signing up for updates to offering skills, support, or partnership ideas. Some want to follow along. Some want to help fund the mission. Others want to build with us.
-                                                    Wherever you fall on that spectrum, we&apos;re here for it.
-                                                    We&apos;re still early in our journey, which means we can&apos;t say yes to everything (yet). But knowing what you&apos;re excited about helps us grow in the right direction, together.
-                                                    Use our [Feedback Hub] to tell us what you're interested in, and we'll keep you in the loop as opportunities grow.
+                                                    Yes. Our roadmap includes AI-powered tools and business agents designed to simplify growth, automate tasks, and uncover hidden opportunities. We&apos;re building apps that give small teams the kind of edge that was once only available to big companies. With affordability and ease-of-use at the core. We&apos;re genuinely excited about what&apos;s coming and can&apos;t wait to share more when the time is right.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className={`py-6 flex flex-col md:px-2 rounded-lg ${currentValuesView === 3 ? 'bg-[#F9F9FB' : 'border-[0.05px] border-solid border-[#3b3b3b1f]'}`}>
-                                            <div onClick={() => setCurrentValuesView(2)}
+                                            <div onClick={() => setCurrentValuesView(3)}
                                                 className={`flex items-center justify-between cursor-pointer gap-5 px-3 md:px-4 rounded-xl faq-header`}>
-                                                <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">How do the Wired Wits pillars work together?</h3>
+                                                <h3 className="font-bold text-base md:text-lg w-[70%] md:w-full">How does this fit into the bigger Quality of Life Ecosystem?</h3>
                                                 <div className="size-8 rounded-full flex items-center justify-center bg-black">
                                                     {
-                                                        currentValuesView === 2 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
+                                                        currentValuesView === 3 ? <BiMinus className="text-lg text-white" /> : <TiPlus className="text-lg text-white" />
                                                     }
                                                 </div>
                                             </div>
                                             <div className={`values-text ${currentValuesView === 2 ? 'show-text pt-5 px-3 md:px-5' : ''}`}>
                                                 <p className="text-sm opacity-80 leading-loose md:leading-loose">
-                                                    Life doesn&apos;t happen in silos, and we don&apos;t build tools that way either. Yes, I can see contradiction there also, but hear us out
-                                                    Wired Wits is a Quality of Life platform because we believe every part of life affects the whole: how we stay informed, how we earn a living, and how we manage our time, money, and mental load. Each of our three pillars is designed to meet a different need, but they all work together to help you thrive.
+                                                    Business Empowerment is one pillar of our broader mission to make life work better for everyone. Together with Everyday AI and Public Good, we&apos;re creating tools that reduce overwhelm, increase opportunity, and put power back in your hands. Because we believe your ideas and your quality of life shouldn&apos;t be limited by your resources.
                                                 </p>
                                             </div>
                                         </div>
